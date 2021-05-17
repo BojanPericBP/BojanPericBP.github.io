@@ -117,17 +117,15 @@ body {
   0% {
     margin-top: 190px;
   }
-
   50% {
     margin-top: 160px;
   }
-
   100% {
     margin-top: 190px;
   }
 }
-/*dropdown meni*/
 
+/*dropdown meni*/
 .dropbtn {
   background-color: #4AD5D4;
   width: 180px;
@@ -184,7 +182,7 @@ body {
   background-color: #5fbebe;
   border-radius: 30px;
 }
-
+/* !Dropdown meni */
 .info-banner{
   display: grid;
   width: 100vw;
@@ -246,7 +244,7 @@ body {
 }
 
 .info-banner .imgSign-Up {
-  background-image: url("../source/progress.svg");
+  background-image: url("../Welcome/source/progress.svg");
   display: flex;
   background-position: center;
   background-size: cover;

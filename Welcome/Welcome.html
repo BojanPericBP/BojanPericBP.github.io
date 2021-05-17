@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="Welcome.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome</title>
 </head>
-
 <body>
 <div class="login-bg" id="login-bg"></div>
-
   <div class="main-banner">
     <div class="header">
       <div class="left-column">
         <div class="logo">
-          <a href="Welcome.html"><img src="./source/logotip.PNG" alt="logo">
-        </div></a>
+          <a href="Welcome.html"><img src="./source/logotip.PNG" alt="logo"></a>
+        </div>
       </div>
       <div class="right-column">
         <div class="nav-bar">
           <ul class="nav">
             <li class="nav1">
               <!-- <a href="#">Prijava za poslodavca</a> -->
-              <!-- Dodati drop down meni -->
+              <!-- Dropdown meni za login -->
               <div class="dropdown">
                 <button class="dropbtn">Prijava</button>
                 <div class="dropdown-content">
@@ -34,7 +31,6 @@
                   <a href="javascript:login()" >Strucni mentor</a>
                 </div>
               </div>
-              <!-- <button class="student_button" onclick="login()">Prijava za poslodavca</button> -->
             </li>
           </ul>
         </div>
@@ -48,7 +44,6 @@
       <img src="./source/hiring.svg" alt="">
     </div>
   </div>
-
 <!-- About -->
 <div class="info-banner">
   <div class="about" id="about">
@@ -60,7 +55,6 @@
     </div>
   </div>
   <div class="imgAbout" id="imgAbout"></div>
-
 <!-- Ucljanjivanje studenta -->
 <div class="imgSign-Up" id="imgSign-Up"></div>
   <div class="sign-up-student" id="sign-up-student">
@@ -92,7 +86,6 @@
     </div>
     <div class="footer-column-3" id="footer-col-3">info@studentskiservis.bl</div>
   </footer>
-
   <!-- LOGIN-->
   <div class="login" id="login">
     <img src="logo.png" alt="" name="imglogo">
@@ -104,7 +97,6 @@
       <button type="submit" class="logbtn"><a href="Student-Poslovi.html">Prijava</a></button>
     </form>
   </div>
-
   <div class="loginFirma" id="loginFirma">
     <img src="logo.png" alt="" name="imglogo">
     <div class="exitbtn"><button type="button" class="exitbtn" onclick="FirmaLogin()">X</button></div>
@@ -116,7 +108,7 @@
     </form>
   </div>
   </div>
-
+  <!-- java script funkcije -->
   <script type="text/javascript">
     function login() {
       var loginbg=document.getElementById("login-bg");
@@ -131,5 +123,4 @@
     }
   </script>
 </body>
-
 </html>
