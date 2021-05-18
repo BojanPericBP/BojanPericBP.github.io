@@ -42,7 +42,7 @@ body {
   margin-right: 20px;
 }
 
-.nav>li {
+.nav li {/*ovde je bilo .nav>li zasto*/
   padding: 0 20px;
   font-size: 18px;
 }
@@ -124,7 +124,6 @@ body {
     margin-top: 190px;
   }
 }
-
 /*dropdown meni*/
 .dropbtn {
   background-color: #4AD5D4;
@@ -250,7 +249,6 @@ body {
 }
 
  .register-btn {
-  /* background: #0F0F6D; */
   background-color: #4AD5D4;
   color: #ffffff;
   font-weight: bold;
@@ -286,7 +284,8 @@ body {
   letter-spacing: 1px;
 }
 
-.sign-up-firma {
+/*DALI treba ovaj kod sada uopste*/
+/*.sign-up-firma { 
   position: relative;
   width: 100%;
   display: grid;
@@ -295,7 +294,8 @@ body {
   justify-content: center;
   margin: 10px;
   margin-right: 10px;
-}
+  background: violet;
+}*/
 
 footer {
   background-color: #105c6e;
@@ -451,6 +451,7 @@ div.exitbtn {
 }
 
 @media screen and (max-width:1150px) {
+
 .imgAbout, .imgSign-Up{
   height: auto;
   width: 100vw;
