@@ -142,10 +142,8 @@ body {
 }
 
 .dropdown {
-  position: absolute;
+  position: relative;
   display: inline-block;
-  top:20px;
-  right:40px;
 }
 
 .dropdown-content {
@@ -549,8 +547,9 @@ div.exitbtn {
   }
   .logo img {
     width: 200px;
-    margin-top: auto;
-    margin-bottom: auto;
+    top: 3px;
+    position: relative;
+    display: inline;
   }
   .nav>li {
     padding: 0 10px;
