@@ -2,4 +2,4 @@
 
 Ovde mozete pogeldati izgled web sajta
 
-Adresa koja vodi do ePrakse je https://BojanPericBP.github.io/Welcome/index.html
+Adresa koja vodi do ePrakse je https://BojanPericBP.github.io/Welcome
