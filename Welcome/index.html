@@ -103,7 +103,7 @@
   <!-- LOGIN-->
   <div class="login" id="login">
     <img src="./source/logotip.PNG" alt="" name="imglogo">
-    <div class="exitbtn"><button type="button" class="exitbtn" onclick="StudentLogin()">X</button></div>
+    <div class="exitbtn"><button type="button" class="exitbtn" onclick="login()">X</button></div>
     <div class="log">Student</div>
     <form action="" method="">
       <input type="email" name="em" placeholder="Studentski email">
@@ -111,9 +111,9 @@
       <button type="submit" class="logbtn"><a href="Student-Poslovi.html">Prijava</a></button>
     </form>
   </div>
-  <div class="loginFirma" id="loginFirma">
+  <div class="loginFirma" id="loginForma">
     <img src="./source/logotip.PNG" alt="" name="imglogo">
-    <div class="exitbtn"><button type="button" class="exitbtn" onclick="FirmaLogin()">X</button></div>
+    <div class="exitbtn"><button type="button" class="exitbtn" onclick="login()">X</button></div>
     <div class="log">Poslodavac</div>
     <form>
       <input type="email" name="em" placeholder="Email">
@@ -124,17 +124,31 @@
   </div>
   <!-- java script funkcije -->
   <script type="text/javascript">
+    window.onload = function () {
+
+      document.getElementById("loginFormaTT").style.display = "none";
+    }
     function login() {
       var loginbg = document.getElementById("login-bg");
-      var firma = document.getElementById("loginFirma");
-      if (firma.style.display === "none") {
-        firma.style.display = "block";
-        loginbg.style.display = "block";
+      var loginForma = document.getElementById("loginForma");
+      if (loginForma.style.display == "none") {
+        loginForma.style.display = "block";
+        loginbg.style.display = "block"; //zatamni pozadinu
       } else {
-        firma.style.display = "none";
-        loginbg.style.display = "none";
+        loginForma.style.display = "none";
+        loginbg.style.display = "none"; //odtamni pozadinu
       }
     }
+
+    //da se klikne u prazno
+    document.addEventListener('mouseup', function (e) {
+      var container = document.getElementById("loginForma");
+      var loginbg = document.getElementById("login-bg");
+      if (!container.contains(e.target)) {
+        container.style.display = 'none';
+        loginbg.style.display = "none";
+      }
+    });
   </script>
 </body>
 
