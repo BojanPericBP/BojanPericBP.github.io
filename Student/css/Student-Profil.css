@@ -1,0 +1,465 @@
+body {
+  background: #FFFFFF;
+  font-family: "Landrina shadow", cursive;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Londrina shadow", cursive;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*--- NAVIGACIONI MENI ---*/
+.navbar {
+  height: 80px;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0px;
+  border-bottom: 1px solid white;
+  position: fixed;
+  z-index: 1;
+  background: #105C6E;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.navbar .container .logo img {
+  width: 250px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+
+.navbar .container .secondary-nav button {
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.navbar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.navbar nav .secondary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+}
+
+.ocijeni-prakse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.ocijeni-prakse .dropbtn {
+  background: none;
+  width: auto;
+  color: white;
+  font-size: 1em;
+  padding: 1rem;
+  border: 0;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ocijeni-prakse .dropdown:hover .dropbtn {
+  background-color: #007d8d;
+  border-radius: 30px;
+}
+
+.moji-konkursi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.moji-konkursi .dropbtn {
+  background: none;
+  width: auto;
+  color: white;
+  font-size: 1em;
+  padding: 1rem;
+  border: 0;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.moji-konkursi .dropdown:hover .dropbtn {
+  background-color: #007d8d;
+  border-radius: 30px;
+}
+
+.prakse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.prakse .dropbtn {
+  background: none;
+  width: 185px;
+  color: white;
+  font-size: 1em;
+  padding: 1rem;
+  border: 0;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.prakse .dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+}
+
+.prakse .dropdown-content {
+  display: none;
+  background-color: #9cf3ff;
+  max-width: 185px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.prakse .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 30px;
+}
+
+.prakse .dropdown-content a:hover {
+  background-color: #92d3df;
+}
+
+.prakse .dropdown:hover .dropdown-content {
+  display: block;
+  left: auto;
+  right: 0;
+  border-radius: 30px;
+}
+
+.prakse .dropdown:hover .dropbtn {
+  background-color: #007d8d;
+  border-radius: 30px;
+}
+
+.izvjestaji {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.izvjestaji .dropbtn {
+  background: none;
+  width: 180px;
+  color: white;
+  font-size: 1em;
+  padding: 1rem;
+  border: 0;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.izvjestaji .dropdown:hover .dropbtn {
+  background-color: #007d8d;
+  border-radius: 30px;
+}
+
+.profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profil .primary-nav {
+  font-size: 18px;
+}
+
+.profil .dropbtn {
+  background-color: #5FB34F;
+  width: 180px;
+  color: white;
+  font-size: 1em;
+  padding: 1rem;
+  border: 0;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profil .dropdown {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  margin: 0px;
+}
+
+.profil .dropdown-content {
+  display: none;
+  background-color: #acff9c;
+  max-width: 180px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.profil .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 30px;
+}
+
+.profil .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.profil .dropdown:hover .dropdown-content {
+  display: block;
+  left: 0px;
+  left: auto;
+  right: 0;
+  border-radius: 30px;
+}
+
+.profil .dropdown:hover .dropbtn {
+  background-color: #3e8031;
+  border-radius: 30px;
+}
+
+.profil .nav button {
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+/*------------------------------------------------------------------------------------*/
+
+
+/* POSAO HEADING */
+.heading{
+  font-size: 40px;
+  margin-top: 100px;
+  padding: 10px;
+  text-align: left;
+  padding-left: 50px;
+  font-weight: bold;
+  width: 100vw;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  /* margin-left: 1vw; */
+  /* margin-right: 1vw; */
+  color: black;
+}
+
+.profile_grid{
+  position: relative;
+  display: grid;
+  /* background-color: pink; */
+  width: 95vw;
+  margin: 30px;
+  grid-column-gap: 20px;
+  height: auto;
+  grid-template-columns: 38% 10% 10% 38%;
+  grid-template-areas:
+  "heading_main heading_main heading_licni_podaci heading_licni_podaci"
+  "main main licni_podaci licni_podaci"
+  "heading_skolovanje heading_skolovanje heading_skolovanje  heading_vjestine"
+  "skolovanje skolovanje skolovanje vjestine"
+  "heading_radno_iskustvo heading_radno_iskustvo heading_radno_iskustvo heading_radno_iskustvo"
+  "radno_iskustvo radno_iskustvo radno_iskustvo radno_iskustvo"
+  "heading_projekti heading_projekti heading_projekti heading_projekti"
+  "projekti projekti projekti projekti"
+  "heading_komentari heading_komentari heading_komentari heading_komentari"
+  "komentari komentari komentari komentari";
+}
+.heading_main, .heading_licni_podaci, .heading_skolovanje, .heading_vjestine, .heading_radno_iskustvo, .heading_projekti, .heading_komentari{
+  grid-area: heading_main;
+  margin-left: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.main{
+  height: 200px;
+  background-color: #DDDDDD;
+  border-radius: 40px;
+  grid-area: main;
+  margin-bottom: 20px;
+}
+
+.heading_licni_podaci{
+  grid-area: heading_licni_podaci;
+}
+
+.licni_podaci{
+  height: 200px;
+  background-color: #5fb34f;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  grid-area: licni_podaci;
+}
+
+.heading_skolovanje{
+  grid-area: heading_skolovanje;
+}
+.skolovanje{
+  height: 200px;
+  background-color: #4AD5D4;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  grid-area: skolovanje;
+}
+
+.heading_vjestine{
+  grid-area: heading_vjestine;
+}
+.vjestine{
+  height: 200px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  background-color: #DDDDDD;
+}
+
+.heading_radno_iskustvo{
+  grid-area: heading_radno_iskustvo;
+}
+.radno_iskustvo{
+  height: 250px;
+  background-color: #105c6e;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  grid-area: radno_iskustvo;
+}
+
+.heading_projekti{
+  grid-area: heading_projekti;
+}
+.projekti{
+  height: 300px;
+  background-color: #5fb34f;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  grid-area: projekti;
+}
+
+.heading_komentari{
+  grid-area: heading_komentari;
+}
+.komentari{
+  height: 400px;
+  background-color: #4AD5D4;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  grid-area: komentari;
+}
+
+/* FOOTER */
+footer {
+  background-color: #105c6e;
+  height: 250px;
+  position: relative;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 30vw 33vw 32vw;
+  grid-gap: 1%;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas:
+  "footer-col-1 footer-col-2 footer-col-3";
+}
+footer .footer-column-1{
+  float: left;
+  grid-area: "footer-col-1"
+}
+
+footer .footer-column-1 a{
+  justify-content: space-around;
+  color: #DDDDDD;
+  margin: 15px;
+  margin-left: 90px;
+  display: block;
+}
+footer .footer-column-2{
+  text-align: center;
+  display: block;
+  float: left;
+  color: white;
+  font-size: 17px;
+  grid-area: "footer-col-2";
+}
+
+
+.footer-column-2 .footer-heading{
+  margin-top: 10px;
+  margin-bottom: 10px;
+    font-size: 30px;
+}
+.footer-column-2 img{
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+footer .footer-column-3{
+  color:#4AD5D4;
+  margin-left: 150px;
+  grid-area: "footer-col-3";
+}
