@@ -27,13 +27,18 @@
                 </ul>
             </nav>
             >-->
+            
+            <img id="mobile-cta" class="mobile-menu" src="/Administrator/source/menu.svg" alt="Open navigation">
 
             <nav>
-                <ul class="secondary-nav">
+
+                <img id="mobile-exit" class="mobile-menu-exit" src="/Administrator/source/exit.svg" alt="Close navigation">
+
+                <ul class="primary-nav">
                     <li class="kreiraj-nalog">
-                        <div class="dropdown">
-                            <button class="dropbtn">Kreiraj nalog</button>
-                            <div class="dropdown-content">
+                        <div class="dropdown-one">
+                            <button id="dropbtn-kreiraj-nalog" class="dropbtn">Kreiraj nalog</button>
+                            <div id="dropdown-content-kreiraj-nalog" class="dropdown-content">
                               <a href="#">Clan strucne komisije</a>
                               <a href="#">Student</a>
                               <a href="#">Kompanija</a>
@@ -41,19 +46,31 @@
                     </li>
 
                     <li class="lista-korisnika">
-                        <div class="dropdown">
-                            <button class="dropbtn">Lista korisnika</button>
-                            <div class="dropdown-content">
+                        <div class="dropdown-two">
+                            <button id="dropbtn-lista-korisnika" class="dropbtn">Lista korisnika</button>
+                            <div id="dropdown-content-lista-korisnika" class="dropdown-content">
                               <a href="#">Clanovi strucne komisije</a>
                               <a href="#">Studenti</a>
                               <a href="#">Kompanije</a>
                               <a href="#">Strucni mentori</a>
                             </div>
                     </li>
+                
+                    <li class="profil">
+                        <div class="dropdown-three">
+                            <button id="dropbtn-profil" class="dropbtn">Profil</button>
+                            <div id="dropdown-content-profil" class="dropdown-content">
+                              <a href="#">Prikazi profil</a>
+                              <a href="#">Uredi profil</a>
+                              <a href="#">Odjavi se</a>
+                            </div>
+                    </li>
                 </ul>
+
             </nav>
 
             <!-- Dropdown meni za upravljanje profilom -->
+            <!--
             <div class="profil">
                 <ul class="primary-nav">
                     <li class="nav">
@@ -67,20 +84,171 @@
                     </li>
                 </ul>
             </div>
-
+            -->
         </div>
     </div>
     <!--------------------------------------------------------------------------------------------->
     
     <!-- Glavna sekcija za rad -->
     <section class="main-section">
+        <div class="container">
+            <label class="sub-head" for="icon">Administrator</label>
+            <img class="person" src="/Administrator/source/undraw_profile_pic_ic5t 1.png" alt="">
+        </div>
+        <div class="pom">
 
+        </div>
+
+
+        <!-- Sekcija sa informacijama -->
+        <div class="container-info">
+            <div class="left-side">
+               
+                <div class="text_one">
+                    <a href="#">Pravila koristenja</a>
+                </div>
+
+                <div class="text_two">
+                    <a href="#">O studentskom servisu</a>
+                </div>
+                
+            </div>
+
+            <div class="center-side">
+                <img src="/Welcome/source/logotip.PNG" alt="logo">
+            </div>
+
+            <div class="right-side">
+                <label class="mail" for="email">admin@mail.com</label>
+            </div>
+        </div>
     </section>
 
-    <!-- Seckija na kraju za informacije -->
-    <section class="info-section">
+    <script>
 
-    </section>
+        const mobileBtn = document.getElementById("mobile-cta")
+               nav = document.querySelector('nav')
+               mobileBtnExit = document.getElementById("mobile-exit");
+        
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add("menu-btn");
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove("menu-btn");
+        })
+
+        const cntKreirajNalog = document.getElementById("dropdown-content-kreiraj-nalog")
+              cntListaKorisnika = document.getElementById("dropdown-content-lista-korisnika")
+              cntProfil = document.getElementById("dropdown-content-profil");
+
+        const btnKreirajNalog = document.getElementById("dropbtn-kreiraj-nalog")
+              btnListaKorisnika = document.getElementById("dropbtn-lista-korisnika")
+              btnProfil = document.getElementById("dropbtn-profil");
+
+        btnKreirajNalog.addEventListener('click', () => {
+            var width = window.innerWidth;
+
+            if (width < 770) 
+            {
+                if(window.getComputedStyle(cntKreirajNalog).getPropertyValue('display') == 'none')
+                {
+                    cntKreirajNalog.style.display = "block";
+                    //cntKreirajNalog.classList.replace('dropdown-content', 'drop-cnt');
+                    btnKreirajNalog.classList.replace('dropbtn', 'dropbutton');
+                }
+                else if(window.getComputedStyle(cntKreirajNalog).getPropertyValue('display') == 'block')
+                {
+                    cntKreirajNalog.style.display = null;
+                    //cntKreirajNalog.classList.replace('drop-cnt', 'dropdown-content');
+                    btnKreirajNalog.classList.replace('dropbutton', 'dropbtn');
+                }
+            }
+
+        })
+
+        btnListaKorisnika.addEventListener('click', () => {
+            var width = window.innerWidth;
+
+            if (width < 770) 
+            {
+                if(window.getComputedStyle(cntListaKorisnika).getPropertyValue('display') == 'none')
+                {
+                    cntListaKorisnika.style.display = "block";
+                    //cntListaKorisnika.classList.replace('dropdown-content', 'drop-cnt');
+                    btnListaKorisnika.classList.replace('dropbtn', 'dropbutton');
+                }
+                else if(window.getComputedStyle(cntListaKorisnika).getPropertyValue('display') == 'block')
+                {
+                    cntListaKorisnika.style.display = null;
+                    //cntListaKorisnika.classList.replace('drop-cnt', 'dropdown-content');
+                    btnListaKorisnika.classList.replace('dropbutton', 'dropbtn');
+                }
+            }
+
+        })
+
+        btnProfil.addEventListener('click', () => {
+            var width = window.innerWidth;
+
+            if (width < 770) 
+            {
+                if(window.getComputedStyle(cntProfil).getPropertyValue('display') == 'none')
+                {
+                    cntProfil.style.display = "block";
+                    //cntProfil.replace('dropdown-content', 'drop-cnt');
+                    btnProfil.classList.replace('dropbtn', 'dropbutton');
+                }
+                else if(window.getComputedStyle(cntProfil).getPropertyValue('display') == 'block')
+                {
+                    cntProfil.style.display = null;
+                    //cntProfil.classList.replace('drop-cnt', 'dropdown-content');
+                    btnProfil.classList.replace('dropbutton', 'dropbtn');
+                }
+            }
+
+        })
+
+        function checkSize(){
+            var width = window.innerWidth;
+            if(width > 770)
+            {
+                cntKreirajNalog.style.display = null;
+                //cntKreirajNalog.classList.replace('drop-cnt', 'dropdown-content');
+                btnKreirajNalog.classList.replace('dropbutton', 'dropbtn');
+                
+                cntListaKorisnika.style.display = null;
+                //cntListaKorisnika.classList.replace('drop-cnt', 'dropdown-content');
+                btnListaKorisnika.classList.replace('dropbutton', 'dropbtn');
+                
+                cntProfil.style.display = null;
+                //cntProfil.classList.replace('drop-cnt', 'dropdown-content');
+                btnProfil.classList.replace('dropbutton', 'dropbtn');
+            }
+        }
+
+        window.addEventListener('resize', checkSize);
+
+        // $(window).resize(function() {
+        //     var width = window.innerWidth;
+        //     if(width > 770)
+        //     {
+        //         cntKreirajNalog.style.display = null;
+        //         //cntKreirajNalog.classList.replace('drop-cnt', 'dropdown-content');
+        //         btnKreirajNalog.classList.replace('dropbutton', 'dropbtn');
+                
+        //         cntListaKorisnika.style.display = null;
+        //         //cntListaKorisnika.classList.replace('drop-cnt', 'dropdown-content');
+        //         btnListaKorisnika.classList.replace('dropbutton', 'dropbtn');
+                
+        //         cntProfil.style.display = null;
+        //         //cntProfil.classList.replace('drop-cnt', 'dropdown-content');
+        //         btnProfil.classList.replace('dropbutton', 'dropbtn');
+        //     }
+        // });
+
+    </script>
+
 </body>
 
 </html>
