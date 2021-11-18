@@ -1,20 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ePraksa</title>
     <link rel="stylesheet" href="/Administrator/css/administrator.css">
+    <title>Administrator</title>
 </head>
-<body>
-    <nav>
-        <a href="/Welcome/index.html">
-            <img src="/Welcome/source/logotip.PNG">
-        </a>
-        <ul>
 
-        </ul>
-    </nav>
+<body>
+
+    <!-- NAVIGACIONI MENI -->
+    <div class="navbar">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="logo" href="/Welcome/index.html"><img src="/Welcome/source/logotip.PNG" alt="logo"></a>
+
+            <!-- Meni -->
+            <nav>
+                <ul class="primary-nav">
+                    <li class="kreiraj-nalog">
+                        <div class="dropdown-one">
+                            <button id="dropbtn-kreiraj-nalog" class="dropbtn">Kreiraj nalog</button>
+                            <div id="dropdown-content-kreiraj-nalog" class="dropdown-content">
+                                <a href="#">Clan strucne komisije</a>
+                                <a href="#">Student</a>
+                                <a href="#">Kompanija</a>
+                            </div>
+                    </li>
+
+                    <li class="lista-korisnika">
+                        <div class="dropdown-two">
+                            <button id="dropbtn-lista-korisnika" class="dropbtn">Lista korisnika</button>
+                            <div id="dropdown-content-lista-korisnika" class="dropdown-content">
+                                <a href="#">Clanovi strucne komisije</a>
+                                <a href="#">Studenti</a>
+                                <a href="#">Kompanije</a>
+                                <a href="#">Strucni mentori</a>
+                            </div>
+                    </li>
+
+                    <li class="profil">
+                        <div class="dropdown-three">
+                            <button id="dropbtn-profil" class="dropbtn">Profil</button>
+                            <div id="dropdown-content-profil" class="dropdown-content">
+                                <a href="#">Prikazi profil</a>
+                                <a href="#">Uredi profil</a>
+                                <a href="#">Odjavi se</a>
+                            </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------->
+
+    <!-- Glavna sekcija za rad -->
+    <section class="main-section">
+
+        <div class="container">
+            <label class="sub-head" for="icon">Administrator</label>
+            <img class="person" src="/Administrator/source/undraw_profile_pic_ic5t 1.png" alt="">
+        </div>
+        <div class="pom">
+
+        </div>
+
+
+        <!-- Sekcija sa informacijama -->
+        <div class="container-info">
+            <div class="left-side">
+
+                <div class="text_one">
+                    <a href="#">Pravila koristenja</a>
+                </div>
+
+                <div class="text_two">
+                    <a href="#">O studentskom servisu</a>
+                </div>
+
+            </div>
+
+            <div class="center-side">
+                <img src="/Welcome/source/logotip.PNG" alt="logo">
+            </div>
+
+            <div class="right-side">
+                <label class="mail" for="email">admin@mail.com</label>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+
+    </script>
+
 </body>
+
 </html>
