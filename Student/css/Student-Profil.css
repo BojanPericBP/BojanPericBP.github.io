@@ -1,0 +1,250 @@
+* {
+  text-decoration: none;
+  font-family: "Landrina shadow", cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100vw;
+}
+/* HEADER AND NAVBAR */
+.header {
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: #105c6e;
+}
+
+.nav-bar {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  color: white;
+  width: 60vw;
+  /* margin-top: 35px; */
+}
+
+.nav-bar ul li {
+  width: 170px;
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 12px;
+  border-radius: 30px;
+  /* background-color: #4AD5D4; */
+}
+
+.nav-bar ul li a {
+  color: white;
+  font-size: 18px;
+}
+
+ #active_li, .nav-bar ul li:hover {
+  border-radius: 30px;
+  background-color: #4AD5D4;
+  border:2px solid #105c6e;
+  opacity: 80%;
+}
+#active_li{
+  opacity: 100%;
+}
+
+.nav-bar ul li .fa {
+  margin-right: 10px;
+}
+
+.nav-bar ul .profile {
+  height: 50px;
+  border-radius: 30px;
+  border: 2px solid  #5fb34f;
+  background-color: #5fb34f;
+}
+
+.logo img {
+  width: 200px;
+  margin-left: 10px;
+}
+
+/* POSAO HEADING */
+.heading{
+  font-size: 40px;
+  margin-top: 100px;
+  padding: 10px;
+  text-align: left;
+  padding-left: 50px;
+  font-weight: bold;
+  width: 100vw;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  /* margin-left: 1vw; */
+  /* margin-right: 1vw; */
+  color: black;
+}
+
+.profile_grid{
+  position: relative;
+  display: grid;
+  /* background-color: pink; */
+  width: 95vw;
+  margin: 30px;
+  grid-column-gap: 20px;
+  height: auto;
+  grid-template-columns: 38% 10% 10% 38%;
+  grid-template-areas:
+  "heading_main heading_main heading_licni_podaci heading_licni_podaci"
+  "main main licni_podaci licni_podaci"
+  "heading_skolovanje heading_skolovanje heading_skolovanje  heading_vjestine"
+  "skolovanje skolovanje skolovanje vjestine"
+  "heading_radno_iskustvo heading_radno_iskustvo heading_radno_iskustvo heading_radno_iskustvo"
+  "radno_iskustvo radno_iskustvo radno_iskustvo radno_iskustvo"
+  "heading_projekti heading_projekti heading_projekti heading_projekti"
+  "projekti projekti projekti projekti"
+  "heading_komentari heading_komentari heading_komentari heading_komentari"
+  "komentari komentari komentari komentari";
+}
+.heading_main, .heading_licni_podaci, .heading_skolovanje, .heading_vjestine, .heading_radno_iskustvo, .heading_projekti, .heading_komentari{
+  grid-area: heading_main;
+  margin-left: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.main{
+  height: 200px;
+  background-color: #DDDDDD;
+  border-radius: 40px;
+  grid-area: main;
+  margin-bottom: 20px;
+}
+
+.heading_licni_podaci{
+  grid-area: heading_licni_podaci;
+}
+
+.licni_podaci{
+  height: 200px;
+  background-color: #5fb34f;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  grid-area: licni_podaci;
+}
+
+.heading_skolovanje{
+  grid-area: heading_skolovanje;
+}
+.skolovanje{
+  height: 200px;
+  background-color: #4AD5D4;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  grid-area: skolovanje;
+}
+
+.heading_vjestine{
+  grid-area: heading_vjestine;
+}
+.vjestine{
+  height: 200px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  background-color: #DDDDDD;
+}
+
+.heading_radno_iskustvo{
+  grid-area: heading_radno_iskustvo;
+}
+.radno_iskustvo{
+  height: 250px;
+  background-color: #105c6e;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  grid-area: radno_iskustvo;
+}
+
+.heading_projekti{
+  grid-area: heading_projekti;
+}
+.projekti{
+  height: 300px;
+  background-color: #5fb34f;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  grid-area: projekti;
+}
+
+.heading_komentari{
+  grid-area: heading_komentari;
+}
+.komentari{
+  height: 400px;
+  background-color: #4AD5D4;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  grid-area: komentari;
+}
+
+/* FOOTER */
+footer {
+  background-color: #105c6e;
+  height: 250px;
+  position: relative;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 30vw 33vw 32vw;
+  grid-gap: 1%;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas:
+  "footer-col-1 footer-col-2 footer-col-3";
+}
+footer .footer-column-1{
+  float: left;
+  grid-area: "footer-col-1"
+}
+
+footer .footer-column-1 a{
+  justify-content: space-around;
+  color: #DDDDDD;
+  margin: 15px;
+  margin-left: 90px;
+  display: block;
+}
+footer .footer-column-2{
+  text-align: center;
+  display: block;
+  float: left;
+  color: white;
+  font-size: 17px;
+  grid-area: "footer-col-2";
+}
+
+
+.footer-column-2 .footer-heading{
+  margin-top: 10px;
+  margin-bottom: 10px;
+    font-size: 30px;
+}
+.footer-column-2 img{
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+footer .footer-column-3{
+  color:#4AD5D4;
+  margin-left: 150px;
+  grid-area: "footer-col-3";
+}
