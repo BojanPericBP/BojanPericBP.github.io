@@ -31,7 +31,9 @@
                                 <!-- <button id="kreiraj_csk" onclick="show_kreiraj_csp()">
                                     Clan strucne komisije
                                 </button> -->
-                                <a href="#">Student</a>
+                                <a href="#" onclick="show_kreiraj_studenta()">
+                                    Student
+                                </a>
                                 <a href="#" onclick="show_kreiraj_firmu()">
                                     Kompanija
                                 </a>
@@ -128,7 +130,7 @@
                 </form>
             </div>
         </div>
-        <!-- ==================================================================== -->
+        <!-- ===================================================================================== -->
 
         <!-- Dio za dodavanje firme -->
 
@@ -185,9 +187,114 @@
                 </form>
             </div>
         </div>
+        <!-- ======================================================================================= -->
+
+
+        <!-- Dio za dodavanje studenta -->
+
+        <div class="center_kreiraj_studenta" id="center_kreiraj_studenta">
+            <div class="container_kreiraj_studenta" id="kreiraj_studenta">
+    
+                <div class="text">
+                    <label >Kreiranje naloga za studenta</label>
+                    <div class="exit_bttn">
+                        <button onclick="close_kreiraj_studenta()">Otkaži</button>
+                    </div>
+                    
+                </div>  
+                
+                <div class="line"></div>
+                <form action="#">
+    
+                    <div class="data_ime">
+                        <label>Ime:</label>
+                        <input type="text" class="input_studenta" required>
+                    </div>
+    
+                    <div class="data_prezime">
+                        <label>Prezime:</label>
+                        <input type="text" class="input_studenta" required>
+                    </div>
+    
+                    <div class="data_jmbg">
+                        <label>JMBG:</label>
+                        <input type="text" class="input_studenta" required>
+                    </div>
+    
+                    <div class="data_br_indeksa">
+                        <label>Broj indeksa:</label>
+                        <input type="text" class="input_studenta" required>
+                    </div>
+    
+                    <div class="data_email">
+                        <label>Email:</label>
+                        <input type="email" class="input_studenta" required>
+                    </div>
+    
+                    <div class="data_br_telefona">
+                        <label>Broj telefona:</label>
+                        <input type="text" class="input_studenta" required>
+                    </div>
+    
+                    <div class="data_fakultet">
+                        <label>Fakultet:</label>
+                        <input type="text" class="input_studenta" required>
+                    </div>
+    
+                    <div class="data_smjer">
+                        <label>Smjer:</label>
+                        <select name="smjer" id="smjer">
+                            <option value="ri">Racunarstvo i Informatika</option>
+                            <option value="et">Elektronika i Telekomunikacije</option>
+                            <option value="ea">Elektroenergetika i Automatika</option>
+                        </select>
+                    </div>
+    
+                    <div class="data_ciklus">
+                        <label>Ciklus:</label>
+                        <select name="ciklus" id="ciklus">
+                            <option value="1">Prvi</option>
+                            <option value="2">Drugi</option>
+                            <option value="3">Treći</option>
+                        </select>
+                    </div>
+    
+                    <div class="data_godina">
+                        <label>Godina:</label>
+                        <input type="text" class="input_studenta" required>
+                    </div>
+    
+                    <div class="data_pol">
+                        <label>Pol:</label>
+                        <select name="pol" id="pol">
+                            <option value="zensko">Žensko</option>
+                            <option value="musko">Muško</option>
+                            <option value="other">Drugo</option>
+                        </select>
+                    </div>
+    
+                    <div class="data_datum_rodjenja">
+                        <label>Datum rođenja:</label>
+                        <select name="day_of_birth" id="day_of_birth" class="dan"></select>
+                        <select name="month_of_birth" id="month_of_birth" class="mjesec"></select>
+                        <select name="year_of_birth" id="year_of_birth" class="godina"></select>
+                    </div>
+    
+                    <div class="button">
+                        <div class="inter">
+                            <button type="submit">Potvrdi</button>
+                        </div>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+<!-- ============================================================================================= -->
+
+        
 
         <!-- Sekcija sa informacijama -->
-        <div class="container-info">
+        <div class="container-info" id="container_info">
             <div class="left-side">
 
                 <div class="text_one">
@@ -213,12 +320,19 @@
 
 
     <script>
+
         function show_kreiraj_csp() {
             var x = document.getElementById("kreiraj_csp");
             if (x.style.display == "") {
                 x.style.display = "block";
             }
 
+            var container = document.getElementById("container_info");
+            container.style.bottom = "0";
+
+            remove_scroling();
+
+            document.getElementById("kreiraj_studenta").style.display = "";
             document.getElementById("kreiraj_firmu").style.display = "";
         }
 
@@ -241,7 +355,13 @@
                 x.style.display = "block";
             }
 
+            var container = document.getElementById("container_info");
+            container.style.bottom = "0";
+
+            remove_scroling();
+
             document.getElementById("kreiraj_csp").style.display = "";
+            document.getElementById("kreiraj_studenta").style.display = "";
         }
 
         function close_kreiraj_firmu() {
@@ -255,6 +375,74 @@
             if (x.style.display == "block") {
                 x.style.display = "";
             }
+        }
+
+        function show_kreiraj_studenta() {
+            var container = document.getElementById("container_info");
+            container.style.bottom = "unset";
+
+            var com = document.getElementById("center_kreiraj_studenta");
+            com.style.height = "1000px";
+
+            var x = document.getElementById("kreiraj_studenta");
+            if (x.style.display == "") {
+                x.style.display = "block";
+            }
+
+            var select = document.getElementsByClassName("dan");
+
+            for(i = 1; i <= 31; i++){
+                var option = document.createElement("option");
+                option.text = i;
+                option.value = i;
+                select[0].appendChild(option);
+            }
+
+            var select = document.getElementsByClassName("mjesec");
+
+            for(i = 1; i <= 12; i++){
+                var option = document.createElement("option");
+                option.text = i;
+                option.value = i;
+                select[0].appendChild(option);
+            }
+
+            var select = document.getElementsByClassName("godina");
+            var today = new Date();
+            var year = today.getFullYear();
+
+            for(i = 1940; i <= year; i++){
+                var option = document.createElement("option");
+                option.text = i;
+                option.value = i;
+                select[0].appendChild(option);
+            }
+
+            document.getElementById("kreiraj_csp").style.display = "";
+            document.getElementById("kreiraj_firmu").style.display = "";
+
+        }
+
+        function close_kreiraj_studenta() {
+            var x = document.getElementById("kreiraj_studenta");
+
+            var searchEles = document.getElementsByClassName("input_studenta");
+            for(var i = 0; i < searchEles.length; i++) {
+                searchEles[i].value = ""
+            }
+
+            if (x.style.display == "block") {
+                x.style.display = "";
+            }
+
+            var container = document.getElementById("container_info");
+            container.style.bottom = "0";
+            remove_scroling();
+        }
+
+        function remove_scroling(){
+            var com = document.getElementById("center_kreiraj_studenta");
+            com.style.height = "unset";
         }
 
 

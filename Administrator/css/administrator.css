@@ -80,6 +80,7 @@ nav .kreiraj-nalog .dropdown-one {
   display: inline-block;
   margin: 0px;
   max-width: 180px;
+  z-index: 999;
 }
 
 nav .kreiraj-nalog .dropdown-content {
@@ -94,7 +95,6 @@ nav .kreiraj-nalog .dropdown-content a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  z-index: 999;
 }
 
 nav .kreiraj-nalog .dropdown-content a:hover {
@@ -126,6 +126,7 @@ nav .lista-korisnika .dropdown-two {
   position: relative;
   display: inline-block;
   max-width: 180px;
+  z-index: 999;
 }
 
 nav .lista-korisnika .dropdown-content {
@@ -140,7 +141,6 @@ nav .lista-korisnika .dropdown-content a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  z-index: 999;
 }
 
 nav .lista-korisnika .dropdown-content a:hover {
@@ -171,6 +171,7 @@ nav .profil .dropbtn {
 nav .profil .dropdown-three {
   padding-right: 0.7em;
   max-width: 180px;
+  z-index: 999;
 }
 
 nav .profil .dropdown-content {
@@ -178,7 +179,6 @@ nav .profil .dropdown-content {
   background-color: #5FB34F;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 999;
 }
 
 nav .profil .dropdown-content a {
@@ -231,48 +231,6 @@ nav .profil .nav button {
   border-bottom-style: solid;
 }
 
-.main-section .container-info {
-  background: #105c6e;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: space-between;
-  height: 8em;
-}
-
-.main-section .container-info .center-side img {
-  width: 150px;
-  height: 50px;
-}
-
-.main-section .container-info .left-side {
-  display: block;
-  margin-left: 2em;
-  margin-top: 2em;
-}
-
-.main-section .container-info .text_two {
-  margin-top: 1em;
-}
-
-.main-section .container-info .center-side {
-  margin-top: 2em;
-}
-
-.main-section .container-info .right-side {
-  padding-top: 2.8em;
-  padding-right: 1.5em;
-  margin-left: 10px;
-}
-
-.main-section .container-info .mail {
-  margin-top: 50px;
-  color: white;
-}
-
 .main-section .center_kreiraj_csp {
   /* pomjeranje dijela za unos */
   /* =================================== */
@@ -292,7 +250,7 @@ nav .profil .nav button {
   border-radius: 30px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: -1;
+  z-index: 0;
 }
 
 .main-section .center_kreiraj_csp .container_kreiraj_csp .text label {
@@ -495,7 +453,7 @@ nav .profil .nav button {
   border-radius: 30px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: -1;
+  z-index: 0;
 }
 
 .main-section .center_kreiraj_firmu .container_kreiraj_firmu .text {
@@ -688,6 +646,379 @@ nav .profil .nav button {
 
 .main-section .center_kreiraj_firmu .text .exit_bttn :active {
   background-color: #108ca5;
+}
+
+.main-section .center_kreiraj_studenta {
+  /* pomjeranje dijela za unos */
+  /* =================================== */
+  /* poravnavanje dijela za unos */
+  /* ============================================ */
+  /* podesavanje dugmadi */
+  /* =================================== */
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  background-color: #105c6e;
+  width: 1000px;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+  z-index: 0;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta .text {
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: thin;
+  padding-bottom: 20px;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta .text label {
+  width: 650px;
+  margin: 0 0 0 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta .text button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  float: right;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: #5BA7B9;
+  font-size: 18px;
+  color: #fff;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form {
+  color: #fff;
+}
+
+.main-section .center_kreiraj_studenta .exit_bttn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  float: right;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_ime {
+  height: 45px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_prezime {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_jmbg {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_br_indeksa {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_email {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_br_telefona {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_fakultet {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_smjer {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_ciklus {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_godina {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_pol {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_studenta .container_kreiraj_studenta form .data_datum_rodjenja {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_studenta .data_ime label {
+  margin-left: 280px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_prezime label {
+  margin-left: 243px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_jmbg label {
+  margin-left: 260px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_br_indeksa label {
+  margin-left: 200px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_email label {
+  margin-left: 267px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_br_telefona label {
+  margin-left: 191px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_fakultet label {
+  margin-left: 237px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_smjer label {
+  margin-left: 258px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_ciklus label {
+  margin-left: 262px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_godina label {
+  margin-left: 254px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_pol label {
+  margin-left: 290px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_datum_rodjenja label {
+  margin-left: 250px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_studenta .data_ime input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta .data_prezime input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta .data_jmbg input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta .data_br_indeksa input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta .data_email input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta .data_br_telefona input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta .data_fakultet input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta .data_smjer select {
+  padding: 5px;
+  width: 410px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta .data_ciklus select {
+  padding: 5px;
+  width: 410px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta .data_godina input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta .data_pol select {
+  padding: 5px;
+  width: 410px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta .data_datum_rodjenja select {
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_studenta form .button {
+  margin: 30px 0;
+  height: 45px;
+  width: 100%;
+}
+
+.main-section .center_kreiraj_studenta form .button button {
+  height: 50px;
+  width: 180px;
+  border: none;
+  border-radius: 25px;
+  font-size: 25px;
+  background-color: #5FB34F;
+  color: #fff;
+  margin-left: 435px;
+  font-weight: bolder;
+}
+
+.main-section .center_kreiraj_studenta form .button .inter :hover {
+  background-color: #3e8031;
+}
+
+.main-section .center_kreiraj_studenta form .button .inter :active {
+  background-color: #246317;
+}
+
+.main-section .center_kreiraj_studenta .text .exit_bttn :hover {
+  background-color: #0098b6;
+}
+
+.main-section .center_kreiraj_studenta .text .exit_bttn :active {
+  background-color: #108ca5;
+}
+
+.main-section .container-info {
+  background: #105c6e;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  height: 8em;
+}
+
+.main-section .container-info .center-side img {
+  width: 150px;
+  height: 50px;
+}
+
+.main-section .container-info .left-side {
+  display: block;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+.main-section .container-info .text_two {
+  margin-top: 1em;
+}
+
+.main-section .container-info .center-side {
+  margin-top: 2em;
+}
+
+.main-section .container-info .right-side {
+  padding-top: 2.8em;
+  padding-right: 1.5em;
+  margin-left: 10px;
+}
+
+.main-section .container-info .mail {
+  margin-top: 50px;
+  color: white;
 }
 
 a {
