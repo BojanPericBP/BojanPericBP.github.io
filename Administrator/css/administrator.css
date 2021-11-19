@@ -94,6 +94,7 @@ nav .kreiraj-nalog .dropdown-content a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  z-index: 999;
 }
 
 nav .kreiraj-nalog .dropdown-content a:hover {
@@ -139,6 +140,7 @@ nav .lista-korisnika .dropdown-content a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  z-index: 999;
 }
 
 nav .lista-korisnika .dropdown-content a:hover {
@@ -176,7 +178,7 @@ nav .profil .dropdown-content {
   background-color: #5FB34F;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 999;
 }
 
 nav .profil .dropdown-content a {
@@ -205,7 +207,7 @@ nav .profil .nav button {
 .main-section {
   margin-top: 3.3em;
   width: 100%;
-  /* =================================== */
+  /* =============================================================================== */
 }
 
 .main-section .sub-head {
@@ -271,7 +273,7 @@ nav .profil .nav button {
   color: white;
 }
 
-.main-section .center {
+.main-section .center_kreiraj_csp {
   /* pomjeranje dijela za unos */
   /* =================================== */
   /* poravnavanje dijela za unos */
@@ -279,7 +281,7 @@ nav .profil .nav button {
   /* podesavanje dugmadi */
 }
 
-.main-section .center .container {
+.main-section .center_kreiraj_csp .container_kreiraj_csp {
   position: absolute;
   display: none;
   top: 50%;
@@ -290,18 +292,20 @@ nav .profil .nav button {
   border-radius: 30px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
-.main-section .center .container .text label {
+.main-section .center_kreiraj_csp .container_kreiraj_csp .text label {
   width: 650px;
   margin: 0 0 0 0;
   font-size: 30px;
   font-weight: 600;
   text-align: left;
   color: #fff;
+  padding-left: 10px;
 }
 
-.main-section .center .container .text button {
+.main-section .center_kreiraj_csp .container_kreiraj_csp .text button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -316,11 +320,11 @@ nav .profil .nav button {
   color: #fff;
 }
 
-.main-section .center .container form {
+.main-section .center_kreiraj_csp .container_kreiraj_csp form {
   color: #fff;
 }
 
-.main-section .center .exit_bttn {
+.main-section .center_kreiraj_csp .exit_bttn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -328,62 +332,69 @@ nav .profil .nav button {
   float: right;
 }
 
-.main-section .center .container form .data_ime {
+.main-section .center_kreiraj_csp .text {
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: thin;
+  padding-bottom: 20px;
+}
+
+.main-section .center_kreiraj_csp .container_kreiraj_csp form .data_ime {
   height: 45px;
   width: 100%;
   margin-top: 45px;
 }
 
-.main-section .center .container form .data_prezime {
+.main-section .center_kreiraj_csp .container_kreiraj_csp form .data_prezime {
   height: 45px;
   width: 100%;
   margin: 5px 0;
 }
 
-.main-section .center .container form .data_email {
+.main-section .center_kreiraj_csp .container_kreiraj_csp form .data_email {
   height: 45px;
   width: 100%;
   margin: 5px 0;
 }
 
-.main-section .center .container form .data_sifra {
+.main-section .center_kreiraj_csp .container_kreiraj_csp form .data_sifra {
   height: 45px;
   width: 100%;
   margin: 5px 0;
 }
 
-.main-section .center .container form .data_smjer {
+.main-section .center_kreiraj_csp .container_kreiraj_csp form .data_smjer {
   height: 45px;
   width: 100%;
   margin: 5px 0;
 }
 
-.main-section .center .data_ime label {
-  margin-left: 246px;
+.main-section .center_kreiraj_csp .data_ime label {
+  margin-left: 260px;
   font-size: 20px;
 }
 
-.main-section .center .data_prezime label {
-  margin-left: 209px;
+.main-section .center_kreiraj_csp .data_prezime label {
+  margin-left: 224px;
   font-size: 20px;
 }
 
-.main-section .center .data_email label {
-  margin-left: 234px;
+.main-section .center_kreiraj_csp .data_email label {
+  margin-left: 248px;
   font-size: 20px;
 }
 
-.main-section .center .data_sifra label {
-  margin-left: 234px;
+.main-section .center_kreiraj_csp .data_sifra label {
+  margin-left: 248px;
   font-size: 20px;
 }
 
-.main-section .center .data_smjer label {
-  margin-left: 225px;
+.main-section .center_kreiraj_csp .data_smjer label {
+  margin-left: 240px;
   font-size: 20px;
 }
 
-.main-section .center .data_ime input {
+.main-section .center_kreiraj_csp .data_ime input {
   padding: 5px;
   width: 400px;
   margin-left: 5px;
@@ -392,7 +403,7 @@ nav .profil .nav button {
   font-size: 18px;
 }
 
-.main-section .center .data_prezime input {
+.main-section .center_kreiraj_csp .data_prezime input {
   padding: 5px;
   width: 400px;
   margin-left: 5px;
@@ -401,7 +412,7 @@ nav .profil .nav button {
   font-size: 18px;
 }
 
-.main-section .center .data_email input {
+.main-section .center_kreiraj_csp .data_email input {
   padding: 5px;
   width: 400px;
   margin-left: 5px;
@@ -410,7 +421,7 @@ nav .profil .nav button {
   font-size: 18px;
 }
 
-.main-section .center .data_sifra input {
+.main-section .center_kreiraj_csp .data_sifra input {
   padding: 5px;
   width: 400px;
   margin-left: 5px;
@@ -419,7 +430,7 @@ nav .profil .nav button {
   font-size: 18px;
 }
 
-.main-section .center .data_smjer select {
+.main-section .center_kreiraj_csp .data_smjer select {
   padding: 5px;
   width: 410px;
   margin-left: 5px;
@@ -428,13 +439,13 @@ nav .profil .nav button {
   font-size: 18px;
 }
 
-.main-section .center form .button {
+.main-section .center_kreiraj_csp form .button {
   margin: 30px 0;
   height: 45px;
   width: 100%;
 }
 
-.main-section .center form .button button {
+.main-section .center_kreiraj_csp form .button button {
   height: 50px;
   width: 180px;
   border: none;
@@ -442,23 +453,240 @@ nav .profil .nav button {
   font-size: 25px;
   background-color: #5FB34F;
   color: #fff;
-  margin-left: 405px;
+  margin-left: 430px;
   font-weight: bolder;
 }
 
-.main-section .center form .button .inter :hover {
+.main-section .center_kreiraj_csp form .button .inter :hover {
   background-color: #3e8031;
 }
 
-.main-section .center form .button .inter :active {
+.main-section .center_kreiraj_csp form .button .inter :active {
   background-color: #246317;
 }
 
-.main-section .center .text .exit_bttn :hover {
+.main-section .center_kreiraj_csp .text .exit_bttn :hover {
   background-color: #0098b6;
 }
 
-.main-section .center .text .exit_bttn :active {
+.main-section .center_kreiraj_csp .text .exit_bttn :active {
+  background-color: #108ca5;
+}
+
+.main-section .center_kreiraj_firmu {
+  /* pomjeranje dijela za unos */
+  /* =================================== */
+  /* poravnavanje dijela za unos */
+  /* ============================================ */
+  /* podesavanje dugmadi */
+  /* =================================== */
+}
+
+.main-section .center_kreiraj_firmu .container_kreiraj_firmu {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  background-color: #105c6e;
+  width: 1000px;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.main-section .center_kreiraj_firmu .container_kreiraj_firmu .text {
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: thin;
+  padding-bottom: 20px;
+}
+
+.main-section .center_kreiraj_firmu .container_kreiraj_firmu .text label {
+  width: 650px;
+  margin: 0 0 0 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.main-section .center_kreiraj_firmu .container_kreiraj_firmu .text button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  float: right;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: #5BA7B9;
+  font-size: 18px;
+  color: #fff;
+}
+
+.main-section .center_kreiraj_firmu .container_kreiraj_firmu form {
+  color: #fff;
+}
+
+.main-section .center_kreiraj_firmu .exit_bttn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  float: right;
+}
+
+.main-section .center_kreiraj_firmu .container_kreiraj_firmu form .data_naziv_firme {
+  height: 45px;
+  width: 100%;
+  margin-top: 45px;
+}
+
+.main-section .center_kreiraj_firmu .container_kreiraj_firmu form .data_email {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_firmu .container_kreiraj_firmu form .data_br_telefona {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_firmu .container_kreiraj_firmu form .data_adresa {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_firmu .container_kreiraj_firmu form .data_web_stranica {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_firmu .container_kreiraj_firmu form .data_sifra {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center_kreiraj_firmu .data_naziv_firme label {
+  margin-left: 195px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_firmu .data_email label {
+  margin-left: 255px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_firmu .data_br_telefona label {
+  margin-left: 180px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_firmu .data_adresa label {
+  margin-left: 238px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_firmu .data_web_stranica label {
+  margin-left: 180px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_firmu .data_sifra label {
+  margin-left: 255px;
+  font-size: 20px;
+}
+
+.main-section .center_kreiraj_firmu .data_naziv_firme input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_firmu .data_email input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_firmu .data_br_telefona input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_firmu .data_adresa input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_firmu .data_web_stranica input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_firmu .data_sifra input {
+  padding: 5px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center_kreiraj_firmu form .button {
+  margin: 30px 0;
+  height: 45px;
+  width: 100%;
+}
+
+.main-section .center_kreiraj_firmu form .button button {
+  height: 50px;
+  width: 180px;
+  border: none;
+  border-radius: 25px;
+  font-size: 25px;
+  background-color: #5FB34F;
+  color: #fff;
+  margin-left: 430px;
+  font-weight: bolder;
+}
+
+.main-section .center_kreiraj_firmu form .button .inter :hover {
+  background-color: #3e8031;
+}
+
+.main-section .center_kreiraj_firmu form .button .inter :active {
+  background-color: #246317;
+}
+
+.main-section .center_kreiraj_firmu .text .exit_bttn :hover {
+  background-color: #0098b6;
+}
+
+.main-section .center_kreiraj_firmu .text .exit_bttn :active {
   background-color: #108ca5;
 }
 

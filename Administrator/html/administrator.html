@@ -32,7 +32,9 @@
                                     Clan strucne komisije
                                 </button> -->
                                 <a href="#">Student</a>
-                                <a href="#">Kompanija</a>
+                                <a href="#" onclick="show_kreiraj_firmu()">
+                                    Kompanija
+                                </a>
                             </div>
                     </li>
 
@@ -74,11 +76,11 @@
         </div>
 
         <!-- Dio za dodavanje clana strucne prakse -->
-        <div class="center">
-            <div class="container" id="kreiraj_csp">
+        <div class="center_kreiraj_csp">
+            <div class="container_kreiraj_csp" id="kreiraj_csp">
     
                 <div class="text">
-                    <label >Kreiranje naloga za člana stručne komisije</label>
+                    <label>Kreiranje naloga za člana stručne komisije</label>
                     <div class="exit_bttn">
                         <button onclick="close_kreiraj_csp()">Otkaži</button>
                     </div>
@@ -128,6 +130,61 @@
         </div>
         <!-- ==================================================================== -->
 
+        <!-- Dio za dodavanje firme -->
+
+        <div class="center_kreiraj_firmu">
+            <div class="container_kreiraj_firmu" id="kreiraj_firmu">
+    
+                <div class="text">
+                    <label >Kreiranje naloga za firmu</label>
+                    <div class="exit_bttn">
+                        <button onclick="close_kreiraj_firmu()">Otkaži</button>
+                    </div>
+                    
+                </div>  
+                
+                <div class="line"></div>
+                <form action="#">
+    
+                    <div class="data_naziv_firme">
+                        <label>Naziv firme:</label>
+                        <input type="text" class="input_firmu" required>
+                    </div>
+    
+                    <div class="data_email">
+                        <label>Email:</label>
+                        <input type="email" class="input_firmu" required>
+                    </div>
+    
+                    <div class="data_br_telefona">
+                        <label>Broj telefona:</label>
+                        <input type="tel" class="input_firmu" required>
+                    </div>
+    
+                    <div class="data_adresa">
+                        <label>Adresa:</label>
+                        <input type="text" class="input_firmu" required>
+                    </div>
+    
+                    <div class="data_web_stranica">
+                        <label>Web stranica:</label>
+                        <input type="text" class="input_firmu" required>
+                    </div>
+    
+                    <div class="data_sifra">
+                        <label>Šifra:</label>
+                        <input type="text" class="input_firmu" required>
+                    </div>
+    
+                    <div class="button">
+                        <div class="inter">
+                            <button type="submit">Potvrdi</button>
+                        </div>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
 
         <!-- Sekcija sa informacijama -->
         <div class="container-info">
@@ -161,12 +218,36 @@
             if (x.style.display == "") {
                 x.style.display = "block";
             }
+
+            document.getElementById("kreiraj_firmu").style.display = "";
         }
 
         function close_kreiraj_csp() {
             var x = document.getElementById("kreiraj_csp");
 
             var searchEles = document.getElementsByClassName("input_csp");
+            for(var i = 0; i < searchEles.length; i++) {
+                searchEles[i].value = ""
+            }
+
+            if (x.style.display == "block") {
+                x.style.display = "";
+            }
+        }
+
+        function show_kreiraj_firmu() {
+            var x = document.getElementById("kreiraj_firmu");
+            if (x.style.display == "") {
+                x.style.display = "block";
+            }
+
+            document.getElementById("kreiraj_csp").style.display = "";
+        }
+
+        function close_kreiraj_firmu() {
+            var x = document.getElementById("kreiraj_firmu");
+
+            var searchEles = document.getElementsByClassName("input_firmu");
             for(var i = 0; i < searchEles.length; i++) {
                 searchEles[i].value = ""
             }
