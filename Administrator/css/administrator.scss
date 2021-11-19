@@ -92,10 +92,25 @@ nav{
             text-decoration: none;
             display: block;
         }
+
+        // .dropdown-content button {
+        //     color: white;
+        //     background-color: #105c6e;
+        //     padding: 12px 16px;
+        //     display: block;
+        //     border: none;
+        //     font-size: 16px;
+        //     text-align: left;
+        // }
         
         .dropdown-content a:hover {
             background-color: #007d8d;
         }
+
+        // .dropdown-content button:hover {
+        //     background-color: #007d8d;
+        //     cursor: pointer;
+        // }
         
         .dropdown-one:hover .dropdown-content {
             display: block;
@@ -202,6 +217,8 @@ nav{
     }
 }
 
+// Sekcija za rad 
+
 .main-section {
     margin-top: 3.3em;
     width: 100%;
@@ -265,6 +282,192 @@ nav{
             color: white;
         }
     }
+
+    // Podesavanje dijela za dodavanje mentora strucne prakse
+    .center{
+
+        .container{
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            background-color: #105c6e;
+            width: 1000px;
+            padding: 30px;
+            border-radius: 30px;
+            transform: translate(-50%, -50%);
+        }
+        
+        .container .text label{
+            width: 650px;
+            margin: 0 0 0 0;
+            font-size: 30px;
+            font-weight: 600;
+            text-align: left;
+            color: #fff;
+        }
+        
+        .container .text button{
+            width: fit-content;
+            margin: 0;
+            float: right;
+            width: 100px;
+            height: 35px;
+            border: none;
+            border-radius: 20px;
+            background-color: #5BA7B9;
+            font-size: 18px;
+            color: #fff;
+        }
+        
+        .container form{
+            color: #fff;
+        }
+        
+        .exit_bttn{
+            width: fit-content;
+            margin: 0;
+            float: right;
+        }
+        
+        /* pomjeranje dijela za unos */
+        .container form .data_ime{
+            height: 45px;
+            width: 100%;
+            margin-top: 45px;
+        }
+        .container form .data_prezime{
+            height: 45px;
+            width: 100%;
+            margin: 5px 0;
+        }
+        .container form .data_email{
+            height: 45px;
+            width: 100%;
+            margin: 5px 0;
+        }
+        .container form .data_sifra{
+            height: 45px;
+            width: 100%;
+            margin: 5px 0;
+        }
+        .container form .data_smjer{
+            height: 45px;
+            width: 100%;
+            margin: 5px 0;
+        }
+        /* =================================== */
+        
+        /* poravnavanje dijela za unos */
+        .data_ime label{
+            margin-left: 246px;
+            font-size: 20px;
+        }
+        
+        .data_prezime label{
+            margin-left: 209px;
+            font-size: 20px;
+        }
+        
+        .data_email label{
+            margin-left: 234px;
+            font-size: 20px;
+        }
+        
+        .data_sifra label{
+            margin-left: 234px;
+            font-size: 20px;
+        }
+        
+        .data_smjer label{
+            margin-left: 225px;
+            font-size: 20px;
+        }
+        
+        .data_ime input{
+            padding: 5px;
+            width: 400px;
+            margin-left: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+        }
+        
+        .data_prezime input{
+            padding: 5px;
+            width: 400px;
+            margin-left: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+        }
+        
+        .data_email input{
+            padding: 5px;
+            width: 400px;
+            margin-left: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+        }
+        
+        .data_sifra input{
+            padding: 5px;
+            width: 400px;
+            margin-left: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+        }
+        
+        .data_smjer select{
+            padding: 5px;
+            width: 410px;
+            margin-left: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+        }
+        /* ============================================ */
+        
+        /* podesavanje dugmadi */
+        form .button{
+            margin: 30px 0;
+            height: 45px;
+            width: 100%;
+        }
+        
+        form .button button{
+            height: 50px;
+            width: 180px;
+            border: none;
+            border-radius: 25px;
+            font-size: 25px;
+            background-color: #5FB34F;
+            color: #fff;
+            margin-left: 405px;
+            font-weight: bolder;
+        }
+        
+        form .button .inter :hover{
+            background-color: #3e8031;
+        }
+        form .button .inter :active{
+            background-color: #246317;
+        }
+        
+        .text .exit_bttn :hover{
+            background-color: #0098b6;
+        }
+        
+        .text .exit_bttn :active{
+            background-color: #108ca5;
+        }
+
+    }
+    
+    
+    /* =================================== */
 }
 
 a {

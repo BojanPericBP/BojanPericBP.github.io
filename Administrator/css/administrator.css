@@ -205,6 +205,7 @@ nav .profil .nav button {
 .main-section {
   margin-top: 3.3em;
   width: 100%;
+  /* =================================== */
 }
 
 .main-section .sub-head {
@@ -268,6 +269,197 @@ nav .profil .nav button {
 .main-section .container-info .mail {
   margin-top: 50px;
   color: white;
+}
+
+.main-section .center {
+  /* pomjeranje dijela za unos */
+  /* =================================== */
+  /* poravnavanje dijela za unos */
+  /* ============================================ */
+  /* podesavanje dugmadi */
+}
+
+.main-section .center .container {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  background-color: #105c6e;
+  width: 1000px;
+  padding: 30px;
+  border-radius: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-section .center .container .text label {
+  width: 650px;
+  margin: 0 0 0 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+}
+
+.main-section .center .container .text button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  float: right;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: #5BA7B9;
+  font-size: 18px;
+  color: #fff;
+}
+
+.main-section .center .container form {
+  color: #fff;
+}
+
+.main-section .center .exit_bttn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  float: right;
+}
+
+.main-section .center .container form .data_ime {
+  height: 45px;
+  width: 100%;
+  margin-top: 45px;
+}
+
+.main-section .center .container form .data_prezime {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center .container form .data_email {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center .container form .data_sifra {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center .container form .data_smjer {
+  height: 45px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.main-section .center .data_ime label {
+  margin-left: 246px;
+  font-size: 20px;
+}
+
+.main-section .center .data_prezime label {
+  margin-left: 209px;
+  font-size: 20px;
+}
+
+.main-section .center .data_email label {
+  margin-left: 234px;
+  font-size: 20px;
+}
+
+.main-section .center .data_sifra label {
+  margin-left: 234px;
+  font-size: 20px;
+}
+
+.main-section .center .data_smjer label {
+  margin-left: 225px;
+  font-size: 20px;
+}
+
+.main-section .center .data_ime input {
+  padding: 5px;
+  width: 400px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center .data_prezime input {
+  padding: 5px;
+  width: 400px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center .data_email input {
+  padding: 5px;
+  width: 400px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center .data_sifra input {
+  padding: 5px;
+  width: 400px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center .data_smjer select {
+  padding: 5px;
+  width: 410px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.main-section .center form .button {
+  margin: 30px 0;
+  height: 45px;
+  width: 100%;
+}
+
+.main-section .center form .button button {
+  height: 50px;
+  width: 180px;
+  border: none;
+  border-radius: 25px;
+  font-size: 25px;
+  background-color: #5FB34F;
+  color: #fff;
+  margin-left: 405px;
+  font-weight: bolder;
+}
+
+.main-section .center form .button .inter :hover {
+  background-color: #3e8031;
+}
+
+.main-section .center form .button .inter :active {
+  background-color: #246317;
+}
+
+.main-section .center .text .exit_bttn :hover {
+  background-color: #0098b6;
+}
+
+.main-section .center .text .exit_bttn :active {
+  background-color: #108ca5;
 }
 
 a {

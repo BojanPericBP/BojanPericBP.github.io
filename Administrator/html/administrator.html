@@ -25,7 +25,12 @@
                         <div class="dropdown-one">
                             <button id="dropbtn-kreiraj-nalog" class="dropbtn">Kreiraj nalog</button>
                             <div id="dropdown-content-kreiraj-nalog" class="dropdown-content">
-                                <a href="#">Clan strucne komisije</a>
+                                <a href="#" id="kreiraj_csk" onclick="show_kreiraj_csp()">
+                                    Clan strucne komisije
+                                </a>
+                                <!-- <button id="kreiraj_csk" onclick="show_kreiraj_csp()">
+                                    Clan strucne komisije
+                                </button> -->
                                 <a href="#">Student</a>
                                 <a href="#">Kompanija</a>
                             </div>
@@ -68,6 +73,61 @@
 
         </div>
 
+        <!-- Dio za dodavanje clana strucne prakse -->
+        <div class="center">
+            <div class="container" id="kreiraj_csp">
+    
+                <div class="text">
+                    <label >Kreiranje naloga za člana stručne komisije</label>
+                    <div class="exit_bttn">
+                        <button onclick="close_kreiraj_csp()">Otkaži</button>
+                    </div>
+                    
+                </div>  
+                
+                <div class="line"></div>
+                <form action="#">
+    
+                    <div class="data_ime">
+                        <label>Ime:</label>
+                        <input class="input_csp" type="text" required>
+                    </div>
+    
+                    <div class="data_prezime">
+                        <label>Prezime:</label>
+                        <input class="input_csp" type="text" required>
+                    </div>
+    
+                    <div class="data_email">
+                        <label>Email:</label>
+                        <input class="input_csp" type="email" required>
+                    </div>
+    
+                    <div class="data_sifra">
+                        <label>Šifra:</label>
+                        <input class="input_csp" type="text" required>
+                    </div>
+    
+                    <div class="data_smjer">
+                        <label>Smjer:</label>
+                        <select name="smjer" id="smjer">
+                            <option value="ri">Racunarstvo i Informatika</option>
+                            <option value="et">Elektronika i Telekomunikacije</option>
+                            <option value="ea">Elektroenergetika i Automatika</option>
+                        </select>
+                    </div>
+    
+                    <div class="button">
+                        <div class="inter">
+                            <button type="submit">Potvrdi</button>
+                        </div>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+        <!-- ==================================================================== -->
+
 
         <!-- Sekcija sa informacijama -->
         <div class="container-info">
@@ -96,7 +156,35 @@
 
 
     <script>
+        function show_kreiraj_csp() {
+            var x = document.getElementById("kreiraj_csp");
+            if (x.style.display == "") {
+                x.style.display = "block";
+            }
+        }
 
+        function close_kreiraj_csp() {
+            var x = document.getElementById("kreiraj_csp");
+
+            var searchEles = document.getElementsByClassName("input_csp");
+            for(var i = 0; i < searchEles.length; i++) {
+                searchEles[i].value = ""
+            }
+
+            if (x.style.display == "block") {
+                x.style.display = "";
+            }
+        }
+
+
+        // document.onclick= function(event) {
+        //     // Compensate for IE<9's non-standard event model
+        //     //
+        //     if (event===undefined) event= window.event;
+        //     var target= 'target' in event? event.target : event.srcElement;
+
+        //     alert('clicked on ' + target.tagName);
+        // };
     </script>
 
 </body>
