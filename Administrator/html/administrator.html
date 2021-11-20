@@ -60,7 +60,9 @@
                         <div class="dropdown-three">
                             <button id="dropbtn-profil" class="dropbtn">Profil</button>
                             <div id="dropdown-content-profil" class="dropdown-content">
-                                <a href="#">Prikazi profil</a>
+                                <a href="#" onclick="show_profil()">
+                                    Prikazi profil
+                                </a>
                                 <a href="#">Uredi profil</a>
                                 <a href="#">Odjavi se</a>
                             </div>
@@ -327,6 +329,120 @@
         </div>
         <!-- ================================================================================================ -->
 
+        <!-- Profil -->
+        <div class="container_profil" id="container_profil">
+
+            <div class="profil">
+                <label>Profil</label>
+            </div>
+    
+            <div class="info_container">
+    
+                <div class="licni_podaci">
+                    <label>Lični podaci</label>
+                    <div>
+                        <img src="" alt="">
+                        <div class="osnovno">
+                            <p>Ime prezime</p>
+                            <p>Ime prezime</p>
+                        </div>
+                        <div class="dodatno">
+    
+                            <p>Datum rođenja</p>
+                            <p>Datum rođenja</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="ukratko_o_meni">
+                    <label>Ukratko o meni</label>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ipsum sodales, dignissim
+                            turpis eget, dictum tortor. Nulla sed malesuada sem. Cras pretium, sem dignissim vehicula
+                            elementum, sapien mauris gravida nisl, faucibus ultrices turpis ligula et massa. Suspendisse
+                            potenti. Pellentesque sodales sollicitudin mi, non faucibus enim tristique et. Nunc eleifend
+                            maximus porttitor. Quisque ex sem, scelerisque vitae gravida eget, congue quis tellus. In
+                            iaculis malesuada orci elementum scelerisque. Mauris aliquet laoreet augue, vel aliquet ex
+                            interdum nec. Nam nibh ante, accumsan nec tortor et, euismod lobortis purus. Donec tempus sem
+                            nec semper gravida. Aliquam posuere ipsum pulvinar, sodales lectus et, pulvinar risus. Nam
+                            efficitur libero turpis, quis varius purus hendrerit eu. Donec rutrum pulvinar turpis sit amet
+                            imperdiet. Sed pellentesque ante vel mattis volutpat.</p>
+                    </div>
+                </div>
+    
+                <div class="center">
+                    <div class="left">
+                        <label>Obrazovanje</label>
+                        <div class="obrazovanje">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ipsum sodales, dignissim
+                                turpis eget, dictum tortor. Nulla sed malesuada sem. Cras pretium, sem dignissim vehicula
+                                elementum, sapien mauris gravida nisl, faucibus ultrices turpis ligula et massa. Suspendisse
+                                potenti. Pellentesque sodales sollicit.</p>
+                        </div>
+    
+                        <label>Radno iskustvo</label>
+                        <div class="radno_iskustvo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ipsum sodales, dignissim
+                                turpis eget, dictum tortor. Nulla sed malesuada sem. Cras pretium, sem dignissim vehicula
+                                elementum, sapien mauris gravida nisl, faucibus ultrices turpis ligula et massa. Suspendisse
+                                potenti. Pellentesque sodales sollicit.</p>
+                        </div>
+    
+                        <label>Projekti</label>
+                        <div class="projekti">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ipsum sodales, dignissim
+                                turpis eget, dictum tortor. Nulla sed malesuada sem. Cras pretium, sem dignissim vehicula
+                                elementum, sapien mauris gravida nisl, faucibus ultrices turpis ligula et massa. Suspendisse
+                                potenti. Pellentesque sodales sollicit.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <label>Vještine</label>
+                        <div class="vjestine">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ipsum sodales, dignissim
+                                turpis eget, dictum tortor.</p>
+                        </div>
+    
+                        <label>Strani jezici</label>
+                        <div class="strani_jezici">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ipsum sodales, dignissim
+                                turpis eget, dictum tortor.</p>
+                        </div>
+    
+                        <label>Hobiji</label>
+                        <div class="hobiji">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ipsum sodales, dignissim
+                                turpis eget, dictum tortor.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="ocjene_sa_praksi">
+                    <label>Ocjene sa praksi</label>
+                    <div>
+                        <div class="info_sa_praksi">
+                            <div class="info_one">
+                                <p>Naziv kompanije</p>
+                                <p>Stručna praksa</p>
+                                <p>Ocjena 9.5/10</p>
+                            </div>
+                            <div class="info_two">
+                                <p>Tehničko zananje: 4/5</p>
+                                <p>Odgovornost: 4/5</p>
+                                <p>Timski rad: 4/5</p>
+                                <p>Zalaganje: 4/5</p>
+                            </div>
+                            <p class="info_three">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ipsum sodales, dignissim
+                                turpis eget, dictum tortor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =============================================================================================== -->
+
         <!-- Sekcija sa informacijama -->
         <div class="container-info" id="container_info">
             <div class="left-side">
@@ -356,7 +472,7 @@
     <script>
 
         const forRemoving = ["kreiraj_csp", "kreiraj_studenta", "kreiraj_firmu",
-         "container_spisak"];
+         "container_spisak", "container_profil"];
 
         function remove_everything_except(dontRemove){
             for(i = 0; i<forRemoving.length; i++){
@@ -538,6 +654,24 @@
             if (top.style.display == "flex") {
                 top.style.display = "none";
             }
+        }
+
+        function show_profil() {
+            remove_container_top();
+
+            var x = document.getElementById("container_profil");
+
+            if (x.style.display == "") {
+                x.style.display = "block";
+            }
+
+            var container = document.getElementById("container_info");
+            container.style.bottom = "unset";
+
+            var com = document.getElementById("center_kreiraj_studenta");
+            com.style.height = "0px";
+
+            remove_everything_except("container_profil");
         }
 
         // document.onclick= function(event) {
