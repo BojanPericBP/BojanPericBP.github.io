@@ -28,9 +28,6 @@
                                 <a href="#" id="kreiraj_csk" onclick="show_kreiraj_csp()">
                                     Clan strucne komisije
                                 </a>
-                                <!-- <button id="kreiraj_csk" onclick="show_kreiraj_csp()">
-                                    Clan strucne komisije
-                                </button> -->
                                 <a href="#" onclick="show_kreiraj_studenta()">
                                     Student
                                 </a>
@@ -44,10 +41,18 @@
                         <div class="dropdown-two">
                             <button id="dropbtn-lista-korisnika" class="dropbtn">Lista korisnika</button>
                             <div id="dropdown-content-lista-korisnika" class="dropdown-content">
-                                <a href="#">Clanovi strucne komisije</a>
-                                <a href="#">Studenti</a>
-                                <a href="#">Kompanije</a>
-                                <a href="#">Strucni mentori</a>
+                                <a href="#" onclick="show_lista_csk()">
+                                    Clanovi strucne komisije
+                                </a>
+                                <a href="#" onclick="show_lista_studenata()">
+                                    Studenti
+                                </a>
+                                <a href="#" onclick="show_lista_kompanija()">
+                                    Kompanije
+                                </a>
+                                <a href="#" onclick="show_lista_sm()">
+                                    Strucni mentori
+                                </a>
                             </div>
                     </li>
 
@@ -69,13 +74,13 @@
     <!-- Glavna sekcija za rad -->
     <section class="main-section">
 
-        <div class="container">
+        <div class="container" id="container_top" style="display: flex;">
             <label class="sub-head" for="icon">Administrator</label>
             <img class="person" src="/Administrator/source/undraw_profile_pic_ic5t 1.png" alt="">
         </div>
-        <div class="pom">
+        <!-- <div class="pom">
 
-        </div>
+        </div> -->
 
         <!-- Dio za dodavanje clana strucne prakse -->
         <div class="center_kreiraj_csp">
@@ -291,7 +296,36 @@
         </div>
 <!-- ============================================================================================= -->
 
+        <!-- Lista -->
+        <div class="container_spisak" id="container_spisak">
         
+            <div class="naziv_spiska">
+                <label >Spisak studenata</label>
+                <input type="text" placeholder="Pretraži">
+            </div>
+    
+            <div class="lista">
+                <ul class="neuredjena_lista" id="lista">
+                    <div class="polje">
+                        <label>Ime Prezime</label>
+                        <div>
+                            <img src="/Administrator/source/Edit.png" style="margin-right: 15px;" alt="Uredi">
+                            <img src="/Administrator/source/Recycle_Bin.png" alt="Izbriši">
+                        </div>
+                        
+                    </div>
+                    <div class="polje">
+                        <label>Ime Prezime</label>
+                        <div>
+                            <img src="/Administrator/source/Edit.png" style="margin-right: 15px;" alt="Uredi">
+                            <img src="/Administrator/source/Recycle_Bin.png" alt="Izbriši">
+                        </div>
+                        
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!-- ================================================================================================ -->
 
         <!-- Sekcija sa informacijama -->
         <div class="container-info" id="container_info">
@@ -321,7 +355,20 @@
 
     <script>
 
+        const forRemoving = ["kreiraj_csp", "kreiraj_studenta", "kreiraj_firmu",
+         "container_spisak"];
+
+        function remove_everything_except(dontRemove){
+            for(i = 0; i<forRemoving.length; i++){
+                if(forRemoving[i] != dontRemove){
+                    document.getElementById(forRemoving[i]).style.display = "";
+                }  
+            }
+        }
+
         function show_kreiraj_csp() {
+            show_container_top();
+
             var x = document.getElementById("kreiraj_csp");
             if (x.style.display == "") {
                 x.style.display = "block";
@@ -331,9 +378,7 @@
             container.style.bottom = "0";
 
             remove_scroling();
-
-            document.getElementById("kreiraj_studenta").style.display = "";
-            document.getElementById("kreiraj_firmu").style.display = "";
+            remove_everything_except("kreiraj_csp");
         }
 
         function close_kreiraj_csp() {
@@ -350,6 +395,8 @@
         }
 
         function show_kreiraj_firmu() {
+            show_container_top();
+
             var x = document.getElementById("kreiraj_firmu");
             if (x.style.display == "") {
                 x.style.display = "block";
@@ -359,9 +406,7 @@
             container.style.bottom = "0";
 
             remove_scroling();
-
-            document.getElementById("kreiraj_csp").style.display = "";
-            document.getElementById("kreiraj_studenta").style.display = "";
+            remove_everything_except("kreiraj_firmu");
         }
 
         function close_kreiraj_firmu() {
@@ -378,6 +423,8 @@
         }
 
         function show_kreiraj_studenta() {
+            show_container_top();
+
             var container = document.getElementById("container_info");
             container.style.bottom = "unset";
 
@@ -418,8 +465,7 @@
                 select[0].appendChild(option);
             }
 
-            document.getElementById("kreiraj_csp").style.display = "";
-            document.getElementById("kreiraj_firmu").style.display = "";
+            remove_everything_except("kreiraj_studenta");
 
         }
 
@@ -445,6 +491,54 @@
             com.style.height = "unset";
         }
 
+        function show_lista(lista_cega) {
+            remove_container_top();
+
+            var x = document.getElementById("container_spisak");
+
+            var x_chil = (x.children)[0].children;
+            x_chil[0].innerHTML = lista_cega
+
+            if (x.style.display == "") {
+                x.style.display = "block";
+            }
+
+            var container = document.getElementById("container_info");
+            container.style.bottom = "0";
+
+            remove_scroling();
+            remove_everything_except("container_spisak");
+        }
+
+        function show_lista_csk(){
+            show_lista("Spisak članova stručne komisije");
+        }
+
+        function show_lista_studenata(){
+            show_lista("Spisak studenata");
+        }
+
+        function show_lista_kompanija(){
+            show_lista("Spisak kompanija");
+        }
+
+        function show_lista_sm(){
+            show_lista("Spisak stručnih mentora");
+        }
+
+        function show_container_top(){
+            var top = document.getElementById("container_top");
+            if (top.style.display == "none") {
+                top.style.display = "flex";
+            }
+        }
+
+        function remove_container_top(){
+            var top = document.getElementById("container_top");
+            if (top.style.display == "flex") {
+                top.style.display = "none";
+            }
+        }
 
         // document.onclick= function(event) {
         //     // Compensate for IE<9's non-standard event model
