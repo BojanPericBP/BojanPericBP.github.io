@@ -1068,6 +1068,7 @@ nav{
         height: auto;
         margin-left: 15px;
         margin-right: 15px;
+        margin-bottom: 50px;
     }
     
     .profil{
@@ -1103,6 +1104,7 @@ nav{
     .licni_podaci div{
         display: flex;
         height: auto;
+        width: inherit;
         margin-top: 10px;
         background-color:  #5FB34F;
         border-radius: 50px;
@@ -1122,22 +1124,56 @@ nav{
     }
     
     .licni_podaci .osnovno{
-        display: block;
+        display: inline-flex;
         height: 200px;
-        padding-right: 50px;
+        padding-right: 10%;
         border-right-style: solid;
         border-right-color: white;
         border-right-width: thin;
         border-radius: 0;
+        background: none;
+    }
+
+    .licni_podaci .osnovno div{
+        margin-left: 25px;
+        display: block;
+    }
+
+    .licni_podaci .osnovno div p{
+        margin-bottom: 20px;
+    }
+
+    .licni_podaci .osnovno div h4{
+        margin-bottom: 20px;
+        color: white;
+        font-size: 17px;
     }
     
     .licni_podaci .dodatno{
-        display: block;
+        display: inline-flex;
         height: 200px;
-        margin-left: 50px;
+        margin-left: 16%;
         border-radius: 0;
+        border: none;
+        background: none;
     }
     
+    .licni_podaci .dodatno div{
+        display: block;
+        margin-left: 40px;
+        background: none;
+    }
+
+    .licni_podaci .dodatno div p{
+        margin-bottom: 10px;
+    }
+
+    .licni_podaci .dodatno div h4{
+        margin-bottom: 10px;
+        color: white;
+        font-size: 17px;
+    }
+
     .ukratko_o_meni{
         margin-top: 20px;
         
@@ -1184,15 +1220,27 @@ nav{
     }
     
     .center .left .obrazovanje{
+        display: flex;
         margin-top: 10px;
         margin-bottom: 20px;
-        background-color: #4AD5D4;
+        background-color: #5FB34F;
         border-radius: 50px;
     }
     
+    .center .left .obrazovanje div{
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
     .center .left .obrazovanje p{
-        padding: 30px;
+        padding-top: 10px;
         color: white;
+    }
+
+    .center .left .obrazovanje h4{
+        padding-top: 10px;
+        color: white;
+        font-size: 17px;
     }
     
     .center .left .radno_iskustvo{
@@ -1201,10 +1249,24 @@ nav{
         background-color: #105C6E;
         border-radius: 50px;
     }
+
+    .center .left .radno_iskustvo div{
+        display: flex;
+    }
+
+    .center .left .radno_iskustvo div div{
+        display: block;
+    }
     
-    .center .left .radno_iskustvo p{
+    .center .left .radno_iskustvo h3{
         color: white;
-        padding: 30px;
+        padding: 40px;
+    }
+    .center .left .radno_iskustvo h4{
+        color: white;
+        // padding: 30px;
+        font-weight: lighter;
+        padding-bottom: 30px;
     }
     
     .center .left .projekti{
@@ -1212,10 +1274,23 @@ nav{
         background-color: #5FB34F;
         border-radius: 50px;
     }
+
+    .center .left .projekti ol{
+       padding: 40px;
+    }
+
+    .center .left .projekti li{
+        display: block;
+    }
+
+    .center .left .projekti h3{
+        color: white;
+        padding-bottom: 10px;
+    }
     
     .center .left .projekti p{
         color: white;
-        padding: 30px;
+        padding: 10px;
     }
     
     .center .right{
@@ -1229,9 +1304,14 @@ nav{
         background-color: #f0f0f0;
         border-radius: 50px;
     }
-    
-    .center .right .vjestine p{
-        padding: 30px;
+
+    .center .right .vjestine ul{
+        padding: 20px;
+    }
+
+    .center .right .vjestine ul li{
+        display: block;
+        padding-left: 30px;
     }
     
     .center .right .strani_jezici{
@@ -1241,8 +1321,12 @@ nav{
         border-radius: 50px;
     }
     
-    .center .right .strani_jezici p{
-        padding: 30px;
+    .center .right .strani_jezici ul{
+        padding: 20px;
+    }
+    .center .right .strani_jezici ul li{
+        display: block;
+        padding-left: 30px;
     }
     
     .center .right .hobiji{
@@ -1250,9 +1334,14 @@ nav{
         background-color: #f0f0f0;
         border-radius: 50px;
     }
-    
-    .center .right .hobiji p{
+
+    .center .right .hobiji ul{
         padding: 30px;
+    }
+    
+    .center .right .hobiji ul li{
+        display: block;
+        padding-left: 20px;
     }
     
     .ocjene_sa_praksi{
@@ -1268,6 +1357,13 @@ nav{
     
     .ocjene_sa_praksi p{
         color: white;
+        padding-left: 30px;
+    }
+    .ocjene_sa_praksi h4{
+        color: white;
+        padding-left: 20px;
+        margin-bottom: 7px;
+        font-size: 17px;
     }
     
     .ocjene_sa_praksi .info_sa_praksi{
@@ -1283,11 +1379,17 @@ nav{
         border-bottom-style: solid;
         border-bottom-width: thin;
         border-bottom-color: white;
+        margin-bottom: 10px;
     }
     
     .ocjene_sa_praksi .info_sa_praksi .info_two{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .ocjene_sa_praksi .info_sa_praksi .info_two p{
+        padding-left: 40px;
     }
 }
 
