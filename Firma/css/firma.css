@@ -1,0 +1,167 @@
+
+html
+{
+    height:100%;
+}
+body{
+
+    background-color:#E5E5E5;
+    display: flex;
+    flex-direction: column;
+    font-family: "Landrina shadow", cursive;
+    margin:0;
+    padding: 0;
+    min-height:100%;
+
+    
+}
+
+/*Layout za header desktop*/
+header{
+
+    height: 10%;
+    background-color:#105C6E;
+    display:flex;
+     justify-content: space-between;
+}
+.dropbtn-2{
+    font-family:"Landrina shadow", cursive;
+    background: #5FB34F;
+             width: 130px;
+            color: white;
+            font-size: 1.2rem;
+            height: 50px;
+            border: none;
+            /* transition: all 0.5s; */
+            /* position: flex; */
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 12%;
+}
+.dropbtn-1{
+    font-family:"Landrina shadow", cursive;
+    background: transparent;
+            /* width: 180px; */
+            color: white;
+            font-size: 1.2rem;
+            height: 50px;
+            border: none;
+            /* transition: all 0.5s; */
+            /* position: flex; */
+            font-weight: bold;
+            cursor: pointer;
+}
+.nav-list{
+    list-style: none;
+    display:flex;
+    padding:0;
+    justify-content: flex-end;
+
+}
+/* .header-logo{
+    width:30%;
+} */
+
+/*Layout za header manji ekran i telefon*/
+@media (max-width:600px)
+{
+    header{
+        flex-direction:column;
+        align-items:center;
+        height:5%
+    }
+    /* .header-logo{
+        width:50%;
+    } */
+.dropbtn-2{
+    width:fit-content;
+    font-size:0.8rem;
+}
+.dropbtn-1{
+    width:fit-content;
+    font-size:0.8rem;
+}
+/* .navList{
+    align-items:center;
+    justify-content:space-between;
+    padding:0;
+}  */
+
+}
+
+.nav-list-item{
+
+    margin: 0 0.5em;
+    padding: 0;
+}
+
+
+/*    ABOUT NASLOV I PODACI */
+
+.about-info-container{
+    height:30%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
+
+}
+
+.about-info-label{
+    font-size:40px;
+}
+
+.labels{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+
+
+
+
+@media(max-width:600px)
+{
+    .about-info-label{
+        font-size:15px;
+    }
+}
+
+
+
+footer{
+    height:20%;
+    margin-top:auto;
+    display:flex;
+    background-color:#105C6E;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+@media(max-width:600px)
+{
+    footer{
+        flex-direction:column;
+    }
+}
+
+.links{
+    /* color:#4AD5D4; */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin: 0 auto;
+}
+
+.links a{
+    color:#4AD5D4;
+}
+@media(max-width:600px)
+{
+    .links a{
+        font-size: 0.9rem;
+    }
+}
+
