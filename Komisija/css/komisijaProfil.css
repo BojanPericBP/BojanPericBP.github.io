@@ -129,6 +129,12 @@ body
  
 }
 
+@media screen and (max-width: 768px) {
+    .Ime-prezime-kolona{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .topnav.responsive 
   {
