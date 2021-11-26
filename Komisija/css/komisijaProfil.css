@@ -200,13 +200,14 @@ body
 .sadrzaj{
   padding-top: 60px;
   margin-top: 4%;
+  margin-bottom: 1%;
 }
 
 .profilKolona
 {
   font-weight: bold; 
-  margin-top: 4%;
-  margin-bottom: 10%;
+  margin-top: 14%;
+  margin-bottom: 3%;
   padding: 10%;
   text-align: left;
 }
@@ -219,7 +220,7 @@ body
 
 .treca{
   text-align: left;
-  padding-top: 4%;
+  padding-top: 0%;
 }
 
 .line {
@@ -281,11 +282,7 @@ body
 .treca{
   padding-top: 0%;
 }
-.kolone-u-sredini{
-  margin: 0;
-  margin-top: 4%;
-  padding: 0;
-}
+
 }
 
 @media (max-width: 900px) {
