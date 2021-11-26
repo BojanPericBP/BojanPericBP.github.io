@@ -305,9 +305,15 @@ body
 
 @media (max-width: 768px) 
 {
+.kolone-u-sredini{
+   margin: 0%;
+  }
+
   .profilKolona
   {
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 1%;
   }
 }
 
