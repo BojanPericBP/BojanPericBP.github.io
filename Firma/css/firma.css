@@ -127,6 +127,11 @@ body
     margin: 0px;
     padding: 10px;
   }
+   .topnav a:not(:first-child), .dropdown-klasa .dropbtn-transparent{
+    display: none;
+    margin: 0px;
+    padding: 10px;
+  }
   .active img
   {
     padding: 0px;
@@ -182,6 +187,13 @@ body
     margin: 0px;
   }
   .topnav.responsive .dropdown-klasa .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-radius:0px;
+    margin: 0;
+  }
+  .topnav.responsive .dropdown-klasa .dropbtn-transparent {
     display: block;
     width: 100%;
     text-align: left;
