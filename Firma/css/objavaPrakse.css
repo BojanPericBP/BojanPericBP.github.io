@@ -1,0 +1,25 @@
+
+input[type=text] 
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.popUp-content-klasa {
+    margin: 5% auto 15% auto; /* 5% od vrha, 15% od dna i centriran popUp */
+    border: 1px solid #888;
+    border-radius: 40px;
+    width: 90%; /* 90% ekrana koji je manji 0d 700 pixela */
+    background-color: white;
+    padding: 5px;
+    max-width: 1000px; /* ŠIRINA POPUPa */
+}
+
+body{
+    background:var(--bojaMenija);
+}

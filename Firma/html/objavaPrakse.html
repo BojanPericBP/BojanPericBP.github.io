@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Firma/css/objavaPrakse.css" />
+    <link rel="stylesheet" href="/Firma/css/boje.css">
+    <link rel="stylesheet" href="/Firma/css/font.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="popUp-content-klasa">
+
+            <div class="container">
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Naziv prakse</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="nazivPrakseTextField">
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Vrsta prakse</label>
+                    <div class="col mb-3 form-check">
+                        <input type="radio" class="form-check-input" name="VrstaPrakse" id="ljetnaRadioBtn">
+                        <label class="form-check-label" for="ljetnaRadioBtn">Ljetna</label>
+                    </div>
+                    <div class="col mb-3 form-check">
+                        <input type="radio" class="form-check-input" name="VrstaPrakse" id="zimskaRadioBtn">
+                        <label class="form-check-label" for="zimskaRadioBtn">Zimska</label>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Smjer</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" id="smjerSelect"></select>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Oblast rada</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="oblastRadaTextField">
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Program rada prakse, planirane aktivnosti</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="programRadaTextField">
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Period trajanja prakse</label>
+                    <!-- <label >Od</label> -->
+                    <div class="col mb-3">
+                        <select class="form-select" id="datumOdSelect"></select>
+                    </div>
+                    <label class="col-sm-2 col-form-label">-</label>
+                    <div class="col mb-3">
+                        <select class="form-select" id="datumDoSelect"></select>
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Ukupan broj sati</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="ukupanBrojSatiTextField">
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Mjesto održavanja prakse</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" id="mjestoPrakseTextField">
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Stručni mentor</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" id="mentorTextField">
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Opis prakse</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" id="opisPrakseTextField">
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Potrebni dokumenti</label>
+                    <div class="col mb-3 form-check">
+                        <input type="checkbox" class="form-check-input"  id="cvCheckBox">
+                        <label class="form-check-label" for="cvCheckBox">CV</label>
+                    </div>
+                    <div class="col mb-3 form-check">
+                        <input type="checkbox" class="form-check-input"  id="motivacionoPismoCheckBox">
+                        <label class="form-check-label" for="motivacionoPismoCheckBox">Motivaciono pismo</label>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Link do prakse</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="linkDoPrakseTextField">
+                    </div>
+                
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Rok za prijavu</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" id="rokSelect"></select>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+
+    </div>
+</body>
