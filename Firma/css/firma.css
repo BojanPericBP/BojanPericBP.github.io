@@ -200,7 +200,7 @@ body
     float: none;
     display: block;
     text-align: left;
-    margin: 0px;
+    margin-left:10px;
   }
   .topnav.responsive .logo-klasa{
     float: none;
