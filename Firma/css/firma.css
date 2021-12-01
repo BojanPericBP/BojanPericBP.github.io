@@ -152,7 +152,7 @@ body
   margin: 0;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .topnav a:not(:first-child), .dropdown-klasa .dropbtn{
     display: none;
     margin: 0px;
@@ -184,7 +184,7 @@ body
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .topnav.responsive 
   {
     position: relative;
