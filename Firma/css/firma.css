@@ -73,7 +73,7 @@ body
   font-family: inherit;
   margin-top: inherit;
   border-radius: 30px;
-  width: 130px;
+  width: auto;
 }
 
 .dropdown-content-klasa {
@@ -86,7 +86,26 @@ body
   margin: inherit;
 }
 
+.dropdown-content-klasa-2 {
+  display: none;
+  position: absolute;
+  background-color: var(--bojaMenija);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin: inherit;
+}
+
 .dropdown-content-klasa a {
+  float: none;
+  color: white; /* boja slova dok je aktivan padajuci meni ali nije prevuceno misem preko */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin: inherit;
+}
+.dropdown-content-klasa-2 a {
   float: none;
   color: white; /* boja slova dok je aktivan padajuci meni ali nije prevuceno misem preko */
   padding: 12px 16px;
@@ -114,8 +133,20 @@ body
   border-radius: inherit;
   margin: inherit;
 }
+.dropdown-content-klasa-2 a:hover {
+  background-color: var( --zelenaMouseOver);
+  color: white;
+  margin: 0;
+  border-radius: inherit;
+  margin: inherit;
+}
 
 .dropdown-klasa:hover .dropdown-content-klasa {
+  display: block;
+  border-radius: 30px;
+  margin: 0;
+}
+.dropdown-klasa:hover .dropdown-content-klasa-2 {
   display: block;
   border-radius: 30px;
   margin: 0;
@@ -182,6 +213,11 @@ body
   }
   .topnav.responsive .dropdown-klasa {float: none;margin-bottom: 10px;}
   .topnav.responsive .dropdown-content-klasa {
+    position: relative;
+    border-radius:0px;
+    margin: 0px;
+  }
+  .topnav.responsive .dropdown-content-klasa-2 {
     position: relative;
     border-radius:0px;
     margin: 0px;

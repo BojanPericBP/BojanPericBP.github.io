@@ -1,5 +1,10 @@
-
-input[type=text] 
+textarea{
+    background-color:rgba(196, 196, 196, 0.23)!important;
+}
+select{
+    background-color:rgba(196, 196, 196, 0.23) !important;
+}
+input[type=text]
 {
   width: 100%;
   padding: 12px 20px;
@@ -7,6 +12,7 @@ input[type=text]
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  background-color:rgba(196, 196, 196, 0.23) !important;
 }
 
 
@@ -22,4 +28,19 @@ input[type=text]
 
 body{
     background:var(--bojaMenija);
+}
+
+.justify-space-between{
+    justify-content:space-between;
+}
+input[type=number]
+{
+     width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color:rgba(196, 196, 196, 0.23) !important;
+
 }
