@@ -44,3 +44,46 @@ input[type=number]
   background-color:rgba(196, 196, 196, 0.23) !important;
 
 }
+.form-margins-klasa{
+    margin-right:200px;
+    margin-left:100px
+}
+@media(max-width:1000px)
+{
+    .form-margins-klasa{
+        margin-right:10px;
+    margin-left:10px
+    }
+}
+
+.centered-text-klasa{
+    text-align:center;
+}
+
+.form-button-primary{
+    font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 11px 16px;
+  padding-top: 9px;
+  background-color: var(--zelena);
+  font-family: inherit;
+  margin-top: inherit;
+  border-radius: 30px;
+  width: 130px;
+}
+
+.form-button-secondary{
+    font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 11px 16px;
+  padding-top: 9px;
+  background-color: var(--crvenaZaButtone);
+  font-family: inherit;
+  margin-top: inherit;
+  border-radius: 30px;
+  width: 130px;
+}
