@@ -2,6 +2,12 @@ label{
     color:var(--bojaTamnoZelenaSlova);
     text-align:right;
 }
+@media (max-width:600px)
+{
+    label{
+        text-align:left;
+    }
+}
 h1{
     color:var(--bojaTamnoZelenaSlova);
 }
