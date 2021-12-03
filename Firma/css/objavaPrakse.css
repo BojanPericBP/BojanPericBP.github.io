@@ -1,8 +1,27 @@
+label{
+    text-align:right;
+}
+
+input[type=number]
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius:12px;
+  background-color:rgba(196, 196, 196, 0.23) !important;
+}
+
+
 textarea{
     background-color:rgba(196, 196, 196, 0.23)!important;
+    border-radius:12px !important;
 }
 select{
     background-color:rgba(196, 196, 196, 0.23) !important;
+    border-radius:12px !important;
 }
 input[type=text]
 {
@@ -12,6 +31,7 @@ input[type=text]
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  border-radius:12px;
   background-color:rgba(196, 196, 196, 0.23) !important;
 }
 
@@ -45,8 +65,8 @@ input[type=number]
 
 }
 .form-margins-klasa{
-    margin-right:200px;
-    margin-left:100px
+    margin-right:150px;
+    margin-left:150px
 }
 @media(max-width:1000px)
 {
