@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/Komisija/css/odbijanjePrakse.css" />
+<link rel="stylesheet" href="/Komisija/css/boje.css">
+<link rel="stylesheet" href="/Komisija/css/font.css">
+</head>
+<body>
+
+<h2>Odbijanje prakse</h2>
+<p>Ovaj button ce ici na formu sa spiskom zahtjeva za stručne prakse</p>
+
+<button onclick="showPopUp()" class="prikaziPopUp-btn">Otkaži</button>
+
+<div id="popUp-Id" class="popUp-klasa">
+  <form class="popUp-content-klasa animate-popUp" method="get">
+
+    <div class="naslov-iznad-hr">
+        <div class="red">
+            <div class="kolona lijevo">
+                <p>Odbijanje stručne prakse</p>
+            </div>
+            <div class="kolona desno">
+                <button type="reset" class="otkaziBtn" onclick="closePopUp()">Otkaži</button>
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+    <div class="container">
+        <label class="naslov">Navedite obrazloženje za odbijanje stručne prakse</label>
+        <textarea name="razlog" class="textBox" rows="8" required></textarea>
+      
+    </div>
+
+    <div class="container">
+      <button onclick="odbijPraksu()" class="potvrdiBtn">Potvrdi</button>
+    </div>
+
+  </form>
+</div>
+
+
+    <script type="text/javascript" src="/Komisija/javascript/odbijanjePrakse.js"></script>
+</body>
+</html>

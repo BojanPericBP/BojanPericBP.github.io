@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Komisija/css/prijavaNaPraksu.css" />
+    <link rel="stylesheet" href="/Komisija/css/boje.css">
+    <link rel="stylesheet" href="/Komisija/css/font.css">
+</head>
+
+<body>
+
+<h2>Apliciranje na praksu</h2>
+<p>Ovaj button ce ici na formu sa spiskom oglasa za stručne prakse</p>
+
+<button onclick="showPopUp()" class="prikaziPopUp-btn">Apliciraj</button>
+
+<div id="popUp-Id" class="popUp-klasa">
+  <form class="popUp-content-klasa animate-popUp" method="get">
+
+    <div class="naslov-iznad-hr">
+        <div class="red">
+            <div class="kolona lijevo">
+                <p>Prijava na stručnu praksu</p>
+            </div>
+            <div class="kolona desno">
+                <button type="reset" class="otkaziBtn" onclick="closePopUp()">Otkaži</button>
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+    <div class="container">
+        <label class="naslov">Motivaciono pismo</label>
+        <textarea name="motivacionoPismo" class="textBox" rows="8" placeholder="Ovdje napisite motivaciono pismo..."></textarea>
+      
+    </div>
+
+    <div class="container">
+        <div class="red">
+            <div class="kolona polovina">
+                <button onclick="pogledajCV()" class="pogledajCVbtn">Pogledaj CV</button>
+            </div>
+            <div class="kolona polovina-2">
+                <button onclick="aplicirajZaPraksu()" class="potvrdiBtn">Potvrdi</button>
+            </div>
+        </div>
+    </div>
+
+  </form>
+</div>
+
+    <script type="text/javascript" src="/Komisija/javascript/prijavaNaPraksu.js"></script>
+</body>
+</html>
