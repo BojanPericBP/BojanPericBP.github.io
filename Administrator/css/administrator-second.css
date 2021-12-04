@@ -608,12 +608,17 @@ body
 
 .licni_podaci div{
     /* display: flex; */
-    /* height: auto; */
-    width: inherit;
+    height: auto;
+    /* width: inherit; */
     margin-top: 10px;
     background-color:  #5FB34F;
     border-radius: 50px;
     align-items: center;
+}
+
+.licni_podaci .nesto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .licni_podaci div p{
@@ -637,8 +642,8 @@ body
     border-right-width: thin;
     border-radius: 0;
     background: none;
-    min-width: 250px;
-    margin-left: 90px;
+    min-width: 280px;
+    margin-left: 0px;
 }
 
 /* .licni_podaci .osnovno div{
@@ -968,15 +973,13 @@ body
         min-width: 270px;
         text-align: center;
     }
-    .ocjene_sa_praksi .info_sa_praksi .info_one .col p{
-        /* text-align: center; */
-    }
-    .ocjene_sa_praksi .info_sa_praksi .info_one .col h4{
-        /* text-align: center; */
-    }
     .ocjene_sa_praksi .info_sa_praksi .info_one .col label{
         vertical-align: middle;
         float: none;
+    }
+
+    .info_container .licni_podaci .osnovno{
+      margin-left: 90px;
     }
 }
 
