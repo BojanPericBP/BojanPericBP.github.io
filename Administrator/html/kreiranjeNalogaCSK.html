@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Administrator/css/kreiranjeNalogaCSK.css" />
+    <link rel="stylesheet" href="/Administrator/css/boje.css">
+    <link rel="stylesheet" href="/Administrator/css/font.css">
+</head>
+
+<body>
+
+<h2>Kreiranje naloga za clana strucne komisije</h2>
+<p>Ovaj button ce ici na formu za kreiranje clana strucne komisije</p>
+
+<button onclick="showPopUp()" class="prikaziPopUp-btn">Kreiraj</button>
+
+<div id="popUp-Id2" class="popUp-klasa2">
+    <div class="container_kreiraj_csp animate-popUp" id="kreiraj_csp">
+
+        <div class="text">
+            <label>Kreiranje naloga za člana stručne komisije</label>
+            <div class="exit_bttn">
+                <button onclick="closePopUp()">Otkaži</button>
+            </div>
+    
+        </div>
+    
+        <div class="line"></div>
+        <form action="#">
+    
+            <div class="row data_ime">
+                <label>Ime:</label>
+                <input class="input_csp" type="text" required>
+            </div>
+    
+            <div class="row data_prezime">
+                <label>Prezime:</label>
+                <input class="input_csp" type="text" required>
+            </div>
+    
+            <div class="row data_email">
+                <label>Email:</label>
+                <input class="input_csp" type="email" required>
+            </div>
+    
+            <div class="row data_sifra">
+                <label>Šifra:</label>
+                <input class="input_csp" type="text" required>
+            </div>
+    
+            <div class="row data_smjer">
+                <label>Smjer:</label>
+                <select name="smjer" id="smjer">
+                    <option value="ri">Racunarstvo i Informatika</option>
+                    <option value="et">Elektronika i Telekomunikacije</option>
+                    <option value="ea">Elektroenergetika i Automatika</option>
+                </select>
+            </div>
+    
+            <div class="row button">
+                <div class="inter">
+                    <button type="submit">Potvrdi</button>
+                </div>
+            </div>
+    
+        </form>
+    </div>
+</div>
+
+
+
+    <script type="text/javascript" src="/Administrator/javascript/kreiranjeNalogaCSK.js"></script>
+</body>
+</html>

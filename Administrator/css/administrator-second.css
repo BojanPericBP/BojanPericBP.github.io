@@ -469,6 +469,515 @@ body
   }
 }
 
-.footer-clean{
+/* .footer-clean{
   color: var(--plavaZaLinkoveFooter);
+} */
+
+
+
+/* Lista */
+
+.container_spisak{
+    display: none;
+    height: auto;
+    /* margin-left: 15px;
+    margin-right: 15px; */
 }
+
+.naziv_spiska{
+    display: flex;
+    justify-content: space-between;
+    
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom-style: solid;
+}
+
+.naziv_spiska label{
+    font-size: 30px;
+    /* font-weight: bolder; */
+    float: left;
+}
+
+.naziv_spiska input{
+    border: none;
+    padding-left: 45px;
+    font-size: 25px;
+    border-radius: 50px;
+    background-color: #F0F0F0;
+    background-image: url("/Administrator/source/Search.png");
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    background-size:25px 25px;
+    float: right;
+}
+
+.lista{
+    margin-top: 20px;
+    
+}
+
+.lista .polje{
+    margin-top: 10px;
+    height: 80px;
+    background-color: #F0F0F0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista .polje div{
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.lista .polje div img{
+    width: 40px;
+    height: 40px;
+}
+
+.lista .polje div img:hover{
+    background-color: #cef5f1;
+    cursor: pointer;
+}
+
+.lista label{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    font-size: 30px;
+}
+
+.neuredjena_lista{
+    padding: 0;
+}
+
+@media screen and (max-width: 770px){
+    .naziv_spiska{
+        display: grid;
+    }
+}
+
+/* ======================================================= */
+
+/* .container_top{
+    display: none;
+} */
+/* .footer-clean{
+    display: none;
+} */
+/* Profil */
+
+.container_profil{
+    display: none;
+    height: auto;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    margin-bottom: 50px;
+}
+
+.profil{
+    display: flex;
+    justify-content: space-between;
+    
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom-style: solid;
+}
+
+.profil label{
+    /* padding-left: 50px; */
+    font-size: 30px;
+    /* font-weight: bolder; */
+}
+
+.info_container{
+    height: auto;
+    margin: 20px 0px;
+}
+
+.licni_podaci{
+    height: auto;
+}
+
+.licni_podaci label{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 40px;
+}
+
+.licni_podaci div{
+    /* display: flex; */
+    /* height: auto; */
+    width: inherit;
+    margin-top: 10px;
+    background-color:  #5FB34F;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.licni_podaci div p{
+   color: white;
+}
+
+.licni_podaci img{
+    background-color: white;
+    width: 125px;
+    height: 125px;
+    margin: 50px 50px;
+    border-radius: 70px;
+}
+
+.licni_podaci .osnovno{
+    display: inline-flex;
+    height: 200px;
+    /* padding-right: 10%; */
+    border-right-style: solid;
+    border-right-color: white;
+    border-right-width: thin;
+    border-radius: 0;
+    background: none;
+    min-width: 250px;
+    margin-left: 90px;
+}
+
+/* .licni_podaci .osnovno div{
+    margin-left: 25px;
+    display: block;
+} */
+
+.licni_podaci .osnovno div p{
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.licni_podaci .osnovno div h4{
+    margin-bottom: 20px;
+    color: white;
+    font-size: 17px;
+}
+
+.licni_podaci .dodatno{
+    display: inline-flex;
+    height: 200px;
+    /* float: right; */
+    /* margin-left: 16%; */
+    border-radius: 0;
+    border: none;
+    background: none;
+    min-width: 450px;
+    margin-left: 50px;
+    /* margin-top: 25px; */
+}
+
+.licni_podaci .dodatno div{
+    /* display: block; */
+    margin-left: 40px;
+    background: none;
+    float: right;
+}
+
+.licni_podaci .dodatno div p{
+    margin-bottom: 7px;
+}
+
+.licni_podaci .dodatno div h4{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 17px;
+}
+
+.ukratko_o_meni{
+    margin-top: 20px;
+    
+    height: auto;
+    
+}
+
+.ukratko_o_meni label{
+    font-size: 20px;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+
+.ukratko_o_meni div{
+    display: flex;
+    height: auto;
+    background-color:  #f0f0f0;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.ukratko_o_meni div p{
+    width: inherit;
+    padding: 30px;
+}
+
+.center{
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+    /* justify-content: space-between; */
+}
+
+.center label{
+    font-size: 20px;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+
+.center .left{
+    /* background-color: lawngreen; */
+    margin-right: 10px;
+    /* width: 100%; */
+}
+
+.center .left .obrazovanje{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #5FB34F;
+    border-radius: 50px;
+}
+
+.center .left .obrazovanje div{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.center .left .obrazovanje p{
+    padding-top: 8px;
+    color: white;
+    margin-bottom: 7px;
+}
+
+.center .left .obrazovanje h4{
+    padding-top: 10px;
+    color: white;
+    font-size: 17px;
+}
+
+.center .left .radno_iskustvo{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #105C6E;
+    border-radius: 50px;
+}
+
+.center .left .radno_iskustvo div{
+    display: flex;
+}
+
+.center .left .radno_iskustvo div div{
+    display: block;
+}
+
+.center .left .radno_iskustvo h3{
+    color: white;
+    padding: 40px;
+}
+.center .left .radno_iskustvo h4{
+    color: white;
+     /* padding: 30px; */
+    font-weight: lighter;
+    padding-bottom: 30px;
+}
+
+.center .left .projekti{
+    margin-top: 10px;
+    background-color: #5FB34F;
+    border-radius: 50px;
+}
+
+.center .left .projekti ol{
+   padding: 40px;
+}
+
+.center .left .projekti li{
+    display: block;
+}
+
+.center .left .projekti h3{
+    color: white;
+    padding-bottom: 10px;
+}
+
+.center .left .projekti p{
+    color: white;
+    padding: 10px;
+}
+
+.center .right{
+    /* background-color: lightcoral; */
+    /* width: 30%; */
+    min-width: 300px;
+}
+
+.center .right .vjestine{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+}
+
+.center .right .vjestine ul{
+    padding: 20px;
+}
+
+.center .right .vjestine ul li{
+    display: block;
+    padding-left: 30px;
+}
+
+.center .right .strani_jezici{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+}
+
+.center .right .strani_jezici ul{
+    padding: 20px;
+}
+.center .right .strani_jezici ul li{
+    display: block;
+    padding-left: 30px;
+}
+
+.center .right .hobiji{
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+}
+
+.center .right .hobiji ul{
+    padding: 30px;
+}
+
+.center .right .hobiji ul li{
+    display: block;
+    padding-left: 20px;
+}
+
+.ocjene_sa_praksi{
+    height: auto;
+    margin-top: 20px;
+}
+
+.ocjene_sa_praksi label{
+    font-size: 20px;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+
+.ocjene_sa_praksi p{
+    color: white;
+    padding-left: 30px;
+}
+.ocjene_sa_praksi h4{
+    color: white;
+    padding-left: 20px;
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+
+.ocjene_sa_praksi .info_sa_praksi{
+    background-color: #105C6E;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.ocjene_sa_praksi .info_sa_praksi .info_one{
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: white;
+    margin-bottom: 10px;
+}
+.ocjene_sa_praksi .info_sa_praksi .info_one p{
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.ocjene_sa_praksi .info_sa_praksi .info_one .col{
+    min-width: fit-content;
+    /* width:min-content; */
+}
+
+.ocjene_sa_praksi .info_sa_praksi .info_two{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ocjene_sa_praksi .info_sa_praksi .info_two .col{
+    min-width: 275px;
+}
+
+.ocjene_sa_praksi .info_sa_praksi .info_two p{
+    padding-left: 40px;
+    
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+    margin-left: 10px;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+@media screen and (max-width: 991px){
+    .center .left{
+        width: auto;
+    }
+}
+@media screen and (max-width: 770px){
+    .ocjene_sa_praksi .info_sa_praksi .info_one .col{
+        min-width: 270px;
+        text-align: center;
+    }
+    .ocjene_sa_praksi .info_sa_praksi .info_one .col p{
+        /* text-align: center; */
+    }
+    .ocjene_sa_praksi .info_sa_praksi .info_one .col h4{
+        /* text-align: center; */
+    }
+    .ocjene_sa_praksi .info_sa_praksi .info_one .col label{
+        vertical-align: middle;
+        float: none;
+    }
+}
+
+/* =============================================================== */
