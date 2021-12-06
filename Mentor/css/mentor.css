@@ -594,9 +594,9 @@ body
         margin: 0;
     }
 
-    .footer-clean{
-        bottom: unset !important;
-    }
+    /* .footer-clean{
+        bottom: unset;
+    } */
 }
 
 /* ======================================================= */
