@@ -1,12 +1,12 @@
 label{
-    text-align:right;
+    text-align:left;
 }
-@media(max-width:600px)
+/* @media(max-width:600px)
 {
     label{
         text-align:left;
     }
-}
+} */
 
 input[type=number]
 {
@@ -112,4 +112,8 @@ input[type=number]
   margin-top: inherit;
   border-radius: 30px;
   width: 130px;
+}
+.form-floating > .bi-calendar-date + .datepicker_input + label {
+  padding-left: 3.5rem;
+  z-index: 3;
 }

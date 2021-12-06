@@ -134,7 +134,7 @@ body
   margin: inherit;
 }
 .dropdown-content-klasa-2 a:hover {
-  background-color: var( --zelenaMouseOver);
+  background-color: var(--plavaMouseOver);
   color: white;
   margin: 0;
   border-radius: inherit;
