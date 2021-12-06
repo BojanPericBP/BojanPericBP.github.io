@@ -150,8 +150,26 @@ body
 }
 /* FOOTER END */
 
+@media (max-width: 1000px) {
+  .footer-clean ul img{
+    height: 50px;
+   }
+ }
 
-@media screen and (max-width: 900px) {
+@media all and (max-width: 770px) {
+  .mid{
+    float: left;
+  }
+  #search{
+    float: left;
+  }
+
+  #sadrzajdiv{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
   .topnav a:not(:first-child), .dropdown-klasa .dropbtn{
     display: none;
     margin: 0px;
@@ -210,13 +228,12 @@ body
     border-radius:0px;
     margin: 0;
   }
+
+  .lijeva-kolona{
+    text-align: center;
+  }
+
 }
- /*---------------------OVO-------------------------------*/
-
-
-
-
-/*----------------------------------------------------*/
 
 .sadrzaj{
   padding-top: 60px;
@@ -246,6 +263,7 @@ body
   height: 30px;
   background: url(/resources/searchicon.svg) no-repeat scroll 10px 3px;
   background-color: #f0f0f0;
+  text-align: center;
 }
 
 /* Filteri */
