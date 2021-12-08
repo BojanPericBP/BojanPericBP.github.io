@@ -113,7 +113,16 @@ input[type=number]
   border-radius: 30px;
   width: 130px;
 }
-.form-floating > .bi-calendar-date + .datepicker_input + label {
+.bi-calendar-date + .datepicker_input{
   padding-left: 3.5rem;
   z-index: 3;
+}
+
+.kalendar{
+    padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius:12px;
 }
