@@ -33,7 +33,7 @@ window.onclick = function(event) //kad se klikne u prazno, da nestane popUp
 
 function closePopUp() 
 {
-    if(document.forms[0].checkValidity)
+    if(document.forms[0].checkValidity())
     popUp.style.display='none';
 }
 
