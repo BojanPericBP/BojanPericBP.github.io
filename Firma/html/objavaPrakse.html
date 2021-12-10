@@ -18,7 +18,7 @@
 
 <body>
     <!--<div class="container">-->
-    <form class="popUp-content-klasa">
+    <form class="popUp-content-klasa needs-validation" novalidate>
         <!-- <div class="container"> -->
 
         <div class="centered-text-klasa my-5">
@@ -32,7 +32,8 @@
                 <div class="row mb-3 justify-content-end">
                     <label class="col-sm-2 col-form-label">Naziv prakse</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="nazivPrakseTextField">
+                        <input type="text" class="form-control" id="nazivPrakseTextField" required>
+                        <div class="invalid-feedback">Obavezno polje</div>
                     </div>
 
                 </div>
@@ -40,26 +41,29 @@
                 <div class="row mb-3 justify-content-end">
                     <label class="col-sm-4 col-form-label">Vrsta prakse</label>
                     <div class="col-sm-4 my-2 form-check">
-                        <input type="radio" class="form-check-input" name="VrstaPrakse" id="ljetnaRadioBtn">
+                        <input type="radio" class="form-check-input" name="VrstaPrakse" id="ljetnaRadioBtn" required>
                         <label class="form-check-label" for="ljetnaRadioBtn">Ljetna</label>
                     </div>
                     <div class="col-sm-4 my-2 form-check">
-                        <input type="radio" class="form-check-input" name="VrstaPrakse" id="strucnaRadioBtn">
+                        <input type="radio" class="form-check-input" name="VrstaPrakse" id="strucnaRadioBtn" required>
                         <label class="form-check-label" for="strucnaRadioBtn">Strucna</label>
+                        <div class="invalid-feedback">Obavezno polje</div>
                     </div>
                 </div>
 
                 <div class="row mb-3 justify-content-end">
                     <label class="col-sm-2 col-form-label">Smjer</label>
                     <div class="col-sm-10">
-                        <select class="form-select" id="smjerSelect"></select>
+                        <select class="form-select" id="smjerSelect" required></select>
+                        <div class="invalid-feedback">Obavezno polje</div>
                     </div>
                 </div>
 
                 <div class="row mb-3 justify-content-end">
                     <label class="col-sm-2 col-form-label">Oblast rada</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="oblastRadaTextField">
+                        <input type="text" class="form-control" id="oblastRadaTextField" required>
+                        <div class="invalid-feedback">Obavezno polje</div>
                     </div>
 
                 </div>
@@ -67,7 +71,8 @@
                 <div class="row mb-3 justify-content-end">
                     <label class="col-sm-2 col-form-label">Program rada prakse, planirane aktivnosti</label>
                     <div class="col-sm-10">
-                        <textarea type="text" class="form-control" rows="5" id="programRadaTextField"></textarea>
+                        <textarea type="text" class="form-control" rows="5" id="programRadaTextField" required></textarea>
+                        <div class="invalid-feedback">Obavezno polje</div>
                     </div>
 
                 </div>
@@ -79,7 +84,8 @@
                         <!-- <div class="input-group"> -->
                         <!-- <select class="form-select" id="datumOdSelect"></select> -->
                         <!-- <i class="bi bi-calendar-date input-group-text"></i> -->
-                        <input type="text" class="datepicker_input form-control">
+                        <input type="text" class="datepicker_input form-control kalendar_layout">
+                        <div class="invalid-feedback">Obavezno polje</div>
                         <!-- </div> -->
                     </div>
                     <label class="col-sm-2 my-2 col-form-label centered-text-klasa">-</label>
@@ -89,7 +95,8 @@
                         
                         <!-- <span class="bi bi-calendar-date input-group-text" id="calendar1"></span> -->
                         
-                        <input type="text" class="datepicker_input form-control" aria-describedby="calendar1">
+                        <input type="text" class="datepicker_input form-control kalendar_layout">
+                        <div class="invalid-feedback">Obavezno polje</div>
                         <!-- </div> -->
                     </div>
 
@@ -98,7 +105,8 @@
                 <div class="row mb-3 justify-content-end">
                     <label class="col-sm-2 col-form-label">Ukupan broj sati</label>
                     <div class="col-sm-10">
-                        <input type="number" class="form-control" id="ukupanBrojSatiTextField">
+                        <input type="number" class="form-control" id="ukupanBrojSatiTextField" required>
+                        <div class="invalid-feedback">Obavezno polje</div>
                     </div>
 
                 </div>
@@ -106,7 +114,8 @@
                 <div class="row mb-3  justify-content-end">
                     <label class="col-sm-3 col-form-label">Mjesto održavanja prakse</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="mjestoPrakseTextField">
+                        <input type="text" class="form-control" id="mjestoPrakseTextField" required>
+                        <div class="invalid-feedback">Obavezno polje</div>
                     </div>
 
                 </div>
@@ -114,7 +123,8 @@
                 <div class="row mb-3 justify-content-end">
                     <label class="col-sm-2 col-form-label">Stručni mentor</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="mentorTextField">
+                        <input type="text" class="form-control" id="mentorTextField" required>
+                        <div class="invalid-feedback">Obavezno polje</div>
                     </div>
 
                 </div>
@@ -122,18 +132,19 @@
                 <div class="row mb-3 justify-content-end">
                     <label class="col-sm-2 col-form-label">Opis prakse</label>
                     <div class="col-sm-10">
-                        <textarea type="text" class="form-control" rows="5" id="opisPrakseTextField"></textarea>
+                        <textarea type="text" class="form-control" rows="5" id="opisPrakseTextField" required></textarea>
+                        <div class="invalid-feedback">Obavezno polje</div>
                     </div>
 
                 </div>
 
                 <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-2 col-form-label">Potrebni dokumenti</label>
-                    <div class="col-sm-5 my-2 form-check">
+                    <label class="col-sm-4 col-form-label">Potrebni dokumenti</label>
+                    <div class="col-sm-4 my-2 form-check">
                         <input type="checkbox" class="form-check-input" id="cvCheckBox">
                         <label class="form-check-label" for="cvCheckBox">CV</label>
                     </div>
-                    <div class="col-sm-5 my-2 form-check">
+                    <div class="col-sm-4 my-2 form-check">
                         <input type="checkbox" class="form-check-input" id="motivacionoPismoCheckBox">
                         <label class="form-check-label" for="motivacionoPismoCheckBox">Motivaciono pismo</label>
                     </div>
@@ -153,14 +164,15 @@
                         <!-- <div class="input-group"> -->
                             <!-- <select class="form-select" id="datumOdSelect"></select> -->
                             <!-- <i class="bi bi-calendar-date input-group-text"></i> -->
-                            <input type="text" class="datepicker_input form-control">
+                            <input type="text" class="datepicker_input form-control kalendar_layout" required>
+                            <div class="invalid-feedback">Obavezno polje</div>
                         <!-- </div> -->
                     </div>
                 </div>
 
                 <div class="row my-5 justify-content-center">
                     <div class="col-sm-3 mx-3 mb-2">
-                        <button class="form-button-primary">Objavi</button>
+                        <button  onclick="objaviPraksu()" type="submit" class="form-button-primary">Objavi</button>
                     </div>
                     <div class="col-sm-3 mx-3 mb-2">
                         <button class="form-button-secondary">Otkaži</button>
