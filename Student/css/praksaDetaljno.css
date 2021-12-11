@@ -45,6 +45,7 @@ button:hover {
 
 .stavke-prakse{
     font-size: inherit;
+    text-decoration: underline;
 }
 
 .vrijednost-stavke{
@@ -65,10 +66,10 @@ button:hover {
 
 .naslov-pasusa{
     font-weight: bold;
-    /*text-decoration: underline;*/ /* na figmi je podvuceno */
 }
 .naslov-pasusa p{
     margin-bottom: 0 !important;
+    text-decoration: underline;
 }
 
 .pasus p{
