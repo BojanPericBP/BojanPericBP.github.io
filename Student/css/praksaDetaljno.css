@@ -55,6 +55,7 @@ button:hover {
 }
 .vrijednost-stavke a{
     color: var(--plavaZaLinkoveFooter);
+    text-decoration: none;
 }
 
 .pasus,.naslov-pasusa{
