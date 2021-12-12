@@ -43,46 +43,77 @@
   <!-- NavBar END -->
 
   <div class="container">
-    <div class="sadrzaj">
+    <div class="sadrzaj" id="sadrzajdiv">
       <div class="mid">
         <label style="font-size: 20px;" for="">Trenutno dostupne prakse</label>
         <input placeholder="Pretraži" class="pretraga" type="text" name="search" id="search">
       </div>
       <span class='line'></span>
-      <!-- FIlter -->
+      <div class="divContent">
+        <!-- div sa filterima -->
+        <!-- FIlter -->
 
-      <label style="font-size: 20px;" for="">Filteri:</label>
-      <div class="filteri">
-        <div class="konent">
-          <label style="font-size: 20px;" for="">Smjer:</label>
-          <div class="smjer">
-            <input type="checkbox" name="softversko" id="chbsoftversko">
-            <label for="chbsoftversko">Softversko inženjerstvo</label>
-          </div>
+        <div class="filteri">
+          <label class="lblFilteri" for="">Filteri:</label>
+          <div class="konent">
+            <label class="lblSmjer" for="">Smjer:</label>
+            <div class="smjer">
+              <input type="checkbox" name="softversko" id="chbsoftversko">
+              <label for="chbsoftversko">Softversko inženjerstvo</label>
+            </div>
 
-          <div class="smjer">
-            <input type="checkbox" name="chbracunarsko" id="chbracunarsko">
-            <label for="chbracunarsko">Računarsko inženjerstvo</label>
-          </div>
+            <div class="smjer">
+              <input type="checkbox" name="chbracunarsko" id="chbracunarsko">
+              <label for="chbracunarsko">Računarsko inženjerstvo</label>
+            </div>
 
-          <div class="smjer">
-            <input type="checkbox" name="chbelektronika" id="chbelektronika">
-            <label for="chbelektronika">Elektronika</label>
-          </div>
+            <div class="smjer">
+              <input type="checkbox" name="chbelektronika" id="chbelektronika">
+              <label for="chbelektronika">Elektronika</label>
+            </div>
 
-          <label style="font-size: 20px;" for="">Vrsta prakse:</label>
-          <div class="smjer">
-            <input type="checkbox" name="chbstrucna" id="chbstrucna">
-            <label for="chbstrucna">Stručna praksa</label>
-          </div>
-          <div class="smjer">
-            <input type="checkbox" name="chbljetna" id="chbljetna">
-            <label for="chbljetna">Ljetna praksa</label>
+            <label class="lblSmjer" for="">Vrsta prakse:</label>
+            <div class="smjer">
+              <input type="checkbox" name="chbstrucna" id="chbstrucna">
+              <label for="chbstrucna">Stručna praksa</label>
+            </div>
+            <div class="smjer">
+              <input type="checkbox" name="chbljetna" id="chbljetna">
+              <label for="chbljetna">Ljetna praksa</label>
+            </div>
           </div>
         </div>
-      </div>
+        <!-- div za prakse -->
+        <div class="prakseDiv">
+          <label for="" class="lblFirma">Kompanija XYZ</label>
+          <label for="" class="lblVrsta">Vrsta prakse: stručna</label>
+          <span class='line'></span>
+          <label for="" class="lblPeriod">Period trajanja prakse: 1.1.2022 - 1.2.2022</label>
+          <label for="" class="lblSmjer2">Smjer: Softversko inzenjerstvo</label>
+          <br>
+          <label for="" class="lblOPraksi">O praksi:</label>
+          <p class="pOPraksi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugit dolorum atque at
+            harum mollitia? Nemo deserunt laudantium
+          </p>
+          <input type="button" value="Detaljan pregled" class="btnPogledajPraksu">
+        </div>
 
-      <div></div>
+        <div class="prakseDiv">
+          <label for="" class="lblFirma">Kompanija XYZ</label>
+          <label for="" class="lblVrsta">Vrsta prakse: stručna</label>
+          <span class='line'></span>
+          <label for="" class="lblPeriod">Period trajanja prakse: 1.1.2022 - 1.2.2022</label>
+          <label for="" class="lblSmjer2">Smjer: Softversko inzenjerstvo</label>
+          <br>
+          <label for="" class="lblOPraksi">O praksi:</label>
+          <p class="pOPraksi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugit dolorum atque at
+            harum mollitia? Nemo deserunt laudantium corporis,
+          </p>
+          <input type="button" value="Detaljan pregled" class="btnPogledajPraksu">
+
+        </div>
+
+      </div>
 
       <!-- FIlter end -->
     </div>

@@ -245,13 +245,6 @@ body
   display: inline-block;
   width: 100%;
   border-top: 2px solid rgb(191, 191, 191);
-  margin: 0;
-  padding: 0;
-}
-
-.test{
-  background-color: khaki;
-  /* display: inline-block; */
 }
 
 /* search */
@@ -263,20 +256,96 @@ body
   height: 30px;
   background: url(/resources/searchicon.svg) no-repeat scroll 10px 3px;
   background-color: #f0f0f0;
-  text-align: center;
 }
 
-/* Filteri */
+/* div za filtere i prakse */
+.divContent{
+  margin: 10px;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+}
 
-/* input:checked+label{
-  color: #5FB34F;
-} */
+/* Objaavljene prakse */
+
+.prakseDiv{
+  flex: 1;
+  background-color:#F0F0F0;
+  border-radius: 25px;
+  margin: 20px; 
+  margin-top: 10px;
+  padding: 1% 3% 1% 3%;
+  height:fit-content;
+}
+
+.lblFirma{
+ top:0%;
+ left:3%;
+ font-size: 20px;
+ font-weight:bold;
+}
+
+.lblVrsta{
+  font-size: 20px;
+  float:right;
+  font-weight:bold;
+  align-self: flex-end;
+  
+}
+
+.lblPeriod{
+  font-size: 20px;
+  text-decoration: black underline;
+  margin-bottom: 10px;
+}
+.lblSmjer2{
+  font-size: 20px;
+  float: right;
+  text-decoration: black underline;
+  align-self: flex-end;
+}
+
+.lblOPraksi{
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.btnPogledajPraksu{
+  background-color: #5FB34F;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  padding: 5px 15px 5px 15px;
+}
+/* objavljene prakse end */
+
 
 .filteri {
+  flex: 0.3;
   background-color: #F0F0F0;
   border-radius: 30px;
-  width: 280px;
+  margin: 0 0 10px 0;
+  padding:15px 10px 15px 10px;
+  height:fit-content;
 }
+/* Filteri */
+.lblFilteri{
+  flex: 1;
+  font-size: 20px;
+  margin:0 0 0 40%;
+  text-align: center;
+  text-decoration: black underline;
+}
+
+.lblSmjer{
+  font-size: 20px;
+   text-decoration: black underline;
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+
+
 
 .konent{
   padding: 10px;
@@ -314,3 +383,4 @@ input[type="checkbox"]:checked{
   background-color: #5FB34F;
 }
 /* Filteri end */
+
