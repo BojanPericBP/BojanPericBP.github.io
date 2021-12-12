@@ -317,6 +317,11 @@ body
   border-radius: 50px;
   border: none;
   padding: 5px 15px 5px 15px;
+  text-decoration: none;
+}
+
+.btnPogledajPraksu:hover{
+  opacity: 0.8;
 }
 /* objavljene prakse end */
 
