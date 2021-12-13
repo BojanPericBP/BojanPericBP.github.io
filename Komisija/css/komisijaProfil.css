@@ -230,13 +230,27 @@ body
   margin: 0;
   padding: 0;
 }
-/*----------------------------------------------------*/
+
+/* --- FOOTER -------------------------------------------------*/
+
 .footer-clean {
   padding:50px 0;
   background-color: var(--bojaMenija);
-  color:white;
+  color: var(--plavaZaLinkoveFooter);
   text-align:center;
-  margin-top: 3%;
+  margin-top: 5%;
+}
+
+.footer-clean .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.footer-clean .mail{
+  justify-content: center;
 }
 
 .footer-clean ul {
@@ -253,60 +267,63 @@ body
   text-decoration:none;
   
 }
-.footer-clean ul img{
+.footer-clean img {
   height: 70px;
+  /*justify-content: center;*/
 }
 
 .footer-clean ul a:hover {
-  opacity:1;
+  opacity: 0.8;
 }
 
-.lijeva-kolona{
+.lijeva-kolona {
   text-align: left;
+  margin-right: 6%;
 }
 
-@media (max-width:900px) {
-  .footer-clean .item{
-    text-align:center;
-    padding:0px;
-    margin: 0;
-  }
-  .lijeva-kolona{
-  text-align: left;
-}
-.profilKolona
+@media (max-width: 1000px) /* 1000-901 pixela */
 {
-  
-  margin-bottom: 0;
-}
-.treca{
-  padding-top: 0%;
-}
-
-}
-
-@media (max-width: 900px) {
-  .footer-clean{
-    text-align:center;
+  .footer-clean {
+    margin-top: 8%;
   }
-  .lijeva-kolona{
-  text-align: center;
-}
-  .footer-clean ul img{
-   height: 50px;
+
+  .footer-clean ul img {
+    height: 50px;
   }
 }
 
-@media (max-width: 1000px) {
- .footer-clean ul img{
-   height: 50px;
-  }
-}
-
-@media (max-width: 768px) 
+@media (max-width:900px) /* 900-769 pixela */
 {
-.kolone-u-sredini{
-   margin: 0%;
+    .footer-clean {
+      margin-top: 8%;
+    }
+
+    .footer-clean .item {
+      padding: 0px;
+      margin: 0;
+    }
+
+    .footer-clean ul img {
+     height: 50px;
+    }
+
+    .profilKolona {
+      margin-bottom: 0;
+    }
+
+    .treca {
+      padding-top: 0%;
+    }
+
+}
+
+@media (max-width: 768px) /* 768-576 pixela */
+{
+  .footer-clean {
+    margin-top: 10%;
+  }
+  .kolone-u-sredini {
+    margin: 0%;
   }
 
   .profilKolona
@@ -317,6 +334,27 @@ body
   }
 }
 
-.footer-clean{
-  color: var(--plavaZaLinkoveFooter);
+@media (max-width: 575px) /* 0-575 pixela */
+{
+ .footer-clean {
+    text-align: center;
+    margin-top: 15%;
+    padding: 0;
+  }
+  
+  .footer-clean .item{
+    justify-content: center;
+  }
+
+  .footer-clean .lijeva-kolona{
+    text-align: center;
+    padding-top: 20px;
+    margin-right: 0;
+  }
+
+  .footer-clean .mail {
+    margin-bottom: 20px;
+  }
 }
+
+/* --- FOOTER END-------------------------------------------*/
