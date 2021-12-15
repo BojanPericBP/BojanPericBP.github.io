@@ -38,7 +38,7 @@ body
   display: none;
 }
 .topnav .icon:hover {
-  background-color: transparent; /* boja one tri linije na maouseOver */
+  background-color: transparent;
 }
 
 .topnav .dropdown-klasa {
@@ -75,7 +75,7 @@ body
 
 .dropdown-content-klasa a {
   float: none;
-  color: white; /* boja slova dok je aktivan padajuci meni ali nije prevuceno misem preko */
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -85,8 +85,12 @@ body
 
 .topnav a:hover{
   color: white;
+  opacity: 0.4; /* TODO: skontat nesto bolje */
 }
 
+.logo-klasa a:hover {
+  opacity: 1;
+}
 .dropdown-klasa:hover .dropbtn {
   background-color: var(--zelena);
   color: white;
@@ -100,13 +104,15 @@ body
   margin: 0;
   border-radius: inherit;
   margin: inherit;
+  opacity: 1;
 }
 
-.dropdown-klasa:hover .dropdown-content-klasa {
+.dropdown-klasa:hover .dropdown-content-klasa,.dropdown-klasa:active .dropdown-content-klasa {
   display: block;
   border-radius: 30px;
   margin: 0;
 }
+
 
 @media screen and (max-width: 900px) {
   .topnav a:not(:first-child), .dropdown-klasa .dropbtn{
@@ -230,131 +236,3 @@ body
   margin: 0;
   padding: 0;
 }
-
-/* --- FOOTER -------------------------------------------------*/
-
-.footer-clean {
-  padding:50px 0;
-  background-color: var(--bojaMenija);
-  color: var(--plavaZaLinkoveFooter);
-  text-align:center;
-  margin-top: 5%;
-}
-
-.footer-clean .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20px;
-  padding: 0;
-}
-
-.footer-clean .mail{
-  justify-content: center;
-}
-
-.footer-clean ul {
-  padding:0;
-  list-style:none;
-  line-height:1.6;
-  font-size:14px;
-  margin-top: 6%;
-  
-}
-
-.footer-clean ul a {
-  color:inherit;
-  text-decoration:none;
-  
-}
-.footer-clean img {
-  height: 70px;
-  /*justify-content: center;*/
-}
-
-.footer-clean ul a:hover {
-  opacity: 0.8;
-}
-
-.lijeva-kolona {
-  text-align: left;
-  margin-right: 6%;
-}
-
-@media (max-width: 1000px) /* 1000-901 pixela */
-{
-  .footer-clean {
-    margin-top: 8%;
-  }
-
-  .footer-clean ul img {
-    height: 50px;
-  }
-}
-
-@media (max-width:900px) /* 900-769 pixela */
-{
-    .footer-clean {
-      margin-top: 8%;
-    }
-
-    .footer-clean .item {
-      padding: 0px;
-      margin: 0;
-    }
-
-    .footer-clean ul img {
-     height: 50px;
-    }
-
-    .profilKolona {
-      margin-bottom: 0;
-    }
-
-    .treca {
-      padding-top: 0%;
-    }
-
-}
-
-@media (max-width: 768px) /* 768-576 pixela */
-{
-  .footer-clean {
-    margin-top: 10%;
-  }
-  .kolone-u-sredini {
-    margin: 0%;
-  }
-
-  .profilKolona
-  {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1%;
-  }
-}
-
-@media (max-width: 575px) /* 0-575 pixela */
-{
- .footer-clean {
-    text-align: center;
-    margin-top: 15%;
-    padding: 0;
-  }
-  
-  .footer-clean .item{
-    justify-content: center;
-  }
-
-  .footer-clean .lijeva-kolona{
-    text-align: center;
-    padding-top: 20px;
-    margin-right: 0;
-  }
-
-  .footer-clean .mail {
-    margin-bottom: 20px;
-  }
-}
-
-/* --- FOOTER END-------------------------------------------*/
