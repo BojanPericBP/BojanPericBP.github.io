@@ -102,10 +102,9 @@ span.psw {
 }
 
 .popUp-content-klasa {
-    margin: 2% auto 25% auto; /* 2% od vrha, 25% od dna */ /* TODO: testirati na telefonu */
+    margin: 2% auto 15% auto; /* 2% od vrha, 15% od dna */ /* TODO: testirati na telefonu */
     border: 3px solid var(--bojaMenija);
     border-radius: 40px;
-    width: 90%;
     background-color: white;
     padding: 5px;
     max-width: 800px; /* ŠIRINA POPUPa */
