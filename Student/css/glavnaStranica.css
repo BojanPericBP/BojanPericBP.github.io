@@ -157,11 +157,8 @@ body
  }
 
 @media all and (max-width: 770px) {
-  .mid{
-    float: left;
-  }
-  #search{
-    float: left;
+  .topdiv{
+    /* float: left; */
   }
 
   #sadrzajdiv{
@@ -234,17 +231,41 @@ body
   }
 
 }
+/*TODO OBrisati klasu kasnije */
+/* .sadrzaj > div{
+  border: red 2px solid;
+} */
+
+
 
 .sadrzaj{
-  padding-top: 60px;
-  margin-top: 4%;
-  margin-bottom: 1%;
+  display: grid;
+  /* grid-template-rows: auto auto; */
+  
+  grid-gap: 1em;
+  padding: 1%;
 }
 
 .line {
   display: inline-block;
   width: 100%;
   border-top: 2px solid rgb(191, 191, 191);
+}
+
+.topdiv>*{
+  border: red 1px solid;
+}
+.topdiv{
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-self: center; */
+  border: red 1px solid;
+}
+
+.prakseContent{
+  display: grid;
+  grid-gap: 1em;
 }
 
 /* search */
@@ -258,66 +279,79 @@ body
   background-color: #f0f0f0;
 }
 
-/* div za filtere i prakse */
-.divContent{
-  margin: 10px;
-  position: relative;
+/* Objaavljene prakse */
+/* .divContent{
   display: grid;
-  grid-template-columns: minmax(150px, 25%) 1fr;
+  grid-gap: 1em;
+} */
+
+.praksaTest{
+  background-color:#F0F0F0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 25px;
+  grid-auto-rows: auto;
+  padding: 3%;
+  gap: 10px;
 }
 
-/* Objaavljene prakse */
+/* .praksaTest>*{
+  border: red 1px solid;
+} */
 
-.prakseDiv{
-  flex: 1;
+.praksaDiv{
   background-color:#F0F0F0;
   border-radius: 25px;
-  margin: 20px; 
-  margin-top: 10px;
-  padding: 1% 3% 1% 3%;
-  height:fit-content;
+  width: 100%;
+  padding: 3%;
 }
 
 .lblFirma{
- top:0%;
- left:3%;
  font-size: 20px;
  font-weight:bold;
 }
 
 .lblVrsta{
-  font-size: 20px;
-  float:right;
   font-weight:bold;
-  align-self: flex-end;
-  
+  font-size: 20px;
+  justify-self: end;
+}
+
+.linija{
+  grid-column: 1/3;
 }
 
 .lblPeriod{
   font-size: 20px;
   text-decoration: black underline;
-  margin-bottom: 10px;
 }
+
 .lblSmjer2{
   font-size: 20px;
-  float: right;
   text-decoration: black underline;
-  align-self: flex-end;
+  justify-self: end;
 }
 
 .lblOPraksi{
+  grid-column: 1/3;
   font-size: 20px;
   text-decoration: underline;
   font-weight: bold;
 }
+.oPraksi{
+  grid-column: 1/3;
+}
 
 .btnPogledajPraksu{
+  grid-column: 1/3;
   background-color: #5FB34F;
   color: white;
   border-radius: 50px;
   border: none;
   padding: 5px 15px 5px 15px;
   text-decoration: none;
+  width: fit-content;
+  justify-self: center;
 }
 
 .btnPogledajPraksu:hover{
@@ -327,7 +361,7 @@ body
 
 
 .filteri {
-  flex: 0.3;
+  /* flex: 0.3; */
   background-color: #F0F0F0;
   border-radius: 30px;
   margin: 0 0 10px 0;
@@ -336,7 +370,7 @@ body
 }
 /* Filteri */
 .lblFilteri{
-  flex: 1;
+  /* flex: 1; */
   font-size: 20px;
   margin:0 0 0 40%;
   text-align: center;
@@ -350,21 +384,19 @@ body
    margin-bottom: 5px;
 }
 
-
-
 .konent{
   padding: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .smjer{
-  padding-left: 35px; 
+  padding-left: 10px; 
   position:relative;
 }
 
-.smjer:hover{
+/* .smjer:hover{
   color: #4AD5D4;
-}
+} */
 .smjer input+label{
   cursor: pointer;
 }
@@ -379,9 +411,9 @@ input[type="checkbox"]{
 }
 
 input[type="checkbox"]:hover{
-  background-color: #4AD5D4;
+  /* background-color: #4AD5D4; */
   cursor: pointer;
-  
+
 }
 
 input[type="checkbox"]:checked{
