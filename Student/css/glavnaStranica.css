@@ -252,15 +252,13 @@ body
   border-top: 2px solid rgb(191, 191, 191);
 }
 
-.topdiv>*{
+/* .topdiv>*{
   border: red 1px solid;
-}
+} */
 .topdiv{
-  grid-column: 1/3;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* justify-self: center; */
-  border: red 1px solid;
+  /* border: red 1px solid; */
 }
 
 .prakseContent{
@@ -277,6 +275,8 @@ body
   height: 30px;
   background: url(/resources/searchicon.svg) no-repeat scroll 10px 3px;
   background-color: #f0f0f0;
+  justify-self: end;
+  width: 60%;
 }
 
 /* Objaavljene prakse */
@@ -354,8 +354,11 @@ body
   justify-self: center;
 }
 
+
 .btnPogledajPraksu:hover{
-  opacity: 0.8;
+  /* opacity: 0.8; */
+  color: white;
+  background-color: #327825;
 }
 /* objavljene prakse end */
 
