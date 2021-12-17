@@ -37,8 +37,13 @@ body
 
 .topnav .icon {
   display: none;
-  color: white;
-  background-color: var(--bojaMenija);
+  padding: 9px;
+  margin-top: 19px !important;
+  margin-bottom: 25px !important;
+  width: 20px;
+  height: 20px;
+  background: url(/resources/triCrtice.svg) no-repeat scroll 0 0;
+  background-size: 20px;
 }
 
 .topnav .dropdown-klasa {
@@ -136,7 +141,7 @@ body
   .topnav a.icon {
     float: right;
     display: block;
-    margin: 10px;
+    margin: 0px;
   }
   .dropdown-content-klasa{
     width: auto;
@@ -161,7 +166,7 @@ body
     position: absolute;
     right: 28px;
     top: 0;
-    margin: 10px;
+    margin: 0px;
   }
   .topnav.responsive a {
     float: none;
