@@ -30,7 +30,8 @@ body
 {
   margin: -23px;
   margin-right: 0;
-  padding-bottom: 3px;
+  padding-bottom: 0px;
+  margin-bottom: -24px !important;
   width: 200px;
 }
 
@@ -38,7 +39,7 @@ body
   display: none;
 }
 .topnav .icon:hover {
-  background-color: transparent;
+  background-color: var(--bojaMenija);
 }
 
 .topnav .dropdown-klasa {
@@ -115,15 +116,21 @@ body
 
 
 @media screen and (max-width: 900px) {
-  .topnav a:not(:first-child), .dropdown-klasa .dropbtn{
+  .topnav a, .dropdown-klasa .dropbtn{
     display: none;
     margin: 0px;
     padding: 10px;
   }
+  .logo-klasa a{
+    display: block;
+    padding-left: 25px;
+    margin-top: 17px;
+    margin-bottom: -20px !important;
+  }
   .active img
   {
     padding: 0px;
-    margin-top: -20px;
+    margin-top: -40px;
     margin-bottom: 0px;
     width: 150px;
   }
@@ -153,7 +160,7 @@ body
   }
   .topnav.responsive .icon {
     position: absolute;
-    right: 0;
+    right: 28px;
     top: 0;
     margin: 10px;
   }
@@ -170,9 +177,13 @@ body
     margin: 0px;
   }
   .topnav.responsive a img{
-     margin-top: 10px;
+     margin-top: -3px;
+     margin-bottom: 15px !important;
   }
-  .topnav.responsive .dropdown-klasa {float: none;margin-bottom: 10px;}
+  .topnav.responsive .dropdown-klasa {
+    float: none;
+    margin-bottom: 0px;
+  }
   .topnav.responsive .dropdown-content-klasa {
     position: relative;
     border-radius:0px;
