@@ -156,16 +156,6 @@ body
    }
  }
 
-@media all and (max-width: 770px) {
-  .topdiv{
-    /* float: left; */
-  }
-
-  #sadrzajdiv{
-    text-align: center;
-  }
-}
-
 @media screen and (max-width: 991px) {
   .topnav a:not(:first-child), .dropdown-klasa .dropbtn{
     display: none;
@@ -229,21 +219,12 @@ body
   .lijeva-kolona{
     text-align: center;
   }
-
 }
-/*TODO OBrisati klasu kasnije */
-/* .sadrzaj > div{
-  border: red 2px solid;
-} */
-
-
 
 .sadrzaj{
   display: grid;
-  /* grid-template-rows: auto auto; */
-  
   grid-gap: 1em;
-  padding: 1%;
+  padding: 15px;
 }
 
 .line {
@@ -252,13 +233,10 @@ body
   border-top: 2px solid rgb(191, 191, 191);
 }
 
-/* .topdiv>*{
-  border: red 1px solid;
-} */
 .topdiv{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* border: red 1px solid; */
+  /* margin-top: 1em; */
 }
 
 .prakseContent{
@@ -268,9 +246,8 @@ body
 
 /* search */
 .pretraga {
-  float: right;
   padding-left: 40px;
-  border-width: 0;
+  border-width: 0px;
   border-radius: 30px;
   height: 30px;
   background: url(/resources/searchicon.svg) no-repeat scroll 10px 3px;
@@ -306,30 +283,44 @@ body
   padding: 3%;
 }
 
+.vrsta{
+  justify-self: end;
+}
+
 .lblFirma{
  font-size: 20px;
  font-weight:bold;
+ text-decoration: black underline;
 }
 
 .lblVrsta{
   font-weight:bold;
   font-size: 20px;
-  justify-self: end;
+  text-decoration: black underline;
+}
+.lblvrstaprakse{
+  font-size: 20px;
 }
 
 .linija{
   grid-column: 1/3;
 }
+/* .linija hr{
+  margin-right: 10px;
+  margin-left: 10px;
+} */
 
 .lblPeriod{
   font-size: 20px;
   text-decoration: black underline;
 }
 
+.divSmjer{
+  justify-self: end;
+}
 .lblSmjer2{
   font-size: 20px;
   text-decoration: black underline;
-  justify-self: end;
 }
 
 .lblOPraksi{
@@ -423,4 +414,26 @@ input[type="checkbox"]:checked{
   background-color: #5FB34F;
 }
 /* Filteri end */
+
+@media  all and (max-width: 768px) {
+
+ .topdiv{
+   display: flex;
+   flex-direction: column;
+ }
+
+ .pretraga{
+   width: 45%;
+ }
+
+ .period{
+   display: flex;
+   flex-direction: column;
+ }
+
+ .divSmjer{
+   display: flex;
+   flex-direction: column;
+ }
+}
 
