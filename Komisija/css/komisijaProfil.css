@@ -37,8 +37,7 @@ body
 
 .topnav .icon {
   display: none;
-}
-.topnav .icon:hover {
+  color: white;
   background-color: var(--bojaMenija);
 }
 
