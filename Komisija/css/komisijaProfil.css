@@ -134,6 +134,7 @@ body
   }
   .dropdown-content-klasa{
     width: auto;
+    border-radius: 0 !important;
   }
  
 }
