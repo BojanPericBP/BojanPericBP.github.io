@@ -34,7 +34,7 @@
   
 }
 .footer-clean img {
-  height: 70px;
+  height: 60px;
 }
 
 .footer-clean ul a:hover {
@@ -69,7 +69,7 @@
     }
 
     .footer-clean ul img {
-     height: 50px;
+     height: 45px;
     }
 
     .profilKolona {
@@ -85,8 +85,16 @@
 @media (max-width: 768px) /* 768-576 pixela */
 {
   .footer-clean {
-    margin-top: 10%;
+    margin-top: 10% !important;
   }
+
+  .footer-clean ul {
+    margin: 0;
+    padding: 10px;
+  }
+   .footer-clean ul img {
+     height: 40px;
+    }
   .kolone-u-sredini {
     margin: 0%;
   }
@@ -103,13 +111,17 @@
 {
  .footer-clean {
     text-align: center;
-    margin-top: 15%;
+    margin-top: 10% !important;
     padding: 0;
   }
   
   .footer-clean .item{
     justify-content: center;
   }
+
+  .footer-clean ul img {
+     height: 38px;
+    }
 
   .footer-clean .lijeva-kolona{
     text-align: center;
