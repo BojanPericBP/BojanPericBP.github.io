@@ -556,9 +556,6 @@ body
     white-space: pre-line;
 }
 
-.lista .test{
-  /* width: fit-content; */
-}
 
 .lista .test a{
   margin-left: 60px;
