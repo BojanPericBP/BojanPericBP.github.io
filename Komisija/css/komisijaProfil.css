@@ -118,6 +118,18 @@ body
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .Ime-prezime-kolona {
+    display: none;
+  }
+  
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 4% !important;
+    top: 0;
+    margin: 0px;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .topnav a, .dropdown-klasa .dropbtn{
@@ -131,29 +143,23 @@ body
     margin-top: 17px;
     margin-bottom: -20px !important;
   }
-  .active img
-  {
+  .active img {
     padding: 0px;
-    margin-top: -40px;
-    margin-bottom: 0px;
+    margin-top: -20px;
+    margin-bottom: 20px !important;
     width: 150px;
   }
   .topnav a.icon {
-    float: right;
     display: block;
-    margin: 0px;
+    position: absolute;
+    right: 4% !important;
+    top: 0;
   }
   .dropdown-content-klasa{
     width: auto;
     border-radius: 0 !important;
   }
  
-}
-
-@media screen and (max-width: 768px) {
-    .Ime-prezime-kolona{
-    display: none;
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -164,7 +170,7 @@ body
   }
   .topnav.responsive .icon {
     position: absolute;
-    right: 28px;
+    right: 4% !important;
     top: 0;
     margin: 0px;
   }
