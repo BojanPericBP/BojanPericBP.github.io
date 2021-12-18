@@ -103,12 +103,12 @@ function show_lista(lista_cega) {
     var container = document.getElementById("footer-clean");
     var x = document.getElementById("container_spisak");
     // alert(container.style.bottom);
-    if(w <= 1200 && container.style.bottom == "0px" && x.style.display == "block"){
-        container.style.bottom = "unset";
-    }
-    if(w > 1200 && container.style.bottom == "unset" && x.style.display == "block"){
-      container.style.bottom = "0";
-  }
+  //   if(w <= 1200 && container.style.bottom == "0px" && x.style.display == "block"){
+  //       container.style.bottom = "unset";
+  //   }
+  //   if(w > 1200 && container.style.bottom == "unset" && x.style.display == "block"){
+  //     container.style.bottom = "0";
+  // }
 
   }
   window.addEventListener("resize", checkFooter);
