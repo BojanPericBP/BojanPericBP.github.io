@@ -44,4 +44,4 @@ function setInputFilter(textbox, inputFilter) {
 }
 
 setInputFilter(document.getElementById("input_br_tel"), function(value) {
-    return /^-?\d*$/.test(value); });
+    return /^\d*$/.test(value); });
