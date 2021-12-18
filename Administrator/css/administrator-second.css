@@ -547,13 +547,32 @@ body
 .lista label{
     display: flex;
     align-items: center;
-    margin-left: 60px;
+    
     font-size: 17px;
     width: fit-content;
 
     overflow: hidden;
     text-overflow: ellipsis;
-    /* white-space: nowrap; */
+    white-space: pre-line;
+}
+
+.lista .test{
+  /* width: fit-content; */
+}
+
+.lista .test a{
+  margin-left: 60px;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  /* width: fit-content; */
+  overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lista .test a label:hover{
+  cursor: pointer;
+  color: var(--plavaZaHoverMenu);
 }
 
 .lista .edit{
@@ -574,10 +593,13 @@ body
   .lista .polje{
     display: block;
   }
+  .lista .test a{
+    margin-left: 30px;
+  }
 
   .lista .test label{
     width: -webkit-fill-available;
-    margin-left: 30px;
+    /* white-space: pre-line; */
 
     text-overflow: ellipsis;
     display: inline-block;
