@@ -24,6 +24,8 @@ button {
   .popUp-klasa2 {
       display: none; 
       position: fixed; 
+      align-items: center;
+      justify-content: center;
       z-index: 1;
       left: 0;
       top: 0;
@@ -31,25 +33,15 @@ button {
       height: 100%; 
       overflow: auto; 
       background-color: rgba(0,0,0,0.4);
-      padding-top: 60px;
   }
 
 .container_kreiraj_studenta{
-    /* position: absolute; */
-    /* display: none; */
-    /* top: 50%;
-    left: 50%; */
     background-color: #105c6e;
-    /* width: 1000px; */
     width: 90%;
     max-width: 1000px;
     min-width: 760px;
-    margin: 0% auto 10% auto;
     padding: 30px;
-    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
     border-radius: 30px;
-    /* transform: translate(-50%, -40%); */
-    /* z-index: 0; */
     overflow: auto;
 }
 

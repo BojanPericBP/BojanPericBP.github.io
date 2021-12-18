@@ -21,6 +21,6 @@ function closePopUpKompanija()
 
 function showPopUpKompanija() 
 {
-    popUp.style.display='block';
+    popUp.style.display='flex';
 
 }
