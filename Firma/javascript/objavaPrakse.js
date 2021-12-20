@@ -59,4 +59,4 @@ for (const elem of elems) {
 
 function objaviPraksu() {
     // TODO implement
-}v
+}
