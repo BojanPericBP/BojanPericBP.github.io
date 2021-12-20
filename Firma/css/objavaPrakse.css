@@ -121,7 +121,7 @@ body{
   z-index: 3;
 }
 .kalendar_layout{
-    background: url(/Firma/source/DateIcondatePickerIcon.svg) no-repeat scroll 10px 3px;
+    background: url(/resources/DateIcondatePickerIcon.svg) no-repeat scroll 10px 3px;
     cursor:pointer;
     padding-left:45px !important;
 }

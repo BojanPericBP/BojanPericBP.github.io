@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Mentor/css/ocijenjivanjeStudenta.css" />
+    <link rel="stylesheet" href="/Mentor/css/boje.css">
+    <link rel="stylesheet" href="/Mentor/css/font.css">
+</head>
+
+<body>
+
+<h2>Ocijenjivanje studenta</h2>
+<p>Ovaj button ce ici na formu za ocijenjivanje kompanije</p>
+
+<button onclick="showPopUpStudent()" class="prikaziPopUp-btn">Ocijeni</button>
+
+<div id="popUp-Id2" class="popUp-klasa2">
+    <div class="container_ocijeni_studenta animate-popUp" id="ocijeni_studenta">
+
+        <div class="text">
+            <label>Ocijenjivanje studenta</label>
+            <div class="exit_bttn">
+                <button onclick="closePopUpStudent()">Otkaži</button>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+        <form action="#">
+            <p>Unesite ocjenu i komentar. Sistem će automatski izračunati 
+                krajnju ocjenu. Ako se slažete, potvrdite unos na dugme “Potvrdi”.
+            </p>
+
+            <div class="row data">
+                <div class="col-auto">
+                    <div class="row data_tehnicko_znanje">
+                        <label>Tehničko znanje:</label>
+                    </div>
+                    <div class="row data_odgovornost">
+                        <label>Odgovornost:</label>
+                    </div>
+                    <div class="row data_zalaganje">
+                        <label>Zalaganje:</label>
+                    </div>
+                    <div class="row data_timski_rad">
+                        <label>Timski rad:</label>
+                    </div>
+                </div>
+                <div class="col-auto" style="margin-left: 50px;">
+                    <div class="row rate tehnicko_znanje">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                    <div class="row rate odgovornost">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                    <div class="row rate zalaganje">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                    <div class="row rate timski_rad">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row data_tehnicko_znanje">
+                <div class="col">
+                    <label>Tehničko znanje:</label>
+                </div>
+                
+                <div class="col rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+            </div>
+
+            <div class="data_odgovornost">
+                <div class="col">
+                    <label>Odgovornost:</label>
+                </div>
+                
+                <div class="col rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+            </div>
+
+            <div class="data_zalaganje">
+                <div class="col">
+                    <label>Zalaganje:</label>
+                </div>
+                
+                <div class="col rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+            </div>
+
+            <div class="data_timski_rad">
+                
+                <div class="col">
+                    <label>Timski rad:</label>
+                </div>
+                <div class="col rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+            </div> -->
+
+            <div class="row data_komentar">
+                <div class="col-auto">
+                    <label>Komentar:</label>
+                </div>
+                <div class="col komentar">
+                    <!-- <input type="text" class="input_student" required> -->
+                    <textarea name="Text1" rows="5"></textarea>
+                </div>
+                
+            </div>
+
+            <div class="button">
+                <div class="inter">
+                    <button type="submit">Potvrdi</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- ======================================================================================= -->
+
+    <script type="text/javascript" src="/Mentor/javascript/ocijenjivanjeStudenta.js"></script>
+</body>
+</html>

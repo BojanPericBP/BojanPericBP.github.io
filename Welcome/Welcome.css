@@ -219,7 +219,7 @@ body {
 }
 
 .info-banner .imgAbout {
-  background-image: url("./source/about.svg");
+  background-image: url("/resources/about.svg");
   display: flex;
   background-position: center;
   background-size: cover;
@@ -242,7 +242,7 @@ body {
 }
 
 .info-banner .imgSign-Up {
-  background-image: url("../Welcome/source/progress.svg");
+  background-image: url("/resources/progress.svg");
   display: flex;
   background-position: center;
   background-size: cover;
