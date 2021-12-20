@@ -21,6 +21,6 @@ function closePopUp()
 
 function showPopUp() 
 {
-    popUp.style.display='flex';
-    // popUp.style.display='block';
+    // popUp.style.display='flex';
+    popUp.style.display='block';
 }

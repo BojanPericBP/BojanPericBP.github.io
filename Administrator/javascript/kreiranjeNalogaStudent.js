@@ -21,8 +21,8 @@ function closePopUpStudent()
 
 function showPopUpStudent() 
 {
-    popUp.style.display='flex';
-    // popUp.style.display='block';
+    // popUp.style.display='flex';
+    popUp.style.display='block';
 
     var select = document.getElementsByClassName("dan");
 

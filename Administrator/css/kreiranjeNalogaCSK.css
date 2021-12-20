@@ -24,8 +24,8 @@ button:hover {
 .popUp-klasa2 {
     display: none; 
     position: fixed; 
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     z-index: 1;
     left: 0;
     top: 0;
@@ -39,6 +39,8 @@ button:hover {
     background-color: #105c6e;
     width: 90%;
     max-width: 1000px;
+
+    margin: 5% auto 5% auto;
 
     /* Ovjde je ogranicena sirina forme */
     /* min-width: 760px; */
