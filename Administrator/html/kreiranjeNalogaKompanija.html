@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Administrator/css/kreiranjeNalogaKompanija.css" />
+    <link rel="stylesheet" href="/Administrator/css/boje.css">
+    <link rel="stylesheet" href="/Administrator/css/font.css">
+</head>
+
+<body>
+
+<h2>Kreiranje naloga za kompaniju</h2>
+<p>Ovaj button ce ici na formu za kreiranje kompanije</p>
+
+<button onclick="showPopUpKompanija()" class="prikaziPopUp-btn">Kreiraj</button>
+
+<div id="popUp-Id2" class="popUp-klasa2">
+    <div class="container_kreiraj_firmu animate-popUp" id="kreiraj_firmu">
+
+        <div class="text">
+            <label>Kreiranje naloga za firmu</label>
+            <div class="exit_bttn">
+                <button onclick="closePopUpKompanija()">Otkaži</button>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+        <form action="#">
+
+            <div class="data_naziv_firme">
+                <label>Naziv firme:</label>
+                <input type="text" class="input_firmu" required>
+            </div>
+
+            <div class="data_email">
+                <label>Email:</label>
+                <input type="email" class="input_firmu" required>
+            </div>
+
+            <div class="data_br_telefona">
+                <label>Broj telefona:</label>
+                <input type="tel" id="input_br_tel" class="input_firmu" required>
+            </div>
+
+            <div class="data_adresa">
+                <label>Adresa:</label>
+                <input type="text" class="input_firmu" required>
+            </div>
+
+            <div class="data_web_stranica">
+                <label>Web stranica:</label>
+                <input type="text" class="input_firmu" required>
+            </div>
+
+            <div class="data_sifra">
+                <label>Šifra:</label>
+                <input type="password" class="input_firmu" required>
+            </div>
+
+            <div class="button">
+                <div class="inter">
+                    <button type="submit">Potvrdi</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<!-- ======================================================================================= -->
+
+    <script type="text/javascript" src="/Administrator/javascript/kreiranjeNalogaKompanija.js"></script>
+</body>
+</html>

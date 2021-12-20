@@ -1,0 +1,295 @@
+button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .prikaziPopUp-btn
+  {
+      width: auto;
+      background-color: var(--zelena);
+      border-radius: 50px;
+      width: 100px;
+      font-weight: bold;
+  }
+  
+  .popUp-klasa2 {
+      display: none; 
+      position: fixed; 
+      /* align-items: center;
+      justify-content: center; */
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.4);
+  }
+
+  .container_kreiraj_firmu{
+    background-color: #105c6e;
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 5% auto 5% auto;
+    
+    /* Ovjde je ogranicena sirina forme */
+    /* min-width: 760px; */
+
+    padding: 30px;
+    border-radius: 30px;
+    overflow: auto;
+
+    /* Za centriranje popUp forme */
+    
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.container_kreiraj_firmu .text{
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: thin;
+    padding-bottom: 20px;
+}
+
+.container_kreiraj_firmu .text label{
+    width: 650px;
+    margin: 0 0 0 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.container_kreiraj_firmu .text button{
+    width: fit-content;
+    margin: 0;
+    float: right;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #5BA7B9;
+    font-size: 18px;
+    color: #fff;
+}
+
+.container_kreiraj_firmu form{
+    color: #fff;
+}
+
+.exit_bttn{
+    width: fit-content;
+    margin: 0;
+    float: right;
+}
+
+/* pomjeranje dijela za unos */
+.container_kreiraj_firmu form .data_naziv_firme{
+    height: 45px;
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_firmu form .data_email{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_firmu form .data_br_telefona{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_firmu form .data_adresa{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_firmu form .data_web_stranica{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_firmu form .data_sifra{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+/* =================================== */
+
+/* poravnavanje dijela za unos */
+.data_naziv_firme label{
+    margin-left: -106px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_email label{
+    margin-left: -45px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_br_telefona label{
+    margin-left: -120px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_adresa label{
+    margin-left: -62px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_web_stranica label{
+    margin-left: -122px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_sifra label{
+    margin-left: -45px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_naziv_firme input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.data_email input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.data_br_telefona input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.data_adresa input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.data_web_stranica input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.data_sifra input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+/* ============================================ */
+
+/* podesavanje dugmadi */
+form .button{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+}
+
+.exit_bttn button{
+    padding: 0;
+}
+
+.inter{
+    display: flex;
+    justify-content: center;
+}
+
+form .button button{
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: #5FB34F;
+    color: #fff;
+    font-weight: bolder;
+    padding: 0;
+}
+
+form .button .inter :hover{
+    background-color: #3e8031;
+}
+form .button .inter :active{
+    background-color: #246317;
+}
+
+.text .exit_bttn :hover{
+    background-color: #0098b6;
+}
+
+.text .exit_bttn :active{
+    background-color: #108ca5;
+}
+
+/* =================================== */
+
+.animate-popUp 
+{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
