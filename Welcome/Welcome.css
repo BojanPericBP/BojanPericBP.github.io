@@ -111,7 +111,7 @@ body {
   max-height: 500px;
   max-width: 40%;
   margin-left: 55%;
-  animation: 2s up-down infinite;
+  /* animation: 2s up-down infinite; */
 }
 
 @keyframes up-down {
