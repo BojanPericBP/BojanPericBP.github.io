@@ -548,7 +548,8 @@ body
 .lista .polje .dugme{
     padding: 0;
     align-self: center;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     margin-top: 7px;
     margin-bottom: 7px;
 }
@@ -583,6 +584,11 @@ body
 
 .neuredjena_lista{
   padding: 0;
+}
+
+.neuredjena_lista .polje{
+  margin-left: 0;
+  margin-right: 0;  
 }
 
 @media screen and (max-width: 770px){
