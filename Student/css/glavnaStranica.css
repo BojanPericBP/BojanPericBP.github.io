@@ -345,7 +345,6 @@ body
   justify-self: center;
 }
 
-
 .btnPogledajPraksu:hover{
   /* opacity: 0.8; */
   color: white;
@@ -441,8 +440,10 @@ input[type="checkbox"]:checked{
   .praksaTest{
     display: flex;
     flex-direction: column;
+    padding: 20px;
   }
   .btnPogledajPraksu{
     align-self: center;
   }
+
 }
