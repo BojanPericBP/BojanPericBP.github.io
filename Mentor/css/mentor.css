@@ -595,6 +595,10 @@ body
     .naziv_spiska{
         display: grid;
     }
+
+    .naziv_spiska input{
+      width: 100%;
+    }
     .lista .polje{
       display: block;
     }
