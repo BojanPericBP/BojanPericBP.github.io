@@ -22,5 +22,4 @@ function closePopUpStudent()
 function showPopUpStudent() 
 {
     popUp.style.display='block';
-
 }

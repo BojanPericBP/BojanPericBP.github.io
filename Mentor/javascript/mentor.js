@@ -110,5 +110,5 @@ function show_lista(lista_cega) {
   //     container.style.bottom = "0";
   // }
 
-  }
   window.addEventListener("resize", checkFooter);
+  }
