@@ -21,6 +21,6 @@ function closePopUpStudent()
 
 function showPopUpStudent() 
 {
-    popUp.style.display='block';
+    popUp.style.display='flex';
 
 }
