@@ -1,0 +1,405 @@
+
+button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .prikaziPopUp-btn
+  {
+      width: auto;
+      background-color: var(--zelena);
+      border-radius: 50px;
+      width: 100px;
+      font-weight: bold;
+  }
+  
+  .popUp-klasa2 {
+      display: none; 
+      position: fixed; 
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.4);
+  }
+
+.container_kreiraj_studenta{
+    background-color: #105c6e;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 760px;
+    padding: 30px;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.container_kreiraj_studenta .text{
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: thin;
+    padding-bottom: 20px;
+}
+
+.container_kreiraj_studenta .text label{
+    width: 650px;
+    margin: 0 0 0 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.container_kreiraj_studenta .text button{
+    width: fit-content;
+    margin: 0;
+    float: right;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #5BA7B9;
+    font-size: 18px;
+    color: #fff;
+}
+
+.container_kreiraj_studenta form{
+    color: #fff;
+}
+
+.exit_bttn{
+    width: fit-content;
+    margin: 0;
+    float: right;
+}
+
+/* pomjeranje dijela za unos */
+.container_kreiraj_studenta form .data_ime{
+    height: 45px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_studenta form .data_prezime{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_studenta form .data_jmbg{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_studenta form .data_br_indeksa{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_studenta form .data_email{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_studenta form .data_br_telefona{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_studenta form .data_fakultet{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_studenta form .data_smjer{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_studenta form .data_ciklus{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_studenta form .data_godina{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_studenta form .data_pol{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_kreiraj_studenta form .data_datum_rodjenja{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+/* =================================== */
+
+/* poravnavanje dijela za unos */
+.data_ime label{
+    margin-left: 0px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_prezime label{
+    margin-left: -36px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_jmbg label{
+    margin-left: -20px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_br_indeksa label{
+    margin-left: -80px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_email label{
+    margin-left: -12px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_br_telefona label{
+    margin-left: -87px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_fakultet label{
+    margin-left: -42px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+.data_smjer label{
+    margin-left: -22px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+.data_ciklus label{
+    margin-left: -18px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+.data_godina label{
+    margin-left: -25px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+.data_pol label{
+    margin-left: 10px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+.data_datum_rodjenja label{
+    margin-left: 0px;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.data_ime input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.data_prezime input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.data_jmbg input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.data_br_indeksa input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.data_email input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.data_br_telefona input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.data_fakultet input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.data_smjer select{
+    padding: 5px;
+    width: 410px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.data_ciklus select{
+    padding: 5px;
+    width: 410px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.data_godina input{
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.data_pol select{
+    padding: 5px;
+    width: 410px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.data_datum_rodjenja select{
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+/* ============================================ */
+
+/* podesavanje dugmadi */
+form .button{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+}
+
+.exit_bttn button{
+    padding: 0;
+}
+
+.inter{
+    display: flex;
+    justify-content: center;
+}
+
+form .button button{
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: #5FB34F;
+    color: #fff;
+    font-weight: bolder;
+    padding: 0;
+}
+
+form .button .inter :hover{
+    background-color: #3e8031;
+}
+form .button .inter :active{
+    background-color: #246317;
+}
+
+.text .exit_bttn :hover{
+    background-color: #0098b6;
+}
+
+.text .exit_bttn :active{
+    background-color: #108ca5;
+}
+
+/* =================================== */
+
+.animate-popUp 
+{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
