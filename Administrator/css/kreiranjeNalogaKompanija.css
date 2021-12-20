@@ -38,7 +38,10 @@ button {
     background-color: #105c6e;
     width: 90%;
     max-width: 1000px;
-    min-width: 760px;
+    
+    /* Ovjde je ogranicena sirina forme */
+    /* min-width: 760px; */
+
     padding: 30px;
     border-radius: 30px;
     overflow: auto;
