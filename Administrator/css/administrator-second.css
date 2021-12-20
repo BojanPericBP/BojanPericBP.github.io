@@ -910,120 +910,12 @@ body
     padding-left: 20px;
 }
 
-.ocjene_sa_praksi{
-    height: auto;
-    margin-top: 20px;
-}
-
-.ocjene_sa_praksi label{
-    font-size: 20px;
-    margin-left: 40px;
-    font-weight: bolder;
-}
-
-.ocjene_sa_praksi p{
-    color: white;
-    padding-left: 30px;
-}
-.ocjene_sa_praksi h4{
-    color: white;
-    padding-left: 20px;
-    margin-bottom: 7px;
-    font-size: 17px;
-}
-
-.ocjene_sa_praksi .info_sa_praksi{
-    background-color: #105C6E;
-    border-radius: 20px;
-    margin-top: 10px;
-    padding: 20px;
-}
-
-.ocjene_sa_praksi .info_sa_praksi .info_one{
-    display: flex;
-    justify-content: space-between;
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    border-bottom-color: white;
-    margin-bottom: 10px;
-}
-.ocjene_sa_praksi .info_sa_praksi .info_one p{
-    margin-bottom: 0px;
-    text-align: center;
-}
-
-.ocjene_sa_praksi .info_sa_praksi .info_one .col{
-    min-width: fit-content;
-    /* width:min-content; */
-}
-
-.ocjene_sa_praksi .info_sa_praksi .info_two{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.ocjene_sa_praksi .info_sa_praksi .info_two .col{
-    min-width: 275px;
-}
-
-.ocjene_sa_praksi .info_sa_praksi .info_two p{
-    padding-left: 40px;
-    
-}
-
-.rate {
-    float: left;
-    height: 46px;
-    padding: 0 10px;
-}
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
-    color:#ccc;
-    margin-left: 10px;
-}
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
-}
-
 @media screen and (max-width: 991px){
     .center .left{
         width: auto;
     }
 }
 @media screen and (max-width: 770px){
-    .ocjene_sa_praksi .info_sa_praksi .info_one .col{
-        min-width: 270px;
-        text-align: center;
-    }
-    .ocjene_sa_praksi .info_sa_praksi .info_one .col label{
-        vertical-align: middle;
-        float: none;
-    }
-
     .info_container .licni_podaci .osnovno{
       margin-left: 90px;
     }
