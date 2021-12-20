@@ -305,32 +305,32 @@ body
 .linija{
   grid-column: 1/3;
 }
-/* .linija hr{
-  margin-right: 10px;
-  margin-left: 10px;
-} */
 
-.lblPeriod{
+.lbl{
   font-size: 20px;
   text-decoration: black underline;
+  font-weight: bold;
+}
+
+.topdiv label{
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .divSmjer{
   justify-self: end;
 }
-.lblSmjer2{
-  font-size: 20px;
-  text-decoration: black underline;
-}
 
-.lblOPraksi{
-  grid-column: 1/3;
-  font-size: 20px;
-  text-decoration: underline;
-  font-weight: bold;
-}
 .oPraksi{
   grid-column: 1/3;
+}
+
+.oPraksi p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .btnPogledajPraksu{
