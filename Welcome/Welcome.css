@@ -1,5 +1,6 @@
 body {
-  font-family: "Landrina shadow", cursive;
+  
+  font-family: 'Londrina solid', cursive;
   margin: 0;
   height: 100vh;
   width: 100vw;
@@ -10,7 +11,7 @@ body {
 * {
   text-decoration: none;
   list-style: none;
-  font-family: "Londrina shadow", cursive;
+  font-family: 'Londrina solid', cursive;
   box-sizing: border-box;
 }
 
@@ -110,7 +111,7 @@ body {
   max-height: 500px;
   max-width: 40%;
   margin-left: 55%;
-  animation: 2s up-down infinite;
+  /* animation: 2s up-down infinite; */
 }
 
 @keyframes up-down {

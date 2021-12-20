@@ -1,65 +1,285 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/Student-Profil.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Profil</title>
-  </head>
-  <body>
-    <div class="header">
-      <div class="left-column">
-        <div class="logo">
-          <a href="Student_Profil.html"><img src="../../Welcome/source/logotip.PNG" alt="logo"></a>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/Student-Profil.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+
+  <title>Profil</title>
+</head>
+
+<body>
+  <div class="navBar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <p>Nav Bar</p>
         </div>
       </div>
-      <div class="right-column">
-        <div class="nav-bar">
-          <ul>
+    </div>
+  </div>
 
-            <li><a href="#"><i class="fa fa-clone" aria-hidden="true"></i>Poslovi</a></li>
-            <li><a href="#"><i class="fa fa-clone" aria-hidden="true"></i>Prakse</a></li>
-            <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i>Zarada</a></li>
-            <li><a href="#"><i class="fa fa-history" aria-hidden="true"></i>Istorija</a></li>
-            <li class="profile"  id="active_li"><a href="Student_Profil.html"><i class="fa fa-user" aria-hidden="true"></i>Profil</a></li>
-          </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="topdiv">
+          <label for="" class="lblProfil">Profil</label>
+          <hr>
         </div>
       </div>
     </div>
 
-    <span class="heading">Profil</span>
+    <!-- licni podaci -->
+    <div class="row">
 
-    <div class="profile_grid">
-      <div class="heading_main"></div>
-        <div class="main" id="main"></div>
-        <div class="heading_licni_podaci">Lični podaci</div>
-        <div class="licni_podaci" id="licni_podaci"></div>
-        <div class="heading_skolovanje">Školovanje</div>
-        <div class="skolovanje" id="skolovanje"></div>
-        <div class="heading_vjestine">Vještine</div>
-        <div class="vjestine" id="vjestine"></div>
-        <div class="heading_radno_iskustvo">Radno iskustvo</div>
-        <div class="radno_iskustvo" id="radno_iskustvo"></div>
-        <div class="heading_projekti">Projekti</div>
-        <div class="projekti" id="projekti"></div>
-        <div class="heading_komentari">Komentari i ocjene poslodavaca</div>
-        <div class="komentari" id="komentari"></div>
+      <div class="col-sm-12">
+        <label for="" class="lbl">Lični podaci</label>
+        <div class="licniPodaci div">
+          <div class="row align-items-center">
+            <!-- Slika -->
+            <div class="col-md-2">
+              <img src="/resources/profileIcon100x100.svg" alt="">
+            </div>
+            <!-- podaci 1 -->
+            <div class="col-sm-4">
+              <div class="col">
+                <label for="" class="lblNested">Ime:</label>
+                <label for="">Marko </label>
+              </div>
+              <div class="col">
+                <label for="" class="lblNested">Prezime:</label>
+                <label for="">Markovic </label>
+              </div>
+              <div class="col">
+                <labela class="lblNested">Datim rođenja:</labela>
+                <label for="">03.06.1999</label>
+              </div>
+              <div class="col">
+                <label for="" class="lblNested">JMBG:</label>
+                <label for="">0306999203948</label>
+              </div>
+            </div>
+
+            <!-- vertikalna linija -->
+            <div class="col-sm-1 vline">
+              <div class="vline">
+                <div class="vr"></div>
+              </div>
+            </div>
+            <!-- podaci 2 -->
+            <div class="col-sm-5">
+              <div class="col">
+                <label class="lblNested">Broj indeksa:</label>
+                <label for="">1171/18</label>
+              </div>
+
+              <div class="col">
+                <label for="" class="lblNested">Adresa stanovanja:</label>
+                <label for="">Simuna Djaka 14 Banja Luka</label>
+              </div>
+
+              <div class="col">
+                <label for="" class="lblNested">Email:</label>
+                <label for="">bojan@invenit.io</label>
+              </div>
+              <div class="col">
+                <label for="" class="lblNested">Telefon:</label>
+                <label for="">065/297-722</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <footer>
-      <div class="footer-column-1" id="footer-col-1">
-        <a href="#">Pravila korištenja</a>
-        <a href="#">O studentskom servisu</a>
+    <!-- O meni -->
+    <div class="row">
+      <div class="col-sm-12">
+        <label for="" class="lbl">O meni</label>
+        <div class="div">
+          <!-- Element O meni -->
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore odio exercitationem   quos amet animi
+            quibusdam. Architecto laborum sed incidunt error saepe quisquam placeat laudantium a illo, corporis
+            temporibus deserunt quo accusamus libero, numquam magni ea amet quae laboriosam est obcaecati.
+          </p>
+        </div>
       </div>
-      <div class="footer-column-2" id="footer-col-2">
-        <div class="footer-heading">Studentski servis</div>
-        <div class="follow">Zaprati nas na:</div>
-        <a href="#" class="fb"><img src="../../Welcome/source/facebook.png"/></a>
-        <a href="#" class="ig"><img src="../../Welcome/source/instagram.png"/></a>
-        <div class="instagram"></div>
-      </div>
-      <div class="footer-column-3" id="footer-col-3">info@studentskiservis.bl</div>
-    </footer>
+    </div>
 
-  </body>
+    <!-- Obrazovanje i vjestine-->
+    <div class="row">
+      <div class="col-md-9">
+        <!-- Obrazovanje -->
+        <label for="" class="lbl">Obrazovanje</label>
+        <div class="div">
+          <div>
+            <div class="row">
+              <div class="col">
+                <label class="lblNested">Fakultet:</label>
+                <label for="">Elektrotehnicki</label>
+              </div>
+
+              <div class="col">
+                <label class="lblNested">Godina:</label>
+                <label for="">Treca</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="lblNested">Smjer:</label>
+                <label for="">Softversko inzenjerstvo</label>
+              </div>
+              <div class="col">
+                <label class="lblNested">Ciklus:</label>
+                <label for="">Prvi</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Obrazovanje end -->
+
+        <!--Div sa radnim iskustvima -->
+        <div class="col-sm-12">
+          <label for="" class="lbl">Radno iskustvo</label>
+          <div class="div">
+            <!-- Ekement za radno iskustvo -->
+            <div class="iskustvo">
+              <div class="row">
+                <div class="col-md-3">
+                  <label for="" class="lblNested">Dec 2021 - Jan 2022</label>
+                </div>
+                <div class="col-md-9">
+                  OPIS RADNOG MEJSTALorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa in praesentium,
+                  repellendus
+                  nihil repellat autem minima, nulla ducimus ipsam sint optio incidunt soluta necessitatibus quod
+                  temporibus
+                  eligendi enim numquam totam!
+                </div>
+              </div>
+            </div>
+
+            <!-- Ekement za radno iskustvo -->
+            <div class="iskustvo">
+              <div class="row">
+                <div class="col-md-3">
+                  <label for="" class="lblNested">Dec 2021 - Jan 2022</label>
+                </div>
+                <div class="col-md-9">
+                  OPIS RADNOG MEJSTALorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa in praesentium,
+                  repellendus
+                  nihil repellat autem minima, nulla ducimus ipsam sint optio incidunt soluta necessitatibus quod
+                  temporibus
+                  eligendi enim numquam totam!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Element za prikaz projekta -->
+        <div class="col">
+          <label for="" class="lbl">Projekti</label>
+          <div class="div">
+            <!-- Element za projekat -->
+            <div>
+              <div class="row">
+                <div class="col-md-3">
+                  <label class="lblNested">-Projekat 1</label>
+                </div>
+                <div class="col">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit pariatur placeat rerum, molestias
+                    fugiat esse
+                    ad unde! Eveniet illo illum necessitatibus dolores, aspernatur deserunt architecto similique
+                    explicabo vel
+                    commodi consectetur.</p>
+                </div>
+              </div>
+            </div>
+            <!-- END element za prikaz projekta-->
+            <div>
+              <div class="row">
+                <div class="col-md-3">
+                  <label class="lblNested">-Projekat 2</label>
+                </div>
+                <div class="col">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit pariatur placeat rerum, molestias
+                    fugiat esse
+                    ad unde! Eveniet illo illum necessitatibus dolores, aspernatur deserunt architecto similique
+                    explicabo vel
+                    commodi consectetur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vjestine -->
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <label for="" class="lbl">Vjestine</label>
+            <div class="div">
+              VJESTINE amet consectetur adipisicing elit. Eligendi exercitationem nobis a, cum, enim ad nam
+              dignissimos, aliquam fugiat facilis qui veritatis minima esse at eaque! Soluta quisquam eveniet quas?
+            </div>
+          </div>
+        </div>
+        <!-- strani jezici -->
+        <div class="row">
+          <div class="col">
+            <label for="" class="lbl">Strani jezici</label>
+            <div class="div">
+              -Strani jezik 1<br>-jezik 2<br> -jezik 3
+            </div>
+          </div>
+        </div>
+
+        <!-- hobiji -->
+        <div class="row">
+          <div class="col">
+            <label for="" class="lbl">Hobiji</label>
+            <div class="div">
+              -hobi1<br>-hobi2<br>-hobi3
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vjestine end -->
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <label for="" class="lbl">Ocjene na praksama</label>
+        <div class="licniPodaci div">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto repellendus, aliquam et nostrum hic eaque
+          beatae amet voluptatum assumenda? Quidem impedit optio dolore ut qui expedita labore ullam doloribus
+          voluptatibus!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navBar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>Footer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
