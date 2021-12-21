@@ -1,32 +1,41 @@
 function myFunction() 
 {
   var x = document.getElementById("myTopnav");
+  var y = document.getElementById("topnav_container");
+  
   if (x.className === "topnav") 
   {
     x.className += " responsive";
     x.style.height = "auto";
+    y.style.height = "auto";
+
   } 
   else 
   {
     x.className = "topnav";
-    x.style.height = "81px";
+    x.style.height = "auto";
+    y.style.height = "65px";
   }
 }
 
 window.onscroll = function() { myFunctionScrool() };
 
 var navbar = document.getElementById("navbar-custom");
+var sadrzaj = document.getElementById("sadrzaj");
 
 var sticky = navbar.offsetTop;
+// alert(sticky);
 
 function myFunctionScrool() 
 {
-  if (window.pageYOffset >= sticky) 
+  if (window.pageYOffset > sticky) 
   {
-    navbar.classList.add("sticky")
+    sadrzaj.style.marginTop = "70px";
+    navbar.classList.add("sticky");
   } 
   else 
   {
+    sadrzaj.style.marginTop = "0px";
     navbar.classList.remove("sticky");
   }
 }
@@ -82,29 +91,32 @@ function remove_container_top() {
   }
 }
 
-function show_profil() {
-  remove_container_top();
+// function show_profil() {
+//   remove_container_top();
 
-  var x = document.getElementById("container_profil");
+//   var x = document.getElementById("container_profil");
 
-  if (x.style.display == "") {
-      x.style.display = "block";
-  }
+//   if (x.style.display == "") {
+//       x.style.display = "block";
+//   }
 
-  var container = document.getElementById("footer-clean");
-  container.style.bottom = "unset"
+//   var container = document.getElementById("footer-clean");
+//   container.style.bottom = "unset"
 
   // var com = document.getElementById("center_kreiraj_studenta");
   // com.style.height = "0px";
 
-  remove_everything_except("container_profil");
-}
+//   remove_everything_except("container_profil");
+// }
 
-const forRemoving = ["container_spisak", "container_profil"];
+const forRemoving = ["container_spisak"];
 
 function remove_everything_except(dontRemove) {
     for (i = 0; i < forRemoving.length; i++) {
-        if (forRemoving[i] != dontRemove) {
+      if (forRemoving[i] != dontRemove) {
+        if(!document.getElementById(forRemoving[i])){
+          alert(forRemoving[i]);
+        }
             document.getElementById(forRemoving[i]).style.display = "";
         }
     }

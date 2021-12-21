@@ -70,25 +70,25 @@ function show_lista(lista_cega) {
     }
   }
   
-  function show_profil() {
-    remove_container_top();
+  // function show_profil() {
+  //   remove_container_top();
   
-    var x = document.getElementById("container_profil");
+  //   var x = document.getElementById("container_profil");
   
-    if (x.style.display == "") {
-        x.style.display = "block";
-    }
+  //   if (x.style.display == "") {
+  //       x.style.display = "block";
+  //   }
   
-    var container = document.getElementById("footer-clean");
-    container.style.bottom = "unset"
+  //   var container = document.getElementById("footer-clean");
+  //   container.style.bottom = "unset"
   
     // var com = document.getElementById("center_kreiraj_studenta");
     // com.style.height = "0px";
   
-    remove_everything_except("container_profil");
-  }
+  //   remove_everything_except("container_profil");
+  // }
   
-  const forRemoving = ["container_spisak", "container_profil"];
+  const forRemoving = ["container_spisak"];
   
   function remove_everything_except(dontRemove) {
       for (i = 0; i < forRemoving.length; i++) {
