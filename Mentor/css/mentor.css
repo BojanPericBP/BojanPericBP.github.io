@@ -8,6 +8,7 @@ body
 .topnav {
   overflow: hidden;
   background-color: var(--bojaMenija);
+  height: 81px;
   /* height: fit-content; */
 }
 
@@ -21,8 +22,8 @@ body
   display: block;
   color: white;
   text-align: center;
-  margin-top: 18px;
-  padding: 8px 16px;
+  margin-top: 8px;
+  /* padding: 8px 16px; */
   text-decoration: none;
   font-size: 15px;
   margin-left: 0;
@@ -39,6 +40,7 @@ body
   margin-right: 0;
   padding-bottom: 3px;
   width: 200px;
+  margin: 0px;
 }
 
 .topnav .icon {
@@ -162,14 +164,14 @@ body
   }
 
 .dropdown-klasa_one:hover .dropbtn {
-    background-color: var(--plavaZaHoverMenu);
+    background-color: var(--plavaMouseOver);
     color: white;
     /* border-radius: 30px; */
     margin-top: inherit;
   }
   
   .dropdown-content-klasa_one a:hover {
-    background-color: var( --plavaZaHoverMenu);
+    background-color: var( --plavaMouseOver);
     color: white;
     margin: 0; 
     /* border-radius: inherit; */
@@ -210,6 +212,7 @@ body
     /* margin-bottom: 0px; */
     width: 150px;
     height: 50px;
+    margin: 0px;
   }
   .topnav a.icon {
     float: right;
@@ -253,6 +256,10 @@ body
 }
 
 @media screen and (max-width: 991px) {
+  .topnav{
+    height: 65px;
+  }
+
   .topnav.responsive 
   {
     position: relative;
@@ -277,7 +284,7 @@ body
     margin: 0px;
   }
   .topnav.responsive .logo-klasa .active{
-      margin-top: 18px;
+      margin-top: 8px;
   }
 
   .topnav.responsive .icon {
@@ -327,10 +334,28 @@ body
 
 /*========================================================================*/
 
+.content 
+{
+  padding: 16px;
+}
 
+.sticky 
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content 
+{
+  padding-top: 60px;
+}
+
+/* ========================================================================== */
+/* 
 .sadrzaj{
-    /* padding-top: 60px; */
-    /* display: block; */
+    padding-top: 60px;
+    display: block;
     margin-top: 40px;
     margin-bottom: 1%;
   }
@@ -361,7 +386,7 @@ body
     border-top: 2px solid rgb(191, 191, 191);
     margin: 0;
     padding: 0;
-  }
+  } */
   /*----------------------------------------------------*/
   .footer-clean {
     padding:50px 0;
@@ -477,30 +502,17 @@ body
     float: left;
 }
 
-.naziv_spiska .red_search{
-  display: flex;
-  justify-content: end;
-}
-
-.naziv_spiska .search{
-  display: flex;
-  width: inherit;
-  height: inherit;
-}
-
 .naziv_spiska input{
     border: none;
-    padding-left: 45px;
-    font-size: 17px;
+    padding-left: 35px;
+    font-size: 20px;
     border-radius: 50px;
     background-color: #F0F0F0;
     background-image: url("/resources/Search.png");
-    background-position: 5px 7px; 
+    background-position: 7px 7px; 
     background-repeat: no-repeat;
-    background-size:20px 20px;
+    background-size:17px 17px;
     float: right;
-    height: 30px;
-    align-self: center;
 }
 
 .lista{
@@ -509,25 +521,17 @@ body
 }
 
 .lista .polje{
-    margin-top: 10px;
-    /* height: 80px; */
-    height: auto;
-    background-color: #F0F0F0;
-    border-radius: 30px;
-    margin-left: 0;
-    margin-right: 0;
-    /* display: flex;
-    justify-content: space-between; */
+  margin-top: 10px;
+  background-color: #F0F0F0;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
 }
-/* 
-.lista .polje div{
-    padding-top: 20px;
-    padding-right: 30px;
-} */
 
-.lista .polje div img{
-    width: 40px;
-    height: 40px;
+.lista .polje div{
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
 }
 
 .lista .polje .dugme:hover button{
@@ -544,6 +548,8 @@ body
     font-weight: bold;
 }
 
+/* Moguca greska */
+
 .lista .polje .one{
     background-color: var(--plavaZaLinkoveFooter);
 }
@@ -557,7 +563,7 @@ body
 }
 
 .lista .polje .one:hover{
-    background-color: var(--plavaZaHoverMenu);
+    background-color: var(--plavaMouseOver);
 }
 
 .lista .polje .two:hover{
@@ -565,35 +571,75 @@ body
 }
 
 .lista .polje .three:hover{
-    background-color: var(--plavaZaHoverMenu);
+    background-color: var(--plavaMouseOver);
 }
 
 .lista .polje .dugme{
-    /* width: fit-content; */
-    padding: 0;
-    align-self: center;
-    /* margin-left: 5px; */
-    margin-right: 10px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+  padding: 0;
+  align-self: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 .lista label{
-    display: flex;
-    align-items: center;
-    margin-left: 60px;
-    font-size: 20px;
-    min-width: 205px;
-    padding-top: 9px;
+  display: flex;
+  align-items: center;
+  
+  font-size: 17px;
+  width: fit-content;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-line;
+}
+
+.lista .test a{
+  margin-left: 60px;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lista .test a label:hover{
+  cursor: pointer;
+  color: var(--plavaMouseOver);
 }
 
 .neuredjena_lista{
     padding: 0;
 }
 
+.neuredjena_lista .polje{
+  margin-left: 0;
+  margin-right: 0;  
+}
+
 @media screen and (max-width: 770px){
     .naziv_spiska{
         display: grid;
+    }
+
+    .naziv_spiska input{
+      width: 100%;
+    }
+    .lista .polje{
+      display: block;
+    }
+    .lista .test a{
+      margin-left: 30px;
+    }
+  
+    .lista .test label{
+      width: -webkit-fill-available;
+      /* white-space: pre-line; */
+  
+      text-overflow: ellipsis;
+      display: inline-block;
+      overflow: hidden;
     }
 }
 @media screen and (max-width: 1200px){
@@ -608,10 +654,6 @@ body
         flex-flow: column-reverse;
         margin: 0;
     }
-
-    /* .footer-clean{
-        bottom: unset;
-    } */
 }
 
 /* ======================================================= */

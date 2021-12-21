@@ -34,21 +34,15 @@ button {
   }
 
   .container_ocijeni_studenta{
-    /* position: absolute; */
-    /* display: none; */
-    /* top: 50%;
-    left: 50%; */
-    background-color: #105c6e;
-    /* width: 1000px; */
+    background-color: var(--bojaMenija);
     width: 90%;
     max-width: 700px;
-    min-width: 510px;
-    margin: 10% auto 10% auto;
+
+    margin: 5% auto 5% auto;
+
     padding: 30px;
-    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
     border-radius: 30px;
-    /* transform: translate(-50%, -50%); */
-    z-index: 0;
+    overflow: auto;
 }
 
 .container_ocijeni_studenta .text{
@@ -76,7 +70,7 @@ button {
     height: 35px;
     border: none;
     border-radius: 20px;
-    background-color: #5BA7B9;
+    background-color: var(--plavaOtkaziButton);
     font-size: 18px;
     color: #fff;
 }
@@ -193,17 +187,17 @@ button {
 .data .timski_rad{
     margin: 10px 0;
 }
+/* Zvezdice */
 
-.data .rate {
-    /* float: left; */
+.data .tehnicko_znanje {
     height: 46px;
     padding: 0 10px;
 }
-.data .rate:not(:checked) > input {
+.data .tehnicko_znanje:not(:checked) > input {
     position:absolute;
     top:-9999px;
 }
-.data .rate:not(:checked) > label {
+.data .tehnicko_znanje:not(:checked) > label {
     float:right;
     width:1em;
     overflow:hidden;
@@ -214,23 +208,142 @@ button {
     margin-left: 10px;
     margin-top: 0;
 }
-.data .rate:not(:checked) > label:before {
+.data .tehnicko_znanje:not(:checked) > label:before {
     content: '★ ';
 }
-.data .rate > input:checked ~ label {
+.data .tehnicko_znanje > input:checked ~ label {
     color: #ffc700;    
 }
-.data .rate:not(:checked) > label:hover,
-.data .rate:not(:checked) > label:hover ~ label {
+.data .tehnicko_znanje:not(:checked) > label:hover,
+.data .tehnicko_znanje:not(:checked) > label:hover ~ label {
     color: #deb217;  
 }
-.data .rate > input:checked + label:hover,
-.data .rate > input:checked + label:hover ~ label,
-.data .rate > input:checked ~ label:hover,
-.data .rate > input:checked ~ label:hover ~ label,
-.data .rate > label:hover ~ input:checked ~ label {
+.data .tehnicko_znanje > input:checked + label:hover,
+.data .tehnicko_znanje > input:checked + label:hover ~ label,
+.data .tehnicko_znanje > input:checked ~ label:hover,
+.data .tehnicko_znanje > input:checked ~ label:hover ~ label,
+.data .tehnicko_znanje > label:hover ~ input:checked ~ label {
     color: #c59b08;
 }
+
+
+.data .odgovornost {
+    /* float: left; */
+    height: 46px;
+    padding: 0 10px;
+}
+.data .odgovornost:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.data .odgovornost:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+    margin-left: 10px;
+    margin-top: 0;
+}
+.data .odgovornost:not(:checked) > label:before {
+    content: '★ ';
+}
+.data .odgovornost > input:checked ~ label {
+    color: #ffc700;    
+}
+.data .odgovornost:not(:checked) > label:hover,
+.data .odgovornost:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.data .odgovornost > input:checked + label:hover,
+.data .odgovornost > input:checked + label:hover ~ label,
+.data .odgovornost > input:checked ~ label:hover,
+.data .odgovornost > input:checked ~ label:hover ~ label,
+.data .odgovornost > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+.data .zalaganje {
+    /* float: left; */
+    height: 46px;
+    padding: 0 10px;
+}
+.data .zalaganje:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.data .zalaganje:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+    margin-left: 10px;
+    margin-top: 0;
+}
+.data .zalaganje:not(:checked) > label:before {
+    content: '★ ';
+}
+.data .zalaganje > input:checked ~ label {
+    color: #ffc700;    
+}
+.data .zalaganje:not(:checked) > label:hover,
+.data .zalaganje:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.data .zalaganje > input:checked + label:hover,
+.data .zalaganje > input:checked + label:hover ~ label,
+.data .zalaganje > input:checked ~ label:hover,
+.data .zalaganje > input:checked ~ label:hover ~ label,
+.data .zalaganje > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+.data .timski_rad {
+    /* float: left; */
+    height: 46px;
+    padding: 0 10px;
+}
+.data .timski_rad:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.data .timski_rad:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+    margin-left: 10px;
+    margin-top: 0;
+}
+.data .timski_rad:not(:checked) > label:before {
+    content: '★ ';
+}
+.data .timski_rad > input:checked ~ label {
+    color: #ffc700;    
+}
+.data .timski_rad:not(:checked) > label:hover,
+.data .timski_rad:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.data .timski_rad > input:checked + label:hover,
+.data .timski_rad > input:checked + label:hover ~ label,
+.data .timski_rad > input:checked ~ label:hover,
+.data .timski_rad > input:checked ~ label:hover ~ label,
+.data .timski_rad > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
 /* ============================================ */
 
 /* podesavanje dugmadi */
@@ -255,21 +368,21 @@ form .button button{
     border: none;
     border-radius: 25px;
     font-size: 25px;
-    background-color: #5FB34F;
+    background-color: var(--zelena);
     color: #fff;
     font-weight: bolder;
     padding: 0;
 }
 
 form .button .inter :hover{
-    background-color: #3e8031;
+    background-color: var(--zelenaMouseOver);
 }
 form .button .inter :active{
     background-color: #246317;
 }
 
 .text .exit_bttn :hover{
-    background-color: #0098b6;
+    background-color: var(--plavaMouseOver);
 }
 
 .text .exit_bttn :active{

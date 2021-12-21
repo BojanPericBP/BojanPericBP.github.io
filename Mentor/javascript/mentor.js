@@ -1,15 +1,20 @@
 function myFunction() 
 {
   var x = document.getElementById("myTopnav");
+  var y = document.getElementById("topnav_container");
+
   if (x.className === "topnav") 
   {
     x.className += " responsive";
     x.style.height = "auto";
+    y.style.height = "auto";
+
   } 
   else 
   {
     x.className = "topnav";
-    x.style.height = "81px";
+    x.style.height = "auto";
+    y.style.height = "65px";
   }
 }
 
