@@ -1,0 +1,295 @@
+button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .prikaziPopUp-btn
+  {
+      width: auto;
+      background-color: var(--zelena);
+      border-radius: 50px;
+      width: 100px;
+      font-weight: bold;
+  }
+  
+  .popUp-klasa2 {
+      display: none; 
+      position: fixed; 
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.4);
+      padding-top: 60px;
+  }
+
+  .container_ocijeni_studenta{
+    /* position: absolute; */
+    /* display: none; */
+    /* top: 50%;
+    left: 50%; */
+    background-color: #105c6e;
+    /* width: 1000px; */
+    width: 90%;
+    max-width: 700px;
+    min-width: 510px;
+    margin: 10% auto 10% auto;
+    padding: 30px;
+    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 30px;
+    /* transform: translate(-50%, -50%); */
+    z-index: 0;
+}
+
+.container_ocijeni_studenta .text{
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: thin;
+    padding-bottom: 20px;
+}
+
+.container_ocijeni_studenta .text label{
+    width: 650px;
+    margin: 0 0 0 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.container_ocijeni_studenta .text button{
+    width: fit-content;
+    margin: 0;
+    float: right;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #5BA7B9;
+    font-size: 18px;
+    color: #fff;
+}
+
+.container_ocijeni_studenta form{
+    color: #fff;
+}
+
+.exit_bttn{
+    width: fit-content;
+    margin: 0;
+    float: right;
+}
+
+/* pomjeranje dijela za unos */
+.container_ocijeni_studenta form .data_tehnicko_znanje{
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+    /* display: flex;
+    justify-content: center; */
+}
+.container_ocijeni_studenta form .data_odgovornost{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    /* display: flex;
+    justify-content: center; */
+}
+.container_ocijeni_studenta form .data_zalaganje{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    /* display: flex;
+    justify-content: center; */
+}
+.container_ocijeni_studenta form .data_timski_rad{
+    height: 45px;
+    width: 100%;
+    margin: 10px 0;
+    /* display: flex;
+    justify-content: center; */
+}
+.container_ocijeni_studenta form .data_komentar{
+    height: auto;
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    /* justify-content: center; */
+}
+/* =================================== */
+
+/* poravnavanje dijela za unos */
+.data_tehnicko_znanje label{
+    margin-top: 9px;
+    font-size: 20px;
+    float: right;
+}
+
+.data_odgovornost label{
+    margin-top: 10px;
+    font-size: 20px;
+    float: right;
+}
+
+.data_zalaganje label{
+    margin-top: 11px;
+    font-size: 20px;
+    float: right;
+}
+
+.data_timski_rad label{
+    margin-top: 12px;
+    font-size: 20px;
+    float: right;
+}
+
+.data_komentar label{
+    margin-top: 9px;
+    font-size: 20px;
+}
+
+.data_komentar .komentar{
+    width: inherit;
+}
+
+.data_komentar textarea{
+    resize: none;
+    padding: 5px;
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+}
+
+.data .tehnicko_znanje{
+    margin-top: 20px;
+}
+
+.data .odgovornost{
+    margin: 10px 0;
+}
+
+.data .zalaganje{
+    margin: 10px 0;
+}
+
+.data .timski_rad{
+    margin: 10px 0;
+}
+
+.data .rate {
+    /* float: left; */
+    height: 46px;
+    padding: 0 10px;
+}
+.data .rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.data .rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+    margin-left: 10px;
+    margin-top: 0;
+}
+.data .rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.data .rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.data .rate:not(:checked) > label:hover,
+.data .rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.data .rate > input:checked + label:hover,
+.data .rate > input:checked + label:hover ~ label,
+.data .rate > input:checked ~ label:hover,
+.data .rate > input:checked ~ label:hover ~ label,
+.data .rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+/* ============================================ */
+
+/* podesavanje dugmadi */
+form .button{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+}
+
+.exit_bttn button{
+    padding: 0;
+}
+
+.inter{
+    display: flex;
+    justify-content: center;
+}
+
+form .button button{
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: #5FB34F;
+    color: #fff;
+    font-weight: bolder;
+    padding: 0;
+}
+
+form .button .inter :hover{
+    background-color: #3e8031;
+}
+form .button .inter :active{
+    background-color: #246317;
+}
+
+.text .exit_bttn :hover{
+    background-color: #0098b6;
+}
+
+.text .exit_bttn :active{
+    background-color: #108ca5;
+}
+
+/* =================================== */
+
+.animate-popUp 
+{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
