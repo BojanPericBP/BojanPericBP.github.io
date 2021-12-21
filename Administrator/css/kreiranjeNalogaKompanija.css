@@ -23,8 +23,8 @@ button {
   .popUp-klasa2 {
       display: none; 
       position: fixed; 
-      align-items: center;
-      justify-content: center;
+      /* align-items: center;
+      justify-content: center; */
       z-index: 1;
       left: 0;
       top: 0;
@@ -35,10 +35,12 @@ button {
   }
 
   .container_kreiraj_firmu{
-    background-color: #105c6e;
+    background-color: var(--bojaMenija);
     width: 90%;
     max-width: 1000px;
-    min-width: 760px;
+
+    margin: 5% auto 5% auto;
+
     padding: 30px;
     border-radius: 30px;
     overflow: auto;
@@ -69,7 +71,7 @@ button {
     height: 35px;
     border: none;
     border-radius: 20px;
-    background-color: #5BA7B9;
+    background-color: var(--plavaOtkaziButton);
     font-size: 18px;
     color: #fff;
 }
@@ -243,21 +245,21 @@ form .button button{
     border: none;
     border-radius: 25px;
     font-size: 25px;
-    background-color: #5FB34F;
+    background-color: var(--zelena);
     color: #fff;
     font-weight: bolder;
     padding: 0;
 }
 
 form .button .inter :hover{
-    background-color: #3e8031;
+    background-color: var(--zelenaMouseOver);
 }
 form .button .inter :active{
     background-color: #246317;
 }
 
 .text .exit_bttn :hover{
-    background-color: #0098b6;
+    background-color: var(--plavaMouseOver);
 }
 
 .text .exit_bttn :active{
