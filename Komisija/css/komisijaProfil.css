@@ -222,14 +222,13 @@ body
   width: 100%;
 }
 
-.sticky + .content 
+.sticky + .container
 {
-  padding-top: 60px;
+  padding-top: 75px;
 }
 /*----------------------------------------------------*/
 
 .sadrzaj{
-  padding-top: 60px;
   margin-top: 4%;
   margin-bottom: 1%;
 }

@@ -1,6 +1,5 @@
 function myFunction() 
 {
-  //document.getElementById("prezimeKomisije").innerHTML = "noName@mail.com";
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") 
   {
