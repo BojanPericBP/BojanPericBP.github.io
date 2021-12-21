@@ -547,7 +547,7 @@ body
 }
 
 .lista .polje div img:hover{
-    background-color: #cef5f1;
+    background-color: var(--plavaMouseOver);
     cursor: pointer;
 }
 
