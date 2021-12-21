@@ -176,19 +176,19 @@ button {
 
 /* poravnavanje dijela za unos */
 .data_ime label{
-    margin-left: 0px;
+    margin-left: -15px;
     margin-top: 7px;
     font-size: 20px;
 }
 
 .data_prezime label{
-    margin-left: -36px;
+    margin-left: -50px;
     margin-top: 7px;
     font-size: 20px;
 }
 
 .data_jmbg label{
-    margin-left: -20px;
+    margin-left: -26px;
     margin-top: 7px;
     font-size: 20px;
 }
@@ -200,39 +200,39 @@ button {
 }
 
 .data_email label{
-    margin-left: -12px;
+    margin-left: -30px;
     margin-top: 7px;
     font-size: 20px;
 }
 
 .data_br_telefona label{
-    margin-left: -87px;
+    margin-left: -85px;
     margin-top: 7px;
     font-size: 20px;
 }
 
 .data_fakultet label{
-    margin-left: -42px;
+    margin-left: -52px;
     margin-top: 7px;
     font-size: 20px;
 }
 .data_smjer label{
-    margin-left: -22px;
+    margin-left: -32px;
     margin-top: 7px;
     font-size: 20px;
 }
 .data_ciklus label{
-    margin-left: -18px;
+    margin-left: -32px;
     margin-top: 7px;
     font-size: 20px;
 }
 .data_godina label{
-    margin-left: -25px;
+    margin-left: -38px;
     margin-top: 7px;
     font-size: 20px;
 }
 .data_pol label{
-    margin-left: 10px;
+    margin-left: -12px;
     margin-top: 7px;
     font-size: 20px;
 }
@@ -241,6 +241,9 @@ button {
     margin-top: 7px;
     font-size: 20px;
 }
+/* ==================================================== */
+
+/* Input */
 
 .data_ime input{
     padding: 5px;
@@ -321,7 +324,7 @@ button {
 }
 .data_godina select{
     padding: 5px;
-    width: 400px;
+    width: 410px;
     border-radius: 5px;
     border: none;
     font-size: 18px;

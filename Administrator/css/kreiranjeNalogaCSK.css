@@ -129,19 +129,19 @@ button:hover {
 
 /* poravnavanje dijela za unos */
 .data_ime label{
-    margin-left: -40px;
+    margin-left: -36px;
     margin-top: 7px;
     font-size: 20px;
 }
 
 .data_prezime label{
-    margin-left: -76px;
+    margin-left: -70px;
     margin-top: 7px;
     font-size: 20px;
 }
 
 .data_email label{
-    margin-left: -52px;
+    margin-left: -51px;
     margin-top: 7px;
     font-size: 20px;
 }
@@ -153,11 +153,13 @@ button:hover {
 }
 
 .data_smjer label{
-    margin-left: -60px;
+    margin-left: -52px;
     margin-top: 7px;
     font-size: 20px;
 }
+/* ======================================= */
 
+/* Input */
 .data_ime input{
     padding: 5px;
     width: 400px;

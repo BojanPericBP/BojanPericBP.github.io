@@ -133,7 +133,7 @@ button {
 
 /* poravnavanje dijela za unos */
 .data_naziv_firme label{
-    margin-left: -106px;
+    margin-left: -89px;
     margin-top: 7px;
     font-size: 20px;
 }
@@ -145,19 +145,19 @@ button {
 }
 
 .data_br_telefona label{
-    margin-left: -120px;
+    margin-left: -100px;
     margin-top: 7px;
     font-size: 20px;
 }
 
 .data_adresa label{
-    margin-left: -62px;
+    margin-left: -55px;
     margin-top: 7px;
     font-size: 20px;
 }
 
 .data_web_stranica label{
-    margin-left: -122px;
+    margin-left: -98px;
     margin-top: 7px;
     font-size: 20px;
 }
@@ -167,6 +167,10 @@ button {
     margin-top: 7px;
     font-size: 20px;
 }
+
+/* ==================================================== */
+
+/* Input */
 
 .data_naziv_firme input{
     padding: 5px;
