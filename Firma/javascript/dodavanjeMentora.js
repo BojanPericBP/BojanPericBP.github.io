@@ -36,6 +36,10 @@ function closePopUp()
     if(document.forms[0].checkValidity())
     popUp.style.display='none';
 }
+function forceClosePopUp() {
+
+        popUp.style.display = 'none';
+}
 
 function showPopUp() 
 {
