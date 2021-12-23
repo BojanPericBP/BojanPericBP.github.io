@@ -26,7 +26,7 @@
   <button onclick="showPopUp()" class="prikaziPopUp-btn">Dodaj</button>
 
   <div id="popUp-Id" class="popUp-klasa">
-    <form class="popUp-content-klasa animate-popUp needs-validation" method="get" novalidate>
+    <form class="popUp-content-klasa animate-popUp" method="get">
 
       <!-- <div class="naslov-iznad-hr">
         <div class="red">
@@ -39,41 +39,51 @@
         </div>
         <hr>
     </div> -->
-      <div class="centered-text-klasa my-5">
+    <div class="row-for-close-button">
+    <button type="reset" class="otkaziBtn" onclick="closePopUp()"></button>
+    </div>
+      <div class="centered-text-klasa row-for-header mb-5">
         <div>
-          <h1>Dodavanje novog mentora</h1>
+          <h1>Kreiranje naloga mentoru</h1>
           <hr>
         </div>
       </div>
-      <div class="container-sm">
-        <div class="row mb-3 justify-content-end">
-          <label for="imeMentoraTextField" class="col-sm-2 col-form-label">Ime</label>
+      <div class="container-sm align-items-center">
+        <div class="row mb-3 align-items-center">
+          <label for="imeMentoraTextField" class="col-sm-2">Ime</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="imeMentoraTextField" required>
-            <div class="invalid-feedback">Obavezno polje</div>
+            <input type="text" id="imeMentoraTextField" required>
+            <!-- <div class="invalid-feedback">Obavezno polje</div> -->
           </div>
         </div>
-        <div class="row mb-3 justify-content-end">
-          <label for="prezimeMentoraTextField" class="col-sm-2 col-form-label">Prezime</label>
+        <div class="row mb-3 align-items-center">
+          <label for="prezimeMentoraTextField" class="col-sm-2">Prezime</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="prezimeMentoraTextField" required>
-            <div class="invalid-feedback">Obavezno polje</div>            
-          </div>
-
-        </div>
-        <div class="row mb-3 justify-content-end">
-          <label for="emailMentoraTextField" class="col-sm-2 col-form-label">E-mail</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="emailMentoraTextField" required>
-            <div class="invalid-feedback">Obavezno polje</div>
+            <input type="text" id="prezimeMentoraTextField" required>
+            <!-- <div class="invalid-feedback">Obavezno polje</div>             -->
           </div>
 
         </div>
-        <div class="row mb-3 justify-content-end">
-          <label for="sifraMentoraField" class="col-sm-2 col-form-label">Šifra</label>
+        <div class="row mb-3 align-items-center">
+          <label for="emailMentoraTextField" class="col-sm-2">E-mail</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control" id="sifraMentoraField" required>
+            <input type="email" id="emailMentoraTextField" required>
+            <!-- <div class="invalid-feedback">Obavezno polje</div> -->
+          </div>
+
+        </div>
+        <div class="row mb-3 align-items-center">
+          <label for="sifraMentoraField" class="col-sm-2">Šifra</label>
+          <div class="col-sm-10">
+            <input type="password" id="sifraMentoraField" required>
             <div class="invalid-feedback">Obavezno polje</div>
+          </div>
+
+        </div>
+        <div class="row mb-3 justify-content-center">
+          <div class="col-sm-4 mx-3 my-2">
+            <button onclick="dodajMentora()" class="potvrdiBtn" type="submit">Dodaj</button>
+
           </div>
 
         </div>
@@ -83,9 +93,13 @@
 
       </div>
 
-      <div class="container">
-        <button onclick="dodajMentora()" class="potvrdiBtn" type="submit">Dodaj</button>
-      </div>
+      <!-- <div class="container-sm border-klasa"> -->
+        <!-- <div class="row align-items-center border-klasa"> -->
+          <!-- <div class="col-sm-6 align-items-center border-klasa"> -->
+        <!-- <button onclick="dodajMentora()" class="potvrdiBtn border-klasa" type="submit">Dodaj</button> -->
+        <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
 
     </form>
   </div>

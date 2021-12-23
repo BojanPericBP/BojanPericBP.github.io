@@ -23,182 +23,212 @@
 </head>
 
 <body>
+    <div class="centered-text-klasa my-5">
+        <div>
+            <h1><u>Objava oglasa za praksu</u></h1>
+        </div>
+    </div>
+    
     <!--<div class="container">-->
-    <form class="popUp-content-klasa needs-validation" novalidate>
+    <form class="popUp-content-klasa" method="get">
         <!-- <div class="container"> -->
 
-        <div class="centered-text-klasa my-5">
+        <!-- <div class="centered-text-klasa my-5">
             <div>
                 <h1><u>Objava oglasa za praksu</u></h1>
             </div>
-        </div>
+        </div> -->
         <div class="form-margins-klasa">
             <div class="container">
 
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-2 col-form-label">Naziv prakse</label>
+                <div class="row mb-3 align-items-center">
+                    <label for="nazivPrakseTextField" class="col-sm-2">Naziv prakse</label>
+                    <!-- <div class="invalid-feedback">Obavezno polje</div> -->
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="nazivPrakseTextField" required>
-                        <div class="invalid-feedback">Obavezno polje</div>
+                        <input type="text" id="nazivPrakseTextField" required>
+                        <!-- <div class="invalid-feedback div-border"><i class="bi bi-exclamation-circle-fill"></i></div> -->
                     </div>
+                    <!-- <div class="invalid-feedback div-border">Obavezno polje</div> -->
 
                 </div>
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-2 col-form-label ">Smjer</label>
+
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-2">Smjer</label>
                     <div class="col-sm-10 grey-background">
-                        <div class="row">
+                        <div class="row align-items-center">
                             <div class="col-sm-6 custom-checkbox">
-                                <input type="checkbox" id="racunarskoCheckBox">
-                                <label class="checkbox-label" for="racunarskoCheckBox">Računarsko inž.</label>
+                                <label class="label-for-custom-things">
+                                <input type="checkbox" name="racunarskoCheckBox" id="racunarskoCheckBox">
+                                Računarsko inž.
+                                </label>
+                                <!-- <label class="checkbox-label" for="racunarskoCheckBox">Računarsko inž.</label> -->
                             </div>
                             <div class="col-sm-6 custom-checkbox">
-                                <input type="checkbox" id="elektronikaCheckBox">
-                                <label class="checkbox-label" for="elektronikaCheckBox">Elektronika</label>
+                                <label class="label-for-custom-things">
+                                <input type="checkbox" name="elektronikaCheckBox" id="elektronikaCheckBox">
+                                Elektronika</label>
+                                <!-- <label class="checkbox-label" for="elektronikaCheckBox">Elektronika</label> -->
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6 custom-checkbox">
-                                <input type="checkbox" name="chbracunarsko" id="softverskoCheckBox">
-                                <label class="checkbox-label" for="softverskoCheckBox">Softversko inž.</label>
+                                <label class="label-for-custom-things">
+                                <input type="checkbox" id="softverskoCheckBox">
+                                Softversko inž.</label>
+                                <!-- <label class="checkbox-label" for="softverskoCheckBox">Softversko inž.</label> -->
                             </div>
                             <div class="col-sm-6 custom-checkbox">
+                                <label class="label-for-custom-things">
                                 <input type="checkbox" id="telekomunikacijeCheckBox">
-                                <label class="checkbox-label" for="telekomunikacijeCheckBox">Telekomunikacije</label>
+                                Telekomunikacije</label>
+                                <!-- <label class="checkbox-label" for="telekomunikacijeCheckBox">Telekomunikacije</label> -->
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-4 col-form-label">Vrsta prakse</label>
-                    <div class="col-sm-4 my-2 form-check">
-                        <input type="radio" class="form-check-input" name="VrstaPrakse" id="ljetnaRadioBtn" required>
-                        <label class="form-check-label" for="ljetnaRadioBtn">Ljetna</label>
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-4">Vrsta prakse</label>
+                    <div class="col-sm-4 my-2">
+                        <label class="label-for-custom-things">
+                            <input type="radio" name="VrstaPrakse" id="ljetnaRadioBtn" required>
+                            Ljetna
+                        </label>
+                        <!-- <label class="form-check-label" for="ljetnaRadioBtn">Ljetna</label> -->
                     </div>
-                    <div class="col-sm-4 my-2 form-check">
-                        <input type="radio" class="form-check-input" name="VrstaPrakse" id="strucnaRadioBtn" required>
-                        <label class="form-check-label" for="strucnaRadioBtn">Strucna</label>
-                        <div class="invalid-feedback">Obavezno polje</div>
+                    <div class="col-sm-4 my-2">
+                        <label class="label-for-custom-things">
+                            <input type="radio" name="VrstaPrakse" id="strucnaRadioBtn" required>
+                            Stručna
+                        </label>
+                        <!-- <label class="form-check-label" for="strucnaRadioBtn">Strucna</label> -->
+                        <!-- <div class="invalid-feedback">Obavezno polje</div> -->
                     </div>
                 </div>
 
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-2 col-form-label">Smjer</label>
+                <!-- <div class="row mb-3 align-items-center">
+                    <label class="col-sm-2">Smjer</label>
                     <div class="col-sm-10">
                         <select class="form-select" id="smjerSelect" required></select>
                         <div class="invalid-feedback">Obavezno polje</div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-2 col-form-label">Oblast rada</label>
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-2">Oblast rada</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="oblastRadaTextField" required>
-                        <div class="invalid-feedback">Obavezno polje</div>
+                        <input type="text" id="oblastRadaTextField" required>
+                        <!-- <div class="invalid-feedback">Obavezno polje</div> -->
                     </div>
 
                 </div>
 
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-2 col-form-label">Program rada prakse, planirane aktivnosti</label>
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-2">Program rada prakse, planirane aktivnosti</label>
                     <div class="col-sm-10">
-                        <textarea type="text" class="form-control" rows="5" id="programRadaTextField"
-                            required></textarea>
-                        <div class="invalid-feedback">Obavezno polje</div>
+                        <textarea type="text" rows="5" id="programRadaTextField" required></textarea>
+                        <!-- <div class="invalid-feedback">Obavezno polje</div> -->
                     </div>
 
                 </div>
 
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-2 col-form-label">Period trajanja prakse</label>
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-2">Period trajanja prakse</label>
+                    <label class="col-sm-1 centered-text-klasa">Od:</label>
                     <!-- <label >Od</label> -->
                     <div class="col-sm-4 my-2">
                         <!-- <div class="input-group"> -->
                         <!-- <select class="form-select" id="datumOdSelect"></select> -->
                         <!-- <i class="bi bi-calendar-date input-group-text"></i> -->
-                        <input type="text" class="datepicker_input form-control kalendar_layout" required>
-                        <div class="invalid-feedback">Obavezno polje</div>
+                        <input type="text" class="datepicker_input kalendar_layout" required onkeypress="return false">
+                        <div class="invalid-feedback div-border"><i class="bi bi-exclamation-circle-fill"></i></div>
+                        <!-- <div class="invalid-feedback">Obavezno polje</div> -->
                         <!-- </div> -->
                     </div>
-                    <label class="col-sm-2 my-2 col-form-label centered-text-klasa">-</label>
+                    <label class="col-sm-1 my-2 centered-text-klasa">Do:</label>
                     <div class="col-sm-4 my-2">
                         <!-- <div class="input-group"> -->
                         <!-- <select class="form-select" id="datumDoSelect"></select> -->
 
                         <!-- <span class="bi bi-calendar-date input-group-text" id="calendar1"></span> -->
 
-                        <input type="text" class="datepicker_input form-control kalendar_layout" required>
-                        <div class="invalid-feedback">Obavezno polje</div>
+                        <input type="text" class="datepicker_input kalendar_layout" required onkeypress="return false">
+                        <!-- <div class="invalid-feedback">Obavezno polje</div> -->
+                        <div class="invalid-feedback div-border"><i class="bi bi-exclamation-circle-fill"></i></div>
                         <!-- </div> -->
                     </div>
 
                 </div>
 
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-2 col-form-label">Ukupan broj sati</label>
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-2">Ukupan broj sati</label>
                     <div class="col-sm-10">
-                        <input type="number" class="form-control" id="ukupanBrojSatiTextField" required>
-                        <div class="invalid-feedback">Obavezno polje</div>
+                        <input type="number" id="ukupanBrojSatiTextField" min="0" oninput="validity.valid||(value='');"
+                            required>
+                        <!-- <div class="invalid-feedback">Obavezno polje</div> -->
                     </div>
 
                 </div>
 
-                <div class="row mb-3  justify-content-end">
-                    <label class="col-sm-3 col-form-label">Mjesto održavanja prakse</label>
+                <div class="row mb-3  align-items-center">
+                    <label class="col-sm-3">Mjesto održavanja prakse</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="mjestoPrakseTextField" required>
-                        <div class="invalid-feedback">Obavezno polje</div>
+                        <input type="text" id="mjestoPrakseTextField" required>
+                        <!-- <div class="invalid-feedback">Obavezno polje</div> -->
                     </div>
 
                 </div>
 
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-2 col-form-label">Stručni mentor</label>
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-2">Stručni mentor</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="mentorTextField" required>
-                        <div class="invalid-feedback">Obavezno polje</div>
+                        <input type="text" id="mentorTextField" required>
+                        <!-- <div class="invalid-feedback">Obavezno polje</div> -->
                     </div>
 
                 </div>
 
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-2 col-form-label">Opis prakse</label>
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-2">Opis prakse</label>
                     <div class="col-sm-10">
-                        <textarea type="text" class="form-control" rows="5" id="opisPrakseTextField"
-                            required></textarea>
-                        <div class="invalid-feedback">Obavezno polje</div>
+                        <textarea type="text" rows="5" id="opisPrakseTextField" required></textarea>
+                        <!-- <div class="invalid-feedback">Obavezno polje</div> -->
                     </div>
 
                 </div>
 
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-4 col-form-label">Potrebni dokumenti</label>
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-4">Potrebni dokumenti</label>
                     <div class="col-sm-4 my-2 custom-checkbox">
+                        <label class="label-for-custom-things">
                         <input type="checkbox" id="cvCheckBox">
-                        <label class="checkbox-label" for="cvCheckBox">CV</label>
+                        CV</label>
+                        <!-- <label class="checkbox-label" for="cvCheckBox">CV</label> -->
                     </div>
                     <div class="col-sm-4 my-2 custom-checkbox">
+                        <label class="label-for-custom-things">
                         <input type="checkbox" id="motivacionoPismoCheckBox">
-                        <label class="checkbox-label" for="motivacionoPismoCheckBox">Motivaciono pismo</label>
+                        Motivaciono pismo</label>
+                        <!-- <label class="checkbox-label" for="motivacionoPismoCheckBox">Motivaciono pismo</label> -->
                     </div>
                 </div>
 
-                <div class="row mb-3 justify-content-end">
-                    <label class="col-sm-2 col-form-label">Link do prakse</label>
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-2">Link do prakse</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="linkDoPrakseTextField">
+                        <input type="text" id="linkDoPrakseTextField">
                     </div>
 
                 </div>
-                <div class="row mb-3 justify-content-start">
-                    <label class="col-sm-2 col-form-label">Rok za prijavu</label>
-                    <div class="col-sm-3">
+                <div class="row mb-3 align-items-center">
+                    <label class="col-sm-2">Rok za prijavu</label>
+                    <div class="col-sm-4">
                         <!-- <select class="form-select" id="rokSelect"></select> -->
                         <!-- <div class="input-group"> -->
                         <!-- <select class="form-select" id="datumOdSelect"></select> -->
                         <!-- <i class="bi bi-calendar-date input-group-text"></i> -->
-                        <input type="text" class="datepicker_input form-control kalendar_layout" required>
-                        <div class="invalid-feedback">Obavezno polje</div>
+                        <input type="text" class="datepicker_input kalendar_layout" required onkeypress="return false">
+                        <!-- <div class="invalid-feedback">Obavezno polje</div> -->
                         <!-- </div> -->
                     </div>
                 </div>

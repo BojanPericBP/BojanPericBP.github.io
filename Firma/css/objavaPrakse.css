@@ -1,6 +1,80 @@
+/*TO DO: dimenzije checkbox-a prebaciti u em*/
+
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+h1{
+  color:white;
+}
+button:hover{
+  opacity:0.8;
+}
+.label-for-custom-things {
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight:normal;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  margin-top:2px;
+  margin-bottom:2px;
+}
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  /* font: inherit; */
+  /* color: currentColor; */
+  width: 1.15em;
+  height: 1.15em;
+  border: 1px solid black;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+ input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--zelenaCheckbox);
+  background-color: var(--zelenaCheckbox)
+} 
+input[type="radio"]:checked::before {
+  transform: scale(1);
+  /* background-color: var(--zelenaCheckBox); */
+}
+.label-for-custom-things + .label-for-custom-things {
+  margin-top: 1em;
+}
+/* input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+} */
+/* .input-icons{
+  position:absolute;
+}
+.invalid-icon{
+  bottom:25px;
+  position:relative;
+} */
 label{
-    font-size:19px !important;
+    font-size:22px;
+    font-weight:bold;
     text-align:left;
+    /* border: 2px solid black; */
 }
 /* @media(max-width:600px)
 {
@@ -18,20 +92,22 @@ input[type=number]
   border: 2px solid black;
   box-sizing: border-box;
   border-radius:12px;
-  background-color:rgba(196, 196, 196, 0.23) !important;
+  background-color:rgba(196, 196, 196, 0.23);
 }
 
 
 textarea{
-    background-color:rgba(196, 196, 196, 0.23)!important;
-    border:2px solid black !important;
-    border-radius:12px !important;
+    background-color:rgba(196, 196, 196, 0.23);
+    border:2px solid black;
+    border-radius:12px;
+
+    width:100%
 }
-select{
+/* select{
     background-color:rgba(196, 196, 196, 0.23) !important;
     border:2px solid black !important;
     border-radius:12px !important;
-}
+} */
 input[type=text]
 {
   width: 100%;
@@ -41,7 +117,7 @@ input[type=text]
   border: 2px solid black;
   box-sizing: border-box;
   border-radius:12px;
-  background-color:rgba(196, 196, 196, 0.23) !important;
+  background-color:rgba(196, 196, 196, 0.23);
 }
 
 
@@ -74,6 +150,7 @@ body{
 
 }*/
 .form-margins-klasa{
+  margin-top:100px;
     margin-right:100px;
     margin-left:100px
 }
@@ -121,10 +198,15 @@ body{
   z-index: 3;
 }
 .kalendar_layout{
-    background: url(/resources/DateIcondatePickerIcon.svg) no-repeat scroll 10px 3px;
+    background: url(/resources/DateIcondatePickerIcon.svg) no-repeat scroll 5px 7px;
     cursor:pointer;
     padding-left:45px !important;
 }
+/* .kalendar_layout:invalid{
+    background: url(/resources/DateIcondatePickerIcon.svg) no-repeat scroll 5px 5px !important;
+    cursor:pointer;
+    padding-left:45px !important;
+} */
 
 .grey-background{
 padding-top:5px;
@@ -173,7 +255,7 @@ padding-bottom:5px;
 }
 
 .custom-checkbox{
-  padding-left: 10px !important; 
+  padding-left: 10px; 
   /*position:relative !important;*/
 }
 
@@ -181,33 +263,37 @@ padding-bottom:5px;
   color:#5fb34f;
 }
 .custom-checkbox input+label{
-  cursor: pointer !important;
+  cursor: pointer;
 }
 
 input[type="checkbox"]{
-  appearance: none !important; 
-  -webkit-appearance: none !important;
-  background-color: white !important;
-  height: 30px !important;
-  width: 30px !important;
+  appearance: none; 
+  -webkit-appearance: none;
+  background-color: white;
+  height: 30px;
+  width: 30px;
   border: 2px solid black;
-  border-radius: 5px !important;
+  border-radius: 5px;
+  transform: translateY(-0.075em);
 }
 
 input[type="checkbox"]:hover{
-  cursor: pointer !important;
+  cursor: pointer;
   
 }
 
 input[type="checkbox"]:checked{
-  background-color: #5FB34F !important;
+  background-color: #5FB34F;
 }
 .lblSmjer{
    margin-top: 10px;
    margin-bottom: 5px;
 }
 .checkbox-label{
+  position: relative;
     font-size:19px;
+    font-weight:normal;
+    padding-bottom:3px;
 }
 @media(max-width:605px)
 {
@@ -215,3 +301,7 @@ input[type="checkbox"]:checked{
         font-size:17px !important;
     }
 }
+.div-border{
+  border:1px solid black !important;
+}
+
