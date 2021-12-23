@@ -1,4 +1,4 @@
-function myFunction() 
+function myFunction() // za otvaranje nav-menija na 3 crtice
 {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") 
@@ -8,23 +8,5 @@ function myFunction()
   else 
   {
     x.className = "topnav";
-  }
-}
-
-window.onscroll = function() { myFunctionScrool() };
-
-var navbar = document.getElementById("navbar-custom");
-
-var sticky = navbar.offsetTop;
-
-function myFunctionScrool() 
-{
-  if (window.pageYOffset >= sticky) 
-  {
-    navbar.classList.add("sticky")
-  } 
-  else 
-  {
-    navbar.classList.remove("sticky");
   }
 }

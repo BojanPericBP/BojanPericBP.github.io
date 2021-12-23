@@ -60,7 +60,7 @@
 @media (max-width:900px) /* 900-769 pixela */
 {
     .footer-clean {
-      margin-top: 8%;
+      margin-top: 8% !important;
     }
 
     .footer-clean .item {
@@ -71,21 +71,12 @@
     .footer-clean ul img {
      height: 45px;
     }
-
-    .profilKolona {
-      margin-bottom: 0;
-    }
-
-    .treca {
-      padding-top: 0%;
-    }
-
 }
 
 @media (max-width: 768px) /* 768-576 pixela */
 {
   .footer-clean {
-    margin-top: 10% !important;
+    margin-top: 5% !important;
   }
 
   .footer-clean ul {
@@ -95,23 +86,14 @@
    .footer-clean ul img {
      height: 40px;
     }
-  .kolone-u-sredini {
-    margin: 0%;
-  }
 
-  .profilKolona
-  {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1%;
-  }
 }
 
 @media (max-width: 575px) /* 0-575 pixela */
 {
  .footer-clean {
     text-align: center;
-    margin-top: 10% !important;
+    margin-top: 3% !important;
     padding: 0;
   }
   
