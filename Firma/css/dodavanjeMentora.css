@@ -5,19 +5,30 @@ label{
     text-align:left;
     font-weight:bold;
 }
-/* @media (max-width:600px)
-{
-    label{
-        text-align:left;
-    }
-} */
 h1{
     color:var(--bojaTamnoZelenaSlova);
     font-weight:bold;
 }
+hr {
+    margin-top: 0;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+
+/* NASLOV FORME */
 .centered-text-klasa{
     text-align:center;
 }
+.row-for-header{
+    height:50px;
+}
+/* NASLOV FORME KRAJ */
+
+
+/* INPUTI U FORMI */
 input[type=email] 
 {
   width: 100%;
@@ -52,6 +63,7 @@ input[type=text]
   background-color:rgba(196, 196, 196, 0.23);
 }
 
+/* DUGMAD GENERALNO*/
 button {
   color: white;
   padding: 14px 20px;
@@ -64,30 +76,11 @@ button {
 button:hover {
   opacity: 0.8;
 }
+/* DUGMED GENERALNO KRAJ */
 
-.naslov-iznad-hr {
-    text-align: left;
-    color: white;
-    margin-left: 7%;
-    margin-right: 8%;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
 
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
 
-/* .container {
-    margin-left: 7%;
-    margin-right: 6%;
-} */
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
+/* POPUP */
 
 .popUp-klasa {
     display: none; 
@@ -150,13 +143,9 @@ span.psw {
     width: 100px;
     font-weight: bold;
 }
-/* .naslov
-{
-    margin-top: 0;
-    font-size: small;
-    color:black;
-} */
+/* POPUP KRAJ */
 
+/* DUGME ZA POTVRDU */
 .potvrdiBtn {
     text-align: center;
     width: 100%;
@@ -165,67 +154,10 @@ span.psw {
     border-radius: 40px;
     color:white;
     margin:auto;
-    /* width: 22%; */
-    /* margin-left: 30%; */
-    /* margin-right: 30%; */
-    /* margin-bottom: 16px; */
 }
-/* .otkaziBtn{
-    background-color: var(--plavaOtkaziButton);
-    border-radius: 40px;
-    margin-top: 7px;
-    height: 40px;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 0;
-} */
+/* DUGME ZA POTVRDU KRAJ */
 
-.textBox{
-    word-wrap: break-word;
-}
-/* textarea {
-    font-size: medium;
-    letter-spacing: 0.9px;
-}
-textarea {
-    padding: 6px;
-    max-width: 96%;
-    min-width: 96%;
-    line-height: 1.5;
-    border-radius: 13px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px #999;
-    margin-top: 10px;
-    margin-bottom: 8px;
-} */
-
-/* .kolona {
-  float: left;
-  margin-bottom: 10px;
-}
-
-.lijevo {
-  width: 75%;
-}
-
-.desno {
-  width: 25%;
-}
-
-.red:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
-hr {
-    margin-top: 0;
-}
-
-.border-klasa{
-    border:2px solid black;
-}
-
+/* DUGME ZA ZATVARANJE */
 .otkaziBtn
 {
     padding: 0;
@@ -239,9 +171,6 @@ hr {
 .row-for-close-button{
     padding-left:90%;
     padding-top:10px;
-    height:50px;
-}
-.row-for-header{
     height:50px;
 }
 

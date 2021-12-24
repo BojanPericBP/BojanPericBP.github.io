@@ -20,10 +20,10 @@
 
 
 
-
+//JS KLIK UPRAZNO IZVAN POPUP-A
 var popUp = document.getElementById('popUp-Id');
 
-window.onclick = function(event) //kad se klikne u prazno, da nestane popUp
+window.onclick = function(event)
 {
     if (event.target == popUp) 
     {
@@ -31,23 +31,28 @@ window.onclick = function(event) //kad se klikne u prazno, da nestane popUp
     }
 }
 
+//JS KLIK NA POTVRDU
 function closePopUp() 
 {
     if(document.forms[0].checkValidity())
     popUp.style.display='none';
 }
+
+//JS KLIK NA DUGME ZA ZATVARANJE
 function forceClosePopUp() {
 
         popUp.style.display = 'none';
 }
 
+//JS ISKAKANJE POPUP*A
 function showPopUp() 
 {
    
     popUp.style.display='block';
 }
 
+//JS DODAVANJE MENTORA
 function dodajMentora()
 {
-    // TODO implement
+    
 }

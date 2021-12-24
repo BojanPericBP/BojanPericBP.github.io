@@ -20,6 +20,7 @@
 // })();
 
 
+// JS ZA DATEPICKER
 (function () {
     Datepicker.locales.en = {
      
@@ -38,7 +39,6 @@
 }) ();
 
 const getDatePickerTitle = elem => {
-    // From the label or the aria-label
     const label = elem.nextElementSibling;
     let titleText = '';
     if (label && label.tagName === 'LABEL') {
@@ -58,5 +58,6 @@ for (const elem of elems) {
 }
 
 
+// JS ZA OBJAVU PRAKSE
 function objaviPraksu() {
 }
