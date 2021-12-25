@@ -132,7 +132,7 @@ body
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) { /* ˇ ovaj dio se odnosi na navMeni kad nije aktivan, tj. kada nije kliknuto na 3 crtice i nije prikazan dropdown ˇ */
   .topnav a, .dropdown-klasa .dropbtn{
     display: none;
     margin: 0px;
@@ -162,7 +162,7 @@ body
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) { /* ˇ ovaj dio se odnosi na aktivan navMeni, tj. kada je kliknuto na 3 crtice i dropdown je prikazan ˇ */
   .topnav.responsive 
   {
     position: relative;
