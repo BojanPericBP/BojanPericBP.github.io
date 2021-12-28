@@ -115,14 +115,14 @@ h1, h2{
   display: none;
   position: absolute;
   background-color: #c7c7c7;
-  min-width: 180px;
+  min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown button{
   background-color: #4AD5D4;
-  width: 180px;
+  width: 140px;
   height: 40px;
   color: white;
   font-size: 1em;
@@ -135,7 +135,7 @@ h1, h2{
 
 .dropdown-content a {
   color: black;
-  width: 180px;
+  width: 140px;
   padding: 15px 0 15px 25px;
   text-decoration: none;
   display: block;
@@ -178,5 +178,18 @@ h1, h2{
     align-items: center ;
     justify-content: flex-end;
     margin-bottom: 3px;
+  }
+}
+
+@media (max-width: 300px) {
+  
+  .nav-bar button{
+    width: fit-content;
+    padding: 0 25px 0 25px;
+    height: 40px;
+  }
+
+  .imglogo{
+    height: 50px;
   }
 }
